@@ -73,7 +73,10 @@ Return ONLY the JSON array. No code fence, no preamble.`;
     if (result.success) {
       out.push(result.data);
     } else {
-      console.warn('Skipping invalid activity:', result.error.issues[0]?.message);
+      const issue = result.error.issues[0];
+      const path = issue?.path.join('.');
+      const offending = path ? path.split('.').reduce<unknown>((acc, k) => (acc as Record<string, unknown> | undefined)?.[k], withId) : undefined;
+      console.warn(`Skipping invalid activity: ${issue?.message} at ${path} (value: ${JSON.stringify(offending)})`);
     }
   }
   console.log(`  Theme "${theme.slice(0, 50)}..." -> ${out.length}/${target} valid`);

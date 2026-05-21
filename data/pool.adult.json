@@ -1,90 +1,6115 @@
 {
-  "generated_at": "2026-05-21T00:00:00.000Z",
+  "generated_at": "2026-05-21T12:14:44.066Z",
   "audience": "adult",
   "activities": [
     {
-      "id": "stub-a-01",
-      "title": "Call one friend you haven't spoken to in 6+ months",
-      "description": "Scroll your call log, pick a name that gives you a small pang. 15 minutes. No agenda.",
+      "id": "03695ee695",
+      "title": "Practice ukulele for 20 minutes using YouTube tutorial",
+      "description": "Dust off that ukulele gathering corner dust and learn one new chord progression from a beginner playlist.",
       "duration_min": 20,
-      "tags": { "energy": ["low", "medium"], "mood": ["social", "calm"], "timeOfDay": ["afternoon", "evening"], "category": "social", "indoor": true, "cost": "free" }
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
     },
     {
-      "id": "stub-a-02",
-      "title": "Read 20 pages of the book on your bedside",
-      "description": "The one you've been meaning to. No new book. The one already there. 30 minutes.",
+      "id": "8a08e68374",
+      "title": "Read 30 pages of that half-finished mystery novel",
+      "description": "Pick up the book gathering dust on your nightstand and commit to exactly 30 pages—enough to reignite interest without overwhelming.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a847d088a7",
+      "title": "Prep ingredients for that bookmarked butter chicken recipe",
+      "description": "Measure and chop vegetables for tomorrow's dinner using that restaurant-quality recipe you've been saving.",
       "duration_min": 30,
-      "tags": { "energy": ["low"], "mood": ["calm"], "timeOfDay": ["morning", "evening", "late_night"], "category": "restful", "indoor": true, "cost": "free" }
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
     },
     {
-      "id": "stub-a-03",
-      "title": "Take a 20-minute walk outside without your phone",
-      "description": "Leave it on the counter. Walk anywhere. Notice the light, the people, the air. Come back.",
-      "duration_min": 20,
-      "tags": { "energy": ["low", "medium"], "mood": ["restless", "calm"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "physical", "indoor": false, "cost": "free" }
-    },
-    {
-      "id": "stub-a-04",
-      "title": "Clear one drawer that has been bothering you",
-      "description": "The kitchen junk drawer, the bathroom under-sink, the cable drawer. Empty, sort, return. 15 min.",
+      "id": "b461f53931",
+      "title": "Practice 15 minutes of beginner piano scales on a keyboard app",
+      "description": "Use a free piano app to warm up fingers with basic scales, no expensive instrument needed.",
       "duration_min": 15,
-      "tags": { "energy": ["medium"], "mood": ["restless"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "productive", "indoor": true, "cost": "free" }
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
     },
     {
-      "id": "stub-a-05",
-      "title": "Cook one recipe you bookmarked but never made",
-      "description": "Open your bookmarks, pick whichever you saved earliest. Buy the missing ingredient or improvise.",
+      "id": "e0f24e984d",
+      "title": "Call that friend you haven't spoken to in 3 months",
+      "description": "Block 45 minutes on your calendar and have a genuine catch-up call instead of text exchanges.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ab0ec005c5",
+      "title": "Sketch or doodle for 20 minutes without judgment",
+      "description": "Pull out a sketchbook and pencil, then draw whatever comes to mind—faces, objects, patterns—no perfectionism required.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "92f6e8cc52",
+      "title": "Learn one new guitar riff from a song you love",
+      "description": "Find a tutorial for a 30-second riff from a favorite song and practice until muscle memory kicks in.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9d268a545d",
+      "title": "Finish that half-read article on a hobby topic you love",
+      "description": "Open that saved article from months ago and read it start to finish in one sitting.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "15d6137acc",
+      "title": "Make that pasta carbonara recipe you've been avoiding",
+      "description": "Cook the full meal from a YouTube cooking channel, step-by-step, and enjoy restaurant-quality dinner at home.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "83f3e7272d",
+      "title": "Practice harmonica for 25 minutes with online lessons",
+      "description": "Blow into that harmonica gathering dust and follow along with a beginner YouTube series on basic techniques.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "0a3310fa91",
+      "title": "Read two chapters of that self-help book about productivity",
+      "description": "Tackle 30 pages of actionable advice on time management or focus—ironically spending idle time productively.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d9edc5eb85",
+      "title": "Bake chocolate chip cookies using that fancy recipe saved",
+      "description": "Gather ingredients and bake a batch of from-scratch cookies—comforting, aromatic, and genuinely rewarding.",
+      "duration_min": 55,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "48761f759a",
+      "title": "Practice vocal warm-ups and sing one full song",
+      "description": "Spend 30 minutes warming up your voice with scales, then sing through one song you love from start to finish.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "78543b1fda",
+      "title": "Organize and catalog your bookshelf by genre or color",
+      "description": "Turn shelf chaos into visual order while rediscovering books you forgot you owned.",
       "duration_min": 90,
-      "tags": { "energy": ["medium"], "mood": ["curious", "calm"], "timeOfDay": ["afternoon", "evening"], "category": "creative", "indoor": true, "cost": "low" }
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
     },
     {
-      "id": "stub-a-06",
-      "title": "Watch one talk from a real-life craft you don't do",
-      "description": "Glassblowing, falconry, bookbinding, beekeeping. YouTube. 30 minutes of someone who loves their thing.",
-      "duration_min": 30,
-      "tags": { "energy": ["low"], "mood": ["curious"], "timeOfDay": ["afternoon", "evening", "late_night"], "category": "learning", "indoor": true, "cost": "free" }
-    },
-    {
-      "id": "stub-a-07",
-      "title": "Sit on your balcony with chai and stare at the sky for 20 min",
-      "description": "Bring just chai. No phone, no book. Watch the sky change. That's the whole activity.",
+      "id": "646ecc88c5",
+      "title": "Write a heartfelt email to someone you've been meaning to thank",
+      "description": "Craft a genuine, specific message to a person who made a difference, then hit send before overthinking.",
       "duration_min": 20,
-      "tags": { "energy": ["low"], "mood": ["calm"], "timeOfDay": ["morning", "evening"], "category": "restful", "indoor": false, "cost": "free" }
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
     },
     {
-      "id": "stub-a-08",
-      "title": "Write a thank-you message to a mentor or old boss",
-      "description": "Three sentences. Specific about what they did for you. Send before you overthink it.",
+      "id": "a3a4a3a9e1",
+      "title": "Learn basic origami by folding 5 different paper designs",
+      "description": "Follow a visual origami tutorial to fold paper cranes, boats, and butterflies—meditative and surprisingly satisfying.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "4724dff8e7",
+      "title": "Cook that Thai green curry you bookmarked last month",
+      "description": "Sauté, simmer, and taste—recreate a restaurant dish step-by-step using your saved recipe and fresh ingredients.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "bd1333e85f",
+      "title": "Finish one chapter of that business book on your nightstand",
+      "description": "Read a focused chapter on leadership, strategy, or finance—something that will genuinely feed your professional mind.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "296ad8bbf1",
+      "title": "Practice finger exercises on acoustic guitar for 30 minutes",
+      "description": "Work through dexterity drills and finger-picking patterns to build muscle memory and speed.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4c908503c7",
+      "title": "Spend 90 minutes cooking a full three-course Indian dinner",
+      "description": "Commit to making an appetizer, main, and dessert from recipes you've been saving—restaurant quality at home.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "2717c5b6d8",
+      "title": "Draw or paint one still-life object from your desk",
+      "description": "Pick a plant, coffee mug, or lamp and spend 40 minutes trying to capture it realistically with pencil or watercolor.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "9569230d7f",
+      "title": "Listen to one audiobook chapter while doing light stretching",
+      "description": "Combine two neglected habits: hear a chapter from that book and gently move your body for 35 minutes.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "1384fc1690",
+      "title": "Attempt that sourdough starter recipe from Pinterest",
+      "description": "Begin the multi-day sourdough journey by mixing flour and water, then tending your starter with care.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "2d709b3ee3",
+      "title": "Learn five basic music theory concepts using free apps",
+      "description": "Use an app like Tenuto or Music Theory Pro to understand scales, chords, intervals, and rhythm in 30 minutes.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "19f9f5c097",
+      "title": "Read the foreword and first 40 pages of that literary classic",
+      "description": "Start that Jane Austen or Tolstoy novel you've been meaning to tackle—enough to get genuinely hooked.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b367ba7835",
+      "title": "Play through one full song on keyboard without stopping",
+      "description": "Use a digital keyboard app or YouTube backing track to play one complete piece from memory or reading.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4aa4ec5644",
+      "title": "Write a short personal essay about a meaningful memory",
+      "description": "Spend 45 minutes writing 500 words about a moment that shaped you—reflective and surprisingly therapeutic.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8d8ce17591",
+      "title": "Prepare that tandoori chicken marinade and cook it",
+      "description": "Mix spices, marinate chicken, and roast or pan-fry until golden—a showstopping weeknight dinner.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "75d57aa2da",
+      "title": "Transcribe lyrics or chords from a song you love",
+      "description": "Listen actively and write down lyrics or figure out guitar/piano chords by ear—builds ear training.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "bdcbbea630",
+      "title": "Read reviews and select the next 3 books you'll buy",
+      "description": "Spend 30 minutes researching and adding recommendations to your reading list—planning the future fun.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "555216daa1",
+      "title": "Make homemade pizza dough and bake one pizza",
+      "description": "Knead, proof, stretch, and top your own pizza base—satisfying from mix to oven to plate.",
+      "duration_min": 100,
+      "tags": {
+        "energy": [
+          "medium",
+          "high"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "bd2a0d4286",
+      "title": "Journal about your goals for the next 90 days",
+      "description": "Spend 30 minutes writing down three concrete goals and breaking each into tiny actionable steps.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9c555371fb",
+      "title": "Practice wind instrument (flute/whistle) basics for 20 minutes",
+      "description": "Learn breath control and simple fingering patterns on that neglected flute or recorder.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c1e99ca862",
+      "title": "Recreate that risotto recipe from a cooking show",
+      "description": "Stir patiently, add stock gradually, and finish with butter and cheese—learn the meditative art of risotto.",
+      "duration_min": 70,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "7dae9c0827",
+      "title": "Spend 50 minutes reading poetry you've never encountered",
+      "description": "Open a poetry anthology or visit AllPoetry.com and read slowly through 10-15 poems from a new poet.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "bf49668224",
+      "title": "Record a video of yourself performing a musical piece",
+      "description": "Play an instrument or sing one complete song and record it—a concrete way to see/hear progress.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "fb1a1a7e50",
+      "title": "Make that dal makhani recipe you've been saving",
+      "description": "Simmer lentils, cream, and spices into restaurant-quality comfort food using your saved recipe.",
+      "duration_min": 80,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "6bc6f772c5",
+      "title": "Illustrate a page from a coloring book mindfully",
+      "description": "Spend 45 minutes coloring one detailed page with intention, letting your mind settle into the rhythm.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "21aabc6873",
+      "title": "Listen to a podcast episode about something you want to learn",
+      "description": "Queue up a 30-minute episode on a topic you've been curious about and listen actively with a notebook nearby.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "7bedfc06ac",
+      "title": "Create a mood board or vision board by hand",
+      "description": "Cut images from magazines and arrange them on cardboard to visualize a goal or aesthetic you love.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "7fd0c36a51",
+      "title": "Prepare and cook that miso soup recipe exactly as written",
+      "description": "Follow a traditional Japanese recipe carefully, learning proper techniques for broth, tofu, and garnish.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "7e47c8807a",
+      "title": "Compose a short original melody on any instrument you own",
+      "description": "Spend 30 minutes improvising and experimenting, then notate or record the best 30-second phrase you create.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f4e70c76d8",
+      "title": "Read the entire first act of a Shakespeare play aloud",
+      "description": "Choose one play, find an online text, and read Act 1 with expression—making Shakespeare accessible and fun.",
+      "duration_min": 55,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a8fe61fa51",
+      "title": "Make homemade pasta dough and roll/cut fresh tagliatelle",
+      "description": "Mix, knead, rest, and hand-roll pasta sheets—meditative and yields restaurant-worthy results.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium",
+          "high"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "5b9b3b6950",
+      "title": "Practice sight-reading on a musical instrument for 25 minutes",
+      "description": "Use free sheet music sites and play through three to five easy pieces, focusing on accurate reading.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "0f00a1e865",
+      "title": "Write haiku poems about 10 different moments in your life",
+      "description": "Spend 35 minutes crafting ten 5-7-5 syllable poems about memories, feelings, or observations.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "463de11e7f",
+      "title": "Bake and decorate a simple sheet cake with homemade frosting",
+      "description": "Mix, bake, cool, and frost a cake from scratch—rewarding and perfect for practicing piping.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "efd8325c84",
+      "title": "Read fan theories or literary analysis about your favorite book",
+      "description": "Spend 40 minutes on Reddit or Medium discovering new interpretations and discussions of a book you love.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "26d08a9234",
+      "title": "Film a short cooking video tutorial of one simple dish",
+      "description": "Set up your phone, cook a bookmarked recipe on camera, and create a sharable cooking reel.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ecc79ba86c",
+      "title": "Teach yourself basic chord progressions on any stringed instrument",
+      "description": "Learn three common progressions (I-IV-V, vi-IV-I-V, etc.) and practice switching cleanly for 35 minutes.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "051d453371",
+      "title": "Spend one full hour on a single challenging recipe",
+      "description": "Pick something ambitious like homemade biryani or croissants and dedicate uninterrupted time to mastery.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "673d74b2ba",
+      "title": "Write fan fiction or alternate ending to your favorite book",
+      "description": "Spend 50 minutes imagining and writing what happens to your favorite characters after the ending.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "308b2846da",
+      "title": "Photograph and edit your home-cooked meals for a week",
+      "description": "Cook, plate, photograph, and edit images of dinners using free tools like Snapseed or Lightroom Mobile.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "db992500e9",
+      "title": "Complete Coursera module on 'Fundamentals of Graphic Design' by California Institute of the Arts",
+      "description": "Learn design principles like composition, color theory, and typography through video lectures and visual examples.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "51437363f4",
+      "title": "Watch YouTube tutorial on 'Introduction to Watercolor Painting' by Florian Karg",
+      "description": "A beginner-friendly walkthrough of essential watercolor techniques—wet-on-wet, glazing, and basic landscapes.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8c81963190",
+      "title": "Sit through one TED talk on the craft of writing by Margaret Atwood or Roxane Gay",
+      "description": "Listen to a celebrated author share insights on voice, structure, and the discipline of the writing craft.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5f8eead5a1",
+      "title": "Follow a 30-minute YouTube tutorial on 'Hand Lettering for Beginners' by The Happy Ever Crafter",
+      "description": "Learn the basics of brush lettering, script styles, and practice simple letterforms with guidance.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4cb6e8f8cc",
+      "title": "Enroll and complete Coursera's 'Introduction to Photography' module by Michigan State University",
+      "description": "Understand aperture, shutter speed, ISO, and composition rules through structured video lessons.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "29c418d89c",
+      "title": "Listen to a YouTube talk on 'The Art and Business of Freelance Copywriting' by a working professional",
+      "description": "Hear practical insights on developing a distinctive voice and landing meaningful writing work.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ffa6628018",
+      "title": "Watch a 40-minute YouTube tutorial on 'Basic Pottery Wheel Throwing' by The Ceramic School",
+      "description": "Learn centering, opening, and shaping clay on a pottery wheel with clear demonstrations.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2c417fbd8b",
+      "title": "Complete one Coursera lesson on 'Web Design Basics' covering HTML structure and semantic markup",
+      "description": "Learn how to structure web pages correctly—a foundation skill for anyone creating digital work.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d0aa5acd73",
+      "title": "Watch a YouTube deep-dive on 'The Craft of Animation: From Storyboard to Final Frame'",
+      "description": "Explore the technical and creative decisions animators make, from planning to execution.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "fdd67523f3",
+      "title": "Attend a YouTube tutorial on 'Interior Styling and Space Planning for Small Homes'",
+      "description": "Learn practical techniques for maximizing small spaces with color, lighting, and furniture placement.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ebf9556430",
+      "title": "Complete a Coursera unit on 'Audio Editing Fundamentals' covering DAWs and sound design basics",
+      "description": "Learn to record, edit, and mix audio—essential skills for podcasters, musicians, and content creators.",
+      "duration_min": 100,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f957ed4653",
+      "title": "Listen to a TED talk on 'The Science of Storytelling' by a narrative designer or filmmaker",
+      "description": "Understand how structure, emotion, and pacing combine to create compelling stories.",
+      "duration_min": 18,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "56e2b3fea6",
+      "title": "Follow a 50-minute YouTube tutorial on 'Introduction to Jewelry Making: Wire Wrapping Basics'",
+      "description": "Learn simple techniques to create custom wire-wrapped pendants and earrings with hand tools.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "6e334f54f6",
+      "title": "Enroll in one Coursera module on 'Color Theory and Its Applications in Design'",
+      "description": "Learn how colors interact, evoke emotion, and communicate meaning in visual work.",
+      "duration_min": 85,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "fd7660ebf6",
+      "title": "Watch a YouTube talk by a professional illustrator on 'Developing Your Unique Drawing Style'",
+      "description": "Hear perspective on finding your voice, overcoming comparison, and consistent practice.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4cb7bd669c",
+      "title": "Complete a Coursera lesson on 'Copywriting Essentials: Tone, Voice, and Persuasion'",
+      "description": "Learn how professional copywriters craft compelling messages for different audiences and platforms.",
+      "duration_min": 95,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f07995c7b1",
+      "title": "Watch a 35-minute YouTube tutorial on 'Beginner Woodcarving: Spoon Carving Fundamentals'",
+      "description": "Learn knife techniques, grain understanding, and safety to carve your first wooden utensil.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "2560e80857",
+      "title": "Sit through a TED talk on 'The Psychology of Creativity and Innovation at Work'",
+      "description": "Explore how to cultivate creative thinking and overcome blocks in professional projects.",
+      "duration_min": 16,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2d798310ca",
+      "title": "Complete one Coursera unit on 'Motion Graphics: Principles and Practice'",
+      "description": "Learn how to bring static designs to life with animation principles and timing.",
+      "duration_min": 110,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "90a9cac97a",
+      "title": "Watch a YouTube deep-dive on 'The Craft of UX Writing: Words as Design'",
+      "description": "Understand how micro-copy and language shape user experience in digital products.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c0c79f7f1c",
+      "title": "Follow a 45-minute YouTube tutorial on 'Beginner Embroidery: Stitches and Simple Patterns'",
+      "description": "Master fundamental embroidery stitches and create a small decorative piece.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "d5654ef0c6",
+      "title": "Enroll in a Coursera module on 'Typography: The Art of Typeface Selection and Pairing'",
+      "description": "Learn to choose and combine fonts intentionally for readable, beautiful designs.",
+      "duration_min": 80,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9e563e2334",
+      "title": "Listen to a YouTube talk from a professional editor on 'The Art of Editing: Clarity and Style'",
+      "description": "Hear insights on ruthless revision, maintaining voice, and perfecting prose.",
+      "duration_min": 55,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f1d6bfb7ca",
+      "title": "Complete one Coursera lesson on 'Video Production Basics: Shooting, Lighting, and Sound'",
+      "description": "Learn practical techniques for producing professional-quality video on a budget.",
+      "duration_min": 105,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "7736d88d40",
+      "title": "Watch a 40-minute YouTube tutorial on 'Introduction to Screen Printing: Design to Print'",
+      "description": "Learn the basics of preparing artwork and executing screen prints at home or in a studio.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b169f11f75",
+      "title": "Attend a TED talk on 'Craftsmanship in the Digital Age: Why Quality Still Matters'",
+      "description": "Explore how to maintain standards and pride in work when speed is often prioritized.",
+      "duration_min": 17,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "644b0a857b",
+      "title": "Complete a Coursera unit on 'Brand Identity Design: From Logo to Full System'",
+      "description": "Learn how designers create cohesive visual identities that communicate a brand's essence.",
+      "duration_min": 115,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "17e21bca6d",
+      "title": "Watch a YouTube deep-dive on 'The Craft of Documentary Filmmaking: Story Structure'",
+      "description": "Learn how documentary makers find, shape, and present true stories compellingly.",
+      "duration_min": 55,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2956858b18",
+      "title": "Follow a 50-minute YouTube tutorial on 'Leather Crafting Basics: Hand-Stitched Wallets'",
+      "description": "Learn leather prep, tooling, and hand-stitching to create a simple bifold wallet.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "f34e74a503",
+      "title": "Enroll in one Coursera module on 'Information Architecture: Organizing Digital Experiences'",
+      "description": "Learn to structure complex information for clarity and usability in websites and apps.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "54d8715429",
+      "title": "Listen to a YouTube talk by a voice actor on 'The Craft of Voice Acting: Character and Technique'",
+      "description": "Discover how professionals develop character voices and deliver scripts with nuance.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "819bed9695",
+      "title": "Complete one Coursera lesson on 'Web Accessibility: Designing for Everyone'",
+      "description": "Learn how to create digital work that's usable and inclusive for people with disabilities.",
+      "duration_min": 85,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d830311ccc",
+      "title": "Watch a 35-minute YouTube tutorial on 'Introduction to Bookbinding: Pamphlet Stitch Method'",
+      "description": "Learn simple hand-stitching to create your own custom notebooks or bound journals.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "51d895c7c1",
+      "title": "Sit through a TED talk on 'The Role of Failure in Creative Growth and Mastery'",
+      "description": "Explore how setbacks and iteration lead to breakthrough work and skill development.",
+      "duration_min": 18,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f5ce0bd989",
+      "title": "Complete a Coursera unit on 'Photography Composition: Leading Lines, Framing, and Depth'",
+      "description": "Deepen your photography skills with advanced compositional techniques and visual storytelling.",
+      "duration_min": 100,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8eff849f17",
+      "title": "Watch a YouTube deep-dive on 'The Craft of Sound Design: Creating Sonic Worlds'",
+      "description": "Learn how sound designers layer effects and music to enhance storytelling and emotion.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3ef1487766",
+      "title": "Follow a 40-minute YouTube tutorial on 'Natural Dye Techniques: Dyeing Fabric with Plants'",
+      "description": "Learn sustainable methods to dye textiles using natural materials and mordants.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "9e332b9cfa",
+      "title": "Enroll in a Coursera module on 'Interaction Design: Creating Intuitive User Experiences'",
+      "description": "Learn how to design digital interactions that feel natural and delightful to users.",
+      "duration_min": 95,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9487bf8d2c",
+      "title": "Listen to a YouTube talk from a design strategist on 'Thinking Like a Designer: Problem Solving'",
+      "description": "Understand design thinking processes and how to approach complex problems systematically.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "bbad89e966",
+      "title": "Complete one Coursera lesson on 'Digital Illustration: Tools, Techniques, and Style Development'",
+      "description": "Learn software workflows and artistic principles to create professional digital artwork.",
+      "duration_min": 110,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "844ba1d649",
+      "title": "Watch a 45-minute YouTube tutorial on 'Intro to Calligraphy: Pointed Pen Lettering'",
+      "description": "Learn traditional pen techniques to create elegant, flowing letterforms.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "8369622942",
+      "title": "Attend a TED talk on 'The Business of Making: From Hobby to Sustainable Practice'",
+      "description": "Hear from makers about turning creative skills into viable, fulfilling work.",
+      "duration_min": 16,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "88e64fb6aa",
+      "title": "Complete a Coursera unit on 'Presentation Design: Visual Communication and Storytelling'",
+      "description": "Learn to design slides and presentations that engage, inform, and persuade.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ab48847c9d",
+      "title": "Watch a YouTube deep-dive on 'The Craft of Perfume Making: Fragrance Notes and Blending'",
+      "description": "Explore how perfumers compose scents using top, middle, and base notes.",
+      "duration_min": 55,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "7d6ffba437",
+      "title": "Follow a 50-minute YouTube tutorial on 'Ceramics Basics: Hand-Building and Glazing'",
+      "description": "Learn coil and slab techniques to hand-build pottery and apply glazes.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d4d142673c",
+      "title": "Enroll in one Coursera module on 'User Research and Testing: Understanding Your Audience'",
+      "description": "Learn how to gather insights about users to inform design and product decisions.",
+      "duration_min": 85,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "0f41da62a7",
+      "title": "Listen to a YouTube talk by an art director on 'Visual Direction: Setting the Mood and Tone'",
+      "description": "Hear how professionals establish consistent aesthetics across projects and campaigns.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "eb1db16004",
+      "title": "Complete one Coursera lesson on 'Icon Design and Symbolic Communication'",
+      "description": "Learn how to create simple, clear icons that communicate meaning across cultures and contexts.",
+      "duration_min": 80,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8878659bae",
+      "title": "Watch a 35-minute YouTube tutorial on 'Soap Making from Scratch: Cold Process Method'",
+      "description": "Learn to safely blend oils and lye to create custom handmade soaps.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "ee7d1cf257",
+      "title": "Sit through a TED talk on 'Mastery: The Long Game of Skill Development and Excellence'",
+      "description": "Explore what it takes to reach mastery and why the journey itself is rewarding.",
+      "duration_min": 18,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "65497901a3",
+      "title": "Complete a Coursera unit on 'Animation Principles: Timing, Spacing, and Character Acting'",
+      "description": "Learn classical animation principles applied to digital and stop-motion work.",
+      "duration_min": 105,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c47980b8c8",
+      "title": "Watch a YouTube deep-dive on 'The Art of Food Styling and Photography'",
+      "description": "Learn styling tricks, lighting, and camera techniques to make food visually stunning.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "33f60ceef0",
+      "title": "Call your college roommate you haven't spoken to in 6 months",
+      "description": "Ring them up without texting first, catch up on their job, relationship, or recent move.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9ce9f00f7a",
+      "title": "Text your mentor from your first job a specific thank-you for one piece of advice",
+      "description": "Write a genuine message recalling how their guidance shaped your career path, even if years have passed.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "01203d50b9",
+      "title": "Video call your cousin in another city just to see their new apartment",
+      "description": "Ask them to give you a quick tour, ask about the neighbourhood, feel connected to their life update.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6e3c39a617",
+      "title": "Write a handwritten thank-you note to someone who helped you recently",
+      "description": "Pen a short, genuine note to a friend, colleague, or family member who went out of their way for you.",
+      "duration_min": 12,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "2025e8cece",
+      "title": "Call your parent or sibling to ask about one thing they mentioned weeks ago",
+      "description": "Follow up on that project, health concern, or relationship update they casually mentioned, show you were listening.",
       "duration_min": 15,
-      "tags": { "energy": ["low"], "mood": ["calm", "social"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "social", "indoor": true, "cost": "free" }
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "evening",
+          "morning"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
     },
     {
-      "id": "stub-a-09",
-      "title": "10-minute full-body stretch with a YouTube video",
-      "description": "Search 'morning stretch 10 min'. Pick first result. Do it. Notice the difference.",
+      "id": "acc4423285",
+      "title": "Send a meme to three friends who would find it hilarious",
+      "description": "Forward that one joke or video that made you think of them specifically, with a quick personal note.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "11c38a7973",
+      "title": "Check in with a friend who recently went through a breakup or tough time",
+      "description": "Send them a supportive message or call, ask how they're doing, offer to grab coffee this week.",
+      "duration_min": 12,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "636c30aa28",
+      "title": "Message an old colleague from your previous job to see what they're up to",
+      "description": "Catch up on their new role, ask for a coffee chat, rekindle a professional connection that lapsed.",
+      "duration_min": 8,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "fd51d1e0c8",
+      "title": "Respond to three unread messages you've been putting off",
+      "description": "Go through your chat backlog and reply to that friend's question, invitation, or life update you missed.",
       "duration_min": 10,
-      "tags": { "energy": ["medium"], "mood": ["restless"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "physical", "indoor": true, "cost": "free" }
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
     },
     {
-      "id": "stub-a-10",
-      "title": "Half-day at a cafe with a single side project",
-      "description": "Laptop, notebook, headphones, one project, no Slack. Three hours. The thing you keep saying you'll start.",
-      "duration_min": 180,
-      "tags": { "energy": ["medium", "high"], "mood": ["curious"], "timeOfDay": ["morning", "afternoon"], "category": "productive", "indoor": true, "cost": "low" }
+      "id": "674907f78e",
+      "title": "Send a voice note to someone you miss saying exactly why",
+      "description": "Record a 1-2 minute message telling a friend or family member specifically what you appreciate about them.",
+      "duration_min": 6,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
     },
     {
-      "id": "stub-a-11",
-      "title": "Plan one weekend trip with a friend on a real call",
-      "description": "Not WhatsApp. Pick up the phone, agree on dates and place in one call. Book one thing today.",
-      "duration_min": 30,
-      "tags": { "energy": ["medium"], "mood": ["social", "curious"], "timeOfDay": ["afternoon", "evening"], "category": "social", "indoor": true, "cost": "free" }
+      "id": "bd3b76f558",
+      "title": "Plan a specific coffee date with someone you haven't seen in months",
+      "description": "Text them with a concrete time, date, and location instead of the vague 'let's catch up sometime' energy.",
+      "duration_min": 8,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
     },
     {
-      "id": "stub-a-12",
-      "title": "Browse old photos on your phone for 20 min",
-      "description": "Scroll back two years. Send one to the person in it. Delete duplicates while you're there.",
+      "id": "37cd4a79f7",
+      "title": "Share a podcast episode with a friend who you think would love it",
+      "description": "Send them the link with a note explaining why you thought of them, spark a conversation about the topic.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2e31def46e",
+      "title": "Write a list of 5 people you owe a genuine catch-up call and commit to one this week",
+      "description": "Jot down names and set a specific reminder to actually dial them, turn intention into action.",
+      "duration_min": 8,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "0b7aade8c7",
+      "title": "Ask a mentor for their advice on a decision you're mulling over",
+      "description": "Reach out to someone whose judgment you trust with a specific dilemma, value their perspective.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "08c61001d6",
+      "title": "Send a thoughtful reply to someone's Instagram or LinkedIn post",
+      "description": "Leave a genuine comment or direct message on a friend's achievement or update, not a generic emoji.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "25673213c4",
+      "title": "Schedule a recurring weekly call with one friend and stick to it",
+      "description": "Set up a standing Tuesday evening or Sunday morning call slot, make it a habit so catching up doesn't lapse.",
+      "duration_min": 6,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5d1c7ba0b1",
+      "title": "Tell a friend you're proud of them for something specific they achieved",
+      "description": "Message or call them out of the blue to acknowledge their promotion, fitness goal, creative project, or courage.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "cbccb12779",
+      "title": "Invite someone you've been meaning to reconnect with for a walk or meal",
+      "description": "Pick a specific weekend activity and send them a concrete invitation, turn idle time into shared time.",
+      "duration_min": 8,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "db67d67cab",
+      "title": "Call someone you know is going through a tough time just to listen",
+      "description": "Ring them without an agenda, let them vent about work stress, family drama, or personal struggles.",
       "duration_min": 20,
-      "tags": { "energy": ["low"], "mood": ["calm", "social"], "timeOfDay": ["evening", "late_night"], "category": "nostalgic", "indoor": true, "cost": "free" }
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2f149065cc",
+      "title": "Send a birthday or anniversary reminder message one week early",
+      "description": "Reach out to a friend or family member to mark an upcoming celebration, show you marked the calendar.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c320ab97b0",
+      "title": "Record a voice memo telling a friend why they're important to you",
+      "description": "Capture a 3-minute unfiltered message about their impact on your life, send it as a surprise.",
+      "duration_min": 8,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "24070ab9d0",
+      "title": "Organize a group video call with 3-4 friends scattered in different cities",
+      "description": "Pick a time, send invites, and host a casual 45-minute hangout where everyone updates everyone.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "aa4e3ef666",
+      "title": "Ask a friend for advice on something you're unsure about",
+      "description": "Reach out with a genuine question about their expertise or experience, value their opinion.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "56d01be4c7",
+      "title": "Text someone you haven't spoken to in a year with a genuine opener",
+      "description": "Break the ice with something specific you remember about them, acknowledge the time gap gracefully.",
+      "duration_min": 8,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d3b08aa552",
+      "title": "Call a friend and talk about a book, show, or movie you both love",
+      "description": "Have a 20-30 minute conversation analyzing characters, plot twists, or themes you're both passionate about.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ec1d34926b",
+      "title": "Send a compliment or appreciation message to someone in your life",
+      "description": "Tell a colleague, friend, or family member one thing they do well or a quality you admire about them.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6557c25ae0",
+      "title": "Plan a group outing with friends for next weekend via group chat",
+      "description": "Propose a specific activity, poll for availability, lock down time and location in the group.",
+      "duration_min": 12,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "116110c856",
+      "title": "Leave a voicemail for someone you know will smile hearing your voice",
+      "description": "Call when you know they're busy and leave a warm, rambling message they can replay later.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6088d5c0bc",
+      "title": "Ask a friend for a recommendation on something you're researching",
+      "description": "Text them asking for book, product, gym, therapist, or restaurant suggestions in their area of expertise.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "297cb0b3cf",
+      "title": "Catch up with a sibling or family member over a weekend breakfast call",
+      "description": "Schedule a 30-minute phone call while you both eat, chat about the week ahead.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "morning"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "dd4fe6ccb8",
+      "title": "Send encouraging words to someone starting a new job or project",
+      "description": "Message a friend who just quit their job, got promoted, or started a side hustle with genuine support.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "515e73bbe6",
+      "title": "Have a spontaneous phone call with someone just because you missed them",
+      "description": "Call a friend out of the blue with no reason except you thought of them and wanted to hear their voice.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "fe5621fa76",
+      "title": "Share a random thought or question with a friend to start a deeper conversation",
+      "description": "Send them a philosophical question, life hack, or observation to spark an engaged discussion.",
+      "duration_min": 8,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "428642fb26",
+      "title": "Write and send a thank-you email to someone who helped your career",
+      "description": "Compose a sincere note to a boss, colleague, or mentor acknowledging their impact on your growth.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "400462c127",
+      "title": "Ask a friend about their weekend plans and offer to join them",
+      "description": "Text or call to ask what they're doing and see if there's room for you to tag along.",
+      "duration_min": 6,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9e0da2e4da",
+      "title": "Send a funny or insightful article to a friend with your thoughts attached",
+      "description": "Forward something you read with a quick note on why you thought it was worth their time.",
+      "duration_min": 6,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "834d5914ef",
+      "title": "Call a friend who moved away to hear about their new city",
+      "description": "Ring them and ask detailed questions about their neighborhood, new job, local spots they've discovered.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "46a6ab993d",
+      "title": "Message an acquaintance you'd like to be closer friends with and suggest an activity",
+      "description": "Reach out to someone you vibe with but haven't invested time in, propose coffee or lunch.",
+      "duration_min": 6,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9d4d6a0465",
+      "title": "Do a 30-minute video call with a friend where you both work on something side-by-side",
+      "description": "Cook the same recipe, do yoga, journal, or read together while on video, feel connected while productive.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "morning"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "253ceb84f4",
+      "title": "Send a screenshot of something that made you laugh and tag the friend who'd appreciate it",
+      "description": "Share a meme, comment, or article screenshot with a note about why it made you think of them.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "84c78d5bb4",
+      "title": "Reach out to someone you lost touch with and suggest rekindling the friendship",
+      "description": "Be honest about missing them and propose a coffee date to get reacquainted, own the lapse gracefully.",
+      "duration_min": 8,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2a235bc530",
+      "title": "10-minute full-body stretch routine",
+      "description": "Follow a guided stretching video focusing on neck, shoulders, back, and legs to release tension from desk work.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6fb2ff1965",
+      "title": "Hydration challenge: drink 1 liter of water over 30 minutes",
+      "description": "Set a timer, drink water in small sips every 3 minutes, and notice how your energy and clarity improve.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "24d4530381",
+      "title": "15-minute sunrise or sunset walk outside",
+      "description": "Walk around your neighborhood or a nearby park to absorb natural light and clear your mind.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "24fa462b11",
+      "title": "Cold shower followed by warm towel meditation",
+      "description": "Take a 2-minute cold shower, then sit quietly wrapped in a warm towel for 5 minutes to reset your nervous system.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8781132526",
+      "title": "One-hour digital detox with a book or magazine",
+      "description": "Put your phone in another room and read a physical book, newspaper, or magazine you've been meaning to get through.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "cce57ccce6",
+      "title": "Guided 5-minute neck and shoulder release",
+      "description": "Do simple neck rolls, shoulder shrugs, and tension-releasing exercises to ease work stress.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "65b364f10f",
+      "title": "Call one friend you haven't spoken to in 2+ months",
+      "description": "Reach out to an old friend for a genuine 20-minute conversation without planning or agenda.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "93ddbffbce",
+      "title": "10-minute yoga flow for desk posture",
+      "description": "Follow a short YouTube video on poses that counteract sitting hunched, such as cat-cow and child's pose.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5e0330c4c2",
+      "title": "Walk to a nearby café and sit outside for 20 minutes",
+      "description": "Get out of your usual space, order a beverage, and people-watch or daydream in a new environment.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "4070c270bb",
+      "title": "Digital detox hour with journaling",
+      "description": "Spend 60 minutes without your phone, using the time to journal about your week, goals, or feelings.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6a6f206128",
+      "title": "Ankle, wrist, and spine mobility work (8 minutes)",
+      "description": "Do slow circles and rotations with your joints to improve flexibility and reduce stiffness.",
+      "duration_min": 8,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ccd6eb6e07",
+      "title": "Responsive walk in nature with photo collection",
+      "description": "Take a 30-minute walk, stopping to photograph interesting plants, textures, or light—no editing required.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8320b2fdd5",
+      "title": "Cold water face splash and breathing exercise (5 minutes)",
+      "description": "Splash cold water on your face three times, then do 2 minutes of slow, deep breathing.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "calm",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "adc77356a0",
+      "title": "Detox evening: no screens after 8 PM for one night",
+      "description": "Put all devices away early, make tea, and wind down with a calm evening routine.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d486910028",
+      "title": "15-minute neighborhood walking meditation",
+      "description": "Walk slowly around your area, focusing on each step and your breath, treating it as moving meditation.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d21e24af75",
+      "title": "Create a hydration reminder system for next week",
+      "description": "Set up phone alarms or water bottle markers to ensure consistent hydration during busy work days.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ef307cebcf",
+      "title": "Leg raise and glute activation routine (12 minutes)",
+      "description": "Do bodyweight exercises like glute bridges, leg raises, and squats to activate lower body muscles.",
+      "duration_min": 12,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4ec311f10f",
+      "title": "Text or voice note to three people you appreciate",
+      "description": "Send quick, genuine messages to three people telling them why you value them.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "164d149be4",
+      "title": "30-minute outdoor sit-spot observation",
+      "description": "Find a quiet outdoor spot, sit silently, and observe birds, plants, weather, and sounds for 30 minutes.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c4c5b7ba72",
+      "title": "Herbal tea ritual with mindful sipping (15 minutes)",
+      "description": "Brew a cup of herbal tea, sit in a quiet spot, and drink it slowly while focusing on taste and aroma.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "d88868b9bd",
+      "title": "Morning sunlight exposure (10 minutes) on balcony or window",
+      "description": "Sit near a window or step outside to get 10 minutes of natural morning light to regulate circadian rhythm.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "351cdc3c16",
+      "title": "List three pending tasks and delegate or defer one",
+      "description": "Spend 10 minutes writing down nagging tasks, then choose one to either complete or schedule for later.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "0d167bf9cf",
+      "title": "30-minute solo walk exploring a new street in your area",
+      "description": "Take a different route through your neighborhood to discover new shops, plants, or details you've missed.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b9cb27e3ec",
+      "title": "Wrist and hand tension release (5 minutes)",
+      "description": "Do hand circles, finger stretches, and wrist flexes to relieve tension from typing and phone use.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b790885691",
+      "title": "5-minute guided breathing exercise (4-7-8 technique)",
+      "description": "Follow the 4-7-8 breathing pattern: inhale for 4, hold for 7, exhale for 8 to calm your nervous system.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a4e3a0fab1",
+      "title": "Prepare a healthy snack and water bottle for tomorrow",
+      "description": "Spend 15 minutes chopping fruit, portioning nuts, or prepping a snack with a filled water bottle.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "4f70154707",
+      "title": "Progressive muscle relaxation (15 minutes)",
+      "description": "Systematically tense and release muscle groups from your toes to your head for deep relaxation.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "49feef7c57",
+      "title": "Groom and skincare routine (20 minutes)",
+      "description": "Give yourself a proper grooming session: haircut trim, nails, or a face mask as a wellness reset.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "1c6fa7fdb5",
+      "title": "Staircase workout: 20 minutes of stair climbing",
+      "description": "Use nearby stairs to climb up and down repeatedly, building cardio and leg strength.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "43c0314541",
+      "title": "Schedule three pending appointments (doctor, dentist, mechanic)",
+      "description": "Spend 20 minutes making calls or booking slots for three overdue appointments.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "205640fb0c",
+      "title": "10-minute core strengthening routine (planks, dead bugs)",
+      "description": "Do planks, dead bugs, bird dogs, and other core exercises without equipment.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "0f883d66e3",
+      "title": "Foam roll or massage ball session (15 minutes)",
+      "description": "Use a foam roller or massage ball on legs, back, and shoulders to release muscle tension.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "9564061e71",
+      "title": "20-minute phone-free time in your favorite room",
+      "description": "Choose a room, leave your phone elsewhere, and spend time reading, thinking, or simply being.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "be76f55ca6",
+      "title": "Overhead shoulder and upper back stretch (8 minutes)",
+      "description": "Do doorway stretches, overhead reaches, and reverse fly positions to open your chest and shoulders.",
+      "duration_min": 8,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e45aa43601",
+      "title": "Visit a nearby park and sit for 25 minutes in silence",
+      "description": "Find a bench or grassy spot in a local park and practice silent observation without distractions.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f70ad0f749",
+      "title": "Hip flexor and lower back stretching routine (10 minutes)",
+      "description": "Do lunges, pigeon pose, and cat stretches to ease hip and lower back tightness from sitting.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "879c194ce3",
+      "title": "Reply to three pending messages or emails",
+      "description": "Clear out your inbox or chat app by responding thoughtfully to three messages you've been putting off.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b2074ef502",
+      "title": "Slow vinyasa or hatha yoga session (30 minutes)",
+      "description": "Follow a gentle YouTube yoga class focusing on flow and breath coordination.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e19630cfca",
+      "title": "Check in with one family member via call or video",
+      "description": "Have a 15-30 minute genuine conversation with a family member you haven't spoken to in a while.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2676b4bd75",
+      "title": "Gentle evening stretching routine before bed (15 minutes)",
+      "description": "Do slow, restorative stretches and breathing to prepare your body for sleep.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5a7e55fb2e",
+      "title": "Cycle or brisk walk for 25 minutes in your neighborhood",
+      "description": "Get your heart rate up with a moderately-paced outdoor activity to boost energy and mood.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "bc297b154f",
+      "title": "Gratitude and reflection journaling (20 minutes)",
+      "description": "Write down three things you're grateful for and reflect on one positive moment from your week.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c000574e22",
+      "title": "Browse a bookstore or library without buying (30 minutes)",
+      "description": "Spend time in a physical bookstore or library discovering new titles, genres, or authors.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a21f9e1460",
+      "title": "Two-hour digital detox evening (no screens after 6 PM)",
+      "description": "Turn off all devices by 6 PM and spend the evening reading, cooking, or being present.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d92aad5f39",
+      "title": "Sort and declutter your bedside drawer",
+      "description": "Pull everything out, toss expired medicines and old receipts, reorganize what stays into zones for sleep aids, books, and chargers.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "53cbf6eb24",
+      "title": "Deep-clean your laptop keyboard with a brush",
+      "description": "Use an old toothbrush or compressed air to remove dust and grime between keys; this takes 20 minutes and your keyboard will feel brand new.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "21949ea74a",
+      "title": "Organize one kitchen shelf by expiry date",
+      "description": "Check spice jars and canned goods, toss expired items, and arrange remaining by use frequency so you can actually cook.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4dd387ffe2",
+      "title": "Fix a loose door hinge with a screwdriver",
+      "description": "Identify the squeaky or drooping door, tighten its hinges with a simple screwdriver—instant home improvement without a technician call.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "dd3c15ef3e",
+      "title": "Cook paneer tikka masala from scratch",
+      "description": "Marinate paneer, prep tomato sauce, and simmer; a restaurant-quality dinner that feels like a win and uses 90 minutes well.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "70960dca9b",
+      "title": "Water all houseplants and check soil moisture",
+      "description": "Give each plant a drink, feel the soil, and remove any dead leaves—a 15-minute ritual that makes your space feel alive.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8fa76ed7a1",
+      "title": "Call one friend you haven't caught up with in months",
+      "description": "Pick someone from your mental 'should call' list and schedule a 30-minute call while walking around your home.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "378c24a91f",
+      "title": "Wipe down all light switches and doorknobs",
+      "description": "Grab a damp cloth and disinfectant; hit every high-touch surface in your home in 20 minutes for a hygiene boost.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "dca1081caf",
+      "title": "Make homemade dosa batter and refrigerate",
+      "description": "Blend rice and dal, set it to ferment overnight so you have fresh dosa ready for weekend breakfast.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "d447fbf756",
+      "title": "Reorganize your work-from-home desk area",
+      "description": "Clear clutter, arrange supplies by category, and position your monitor at eye level for a workspace that actually motivates focus.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2708b735d3",
+      "title": "Repair a loose button on your favorite shirt",
+      "description": "Thread a needle and sew it back on in 10 minutes; saves money and keeps a beloved piece in rotation.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "fe5d62d5f9",
+      "title": "Bake simple eggless chocolate muffins",
+      "description": "Mix and bake in 45 minutes; a small sweet treat that feels homemade and fills your kitchen with aroma.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "11caf1772e",
+      "title": "Clean and organize your bathroom under-sink cabinet",
+      "description": "Remove everything, wipe shelves, check expiry dates on products, and reorganize by category for easy access.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ab860ead89",
+      "title": "Patch small wall cracks with spackling paste",
+      "description": "Apply filler to small dents, sand smooth once dry, and touch up with paint—professional-looking wall repair in an hour.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "5de907f49b",
+      "title": "Make fresh coconut chutney for the week",
+      "description": "Grind fresh coconut with ginger and green chilies; portion into containers so you have chutney ready for breakfasts.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "c04a8415f8",
+      "title": "Dust ceiling fans and light fixtures",
+      "description": "Use an old pillowcase or cloth to catch dust as you wipe each fan blade; less mess, sparkling results in 20 minutes.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "67b2e916b0",
+      "title": "Reply to three pending emails or messages",
+      "description": "Set a timer for 20 minutes and clear out messages you've been meaning to respond to—feels lighter immediately.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "60bda8d2c2",
+      "title": "Make a batch of dal soup for meal prep",
+      "description": "Cook red lentils with vegetables and spices; cool and portion into containers for easy weekday lunches.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "93b13a2d05",
+      "title": "Bleed a radiator or check heating system",
+      "description": "If you have radiators, use a bleed key to release air; a 10-minute fix that improves heating efficiency.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6b1ea454b5",
+      "title": "Organize your junk drawer with dividers",
+      "description": "Sort cables, batteries, pens, and miscellany into labeled sections so you can actually find things when you need them.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "98a737343a",
+      "title": "Plant herb seedlings in a windowsill pot",
+      "description": "Buy seedlings of mint, basil, or cilantro and pot them up; fresh herbs at your fingertips in 20 minutes.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "9541dd68b2",
+      "title": "Deep-clean your refrigerator shelves",
+      "description": "Remove everything, wipe each shelf and drawer, check dates, and reorganize—takes an hour but feels refreshing.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "fc431455f8",
+      "title": "Fix a squeaky door hinge with oil",
+      "description": "Apply a few drops of WD-40 or cooking oil to hinges and open-close repeatedly; silence achieved in 5 minutes.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d50b3a9f05",
+      "title": "Cook dal makhani and freeze portions",
+      "description": "Simmer kidney beans in cream and butter sauce; freeze portions for quick dinners on exhausted weeknights.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "9eff48d48e",
+      "title": "Vacuum under your bed and furniture",
+      "description": "Move things, vacuum dust bunnies, and enjoy the weird satisfaction of a genuinely clean floor underneath.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "72b25cbaf1",
+      "title": "Organize one bookshelf by genre or color",
+      "description": "Sort and arrange books in a way that makes you smile; functional and aesthetic in under an hour.",
+      "duration_min": 55,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "30f0c7dcb4",
+      "title": "Text three friends a genuine check-in message",
+      "description": "No surface chat—ask one real question each and actually wait for replies; social connection in 10 minutes of typing.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "562db3a7d4",
+      "title": "Make fresh sambar powder and store in jars",
+      "description": "Toast and grind spices into fragrant powder; a batch lasts weeks and makes weekday cooking feel less rushed.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "02586589dd",
+      "title": "Clean and polish your wooden furniture",
+      "description": "Use a soft cloth with furniture polish to buff tables and shelves; immediate shine and feels like small luxury.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4eab62ab92",
+      "title": "Caulk gaps around bathroom tiles or fixtures",
+      "description": "Apply caulk between tiles and tub with a caulk gun for a waterproof seal; professional finish in 30 minutes.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "3631043604",
+      "title": "Prepare overnight oats jars for the week",
+      "description": "Layer oats, yogurt, and fruit in jars; grab one each morning for zero-effort breakfasts.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "ae0f9b672b",
+      "title": "Blot and treat a stain on upholstery immediately",
+      "description": "Use rubbing alcohol or club soda on a couch stain before it sets; 10 minutes can save your furniture.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ff55854e6b",
+      "title": "Organize your cable drawer with velcro ties",
+      "description": "Bundle chargers, HDMI cables, and adapters with labels so nothing's ever tangled again.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "8dadae4570",
+      "title": "Make a fresh turmeric-ginger shot",
+      "description": "Blend turmeric, ginger, lemon, and water; drink warm as a wellness ritual that takes 5 minutes.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "c6fc58f8ac",
+      "title": "Wash and dry all your bed sheets",
+      "description": "Strip the bed, wash, dry, and remake with fresh linens; sleep quality skyrockets for minimal effort.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "cded1a2d49",
+      "title": "Unclog a slow drain with baking soda and vinegar",
+      "description": "Pour baking soda then vinegar, let fizz, and flush with hot water; chemical-free drain cleaning in 15 minutes.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3ad699d59e",
+      "title": "Batch-cook vegetable curry and portion out",
+      "description": "Make a spiced vegetable medley; cool and freeze in portions for grab-and-heat dinners all week.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "35bf971fb6",
+      "title": "Scrub shower tiles with a stiff brush",
+      "description": "Mix baking soda and water into paste, scrub grout and tiles, rinse; bathroom glow in 30 minutes.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "de42460754",
+      "title": "Reorganize your wardrobe by season or occasion",
+      "description": "Separate summer/winter, work/casual; this clarity makes getting dressed faster and more intentional.",
+      "duration_min": 80,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f79e09aabd",
+      "title": "Make a week's worth of marinated paneer",
+      "description": "Cube paneer, marinate in yogurt and spices overnight; ready to grill or cook any night.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "9afcbf239f",
+      "title": "Patch a small hole in drywall with spackle",
+      "description": "Fill the hole, sand smooth, and paint; invisible repair that builds handy confidence.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "72ba586175",
+      "title": "Deep-clean your microwave with steam",
+      "description": "Microwave a bowl of water and lemon for 5 minutes, then wipe—interior sparkles without chemicals.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a136433e88",
+      "title": "Start a small herb garden on your balcony",
+      "description": "Place pots with basil, mint, and parsley in sunlight; fresh herbs at your door in minutes.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": false,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "fa1466655e",
+      "title": "Polish and organize your shoe rack",
+      "description": "Clean each shoe, arrange by color or type, and ensure pairs are together; visual peace.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "e2a5e44016",
+      "title": "Schedule and plan a friend hangout",
+      "description": "Pick a date, venue, and send invites to two friends; concrete social plans reduce decision fatigue.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ad63edc217",
+      "title": "Make ghee from butter at home",
+      "description": "Melt butter slowly, strain clarified golden fat into jars; pure ghee costs less than store-bought.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "7deea8786b",
+      "title": "Replace weatherstripping around exterior doors",
+      "description": "Remove old strips, clean the surface, apply new weatherstripping; stops drafts in 20 minutes.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "e571e7208c",
+      "title": "Write three thank-you notes to people who helped",
+      "description": "Handwrite genuine gratitude to colleagues, mentors, or friends; meaningful and takes only 25 minutes.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "024ce060c6",
+      "title": "Meal-prep grilled vegetables in portions",
+      "description": "Grill zucchini, bell peppers, and eggplant with olive oil and spices; refrigerate for easy sides all week.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": false,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "4cf5048470",
+      "title": "Caulk gaps around window frames",
+      "description": "Apply caulk to seal air leaks around windows; saves heating costs and looks finished.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "3c18bd6bb1",
+      "title": "Read 20 pages of that book on your nightstand",
+      "description": "Finally crack open the novel or non-fiction you've been meaning to start, no distractions.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "600e24ceb4",
+      "title": "Write three pages in a journal about this week",
+      "description": "Reflect on what happened, what you're feeling, and what you want next week to look like.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "1026a60d70",
+      "title": "Sit on your balcony with tea for 20 minutes",
+      "description": "Leave your phone inside, watch the neighbourhood, listen to ambient sounds, let your mind wander.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b769cc4606",
+      "title": "Take a 30-minute walk in your neighbourhood without your phone",
+      "description": "Notice storefronts, people, plants, and sounds you usually miss while scrolling.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "7ba22aba65",
+      "title": "Sketch or doodle in a notebook for 30 minutes",
+      "description": "No artistic skill needed—just put pen to paper and see what emerges.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f3e29a1cf7",
+      "title": "Read one long-form article from a publication you trust",
+      "description": "Choose something on economics, culture, science, or anything that intrigues you—slow down and really absorb it.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f7231cf202",
+      "title": "Listen to a podcast episode while doing light tidying",
+      "description": "Tidy your desk or bookshelf while learning something new—two small things at once.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "745b463875",
+      "title": "Walk to a nearby café and sit alone with a coffee for 30 minutes",
+      "description": "Change of scenery without social obligation—just you, your thoughts, and ambient café sounds.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "4321275fb8",
+      "title": "Write a detailed reflection on a skill you want to learn this year",
+      "description": "List why you want it, what excites you about it, and one small first step you could take.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c222adc77b",
+      "title": "Read poetry or essays for 25 minutes",
+      "description": "Pick a collection you've always meant to try—short pieces are perfect for focused, meaningful reading.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "65e9682feb",
+      "title": "Walk to a nearby park and sit on a bench with no agenda",
+      "description": "Just observe—people, nature, the light—without trying to do anything productive.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b819f2c29e",
+      "title": "Write down 10 things you're grateful for this week",
+      "description": "Be specific—not just 'health' but 'that conversation with Priya' or 'that perfect coffee on Tuesday'.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c6146fe869",
+      "title": "Take a slow walk through a market or bazaar you don't usually visit",
+      "description": "Wander without buying, just noticing textures, smells, vendor stories, and the rhythm of the place.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e627644d4e",
+      "title": "Freewrite for 20 minutes without stopping or editing",
+      "description": "Let your pen move—no rules, no judgment, just thoughts flowing onto the page.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "353f046cc2",
+      "title": "Read essays or think pieces on a topic that fascinates you",
+      "description": "Dive deep into something outside your usual work bubble—philosophy, design, history, whatever calls to you.",
+      "duration_min": 55,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "77f0238cee",
+      "title": "Sit quietly and write about what you're worried about right now",
+      "description": "Name the thing that's been nagging at you—anxiety often shrinks when you give it words.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "04a8908efa",
+      "title": "Take a slow run or jog for 30 minutes without music",
+      "description": "Let your mind settle into your body's rhythm—just you, your breath, and the world around you.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless",
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "03e18752eb",
+      "title": "Read a chapter from a biography of someone you admire",
+      "description": "Learn from their life story—what choices they made, challenges they faced, how they grew.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f831077485",
+      "title": "Sit outside at golden hour (sunrise or sunset) for 15 minutes",
+      "description": "Watch light change colours, feel the air shift, be present with the day's transition.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "975077fa98",
+      "title": "Journal about a conversation or relationship you want to improve",
+      "description": "Write honestly about what's working and what feels stuck—clarity often comes through writing.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5701602462",
+      "title": "Read two short stories from a collection you own",
+      "description": "Short stories are perfect for focused time—complete, satisfying, no commitment to a long series.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "61a40ac8d2",
+      "title": "Take a walk and pick up litter in your neighbourhood",
+      "description": "Light physical activity with a purpose—leave your area slightly better than you found it.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e89595b82f",
+      "title": "Read a memoir excerpt or life story essay",
+      "description": "Hear someone else's truth about struggle, joy, or becoming—often more grounding than fiction.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4f5baa33a8",
+      "title": "Walk slowly through a neighbourhood you've never explored",
+      "description": "Get intentionally 'lost'—notice architecture, small shops, side streets you've overlooked.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b126e5e15f",
+      "title": "Journal about three decisions you're currently sitting with",
+      "description": "Lay out the options, the fears, the pros and cons—writing helps untangle what you really want.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4e610b6adf",
+      "title": "Read 15 pages of philosophy or spiritual writing",
+      "description": "Choose something ancient or contemporary that makes you think differently about life.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "577f85bf90",
+      "title": "Sit with a pen and list 20 small things that made you happy this month",
+      "description": "Go small—a good meal, a text from a friend, a sunny moment—and remember joy lives in details.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "96b405b745",
+      "title": "Walk to a quiet spot and do 10 minutes of breathing or gentle stretching",
+      "description": "Combine movement with stillness—let your body settle while you're fully present.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "1500837723",
+      "title": "Read a travel essay or piece about a place you want to visit",
+      "description": "Armchair travel—absorb someone else's discovery and let it inspire your own future wandering.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ed44769016",
+      "title": "Sit on your balcony and observe people for 20 minutes",
+      "description": "Notice routines, interactions, the small dramas of everyday life—no judgment, just watching.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "748e783d22",
+      "title": "Write about what you want your life to look like in five years",
+      "description": "Dream without limiting yourself—then underline one thing you could start this month.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6094670123",
+      "title": "Read essays on identity, culture, or personal growth",
+      "description": "Pick pieces that challenge your thinking or reflect your own questions back to you.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f20e396bf5",
+      "title": "Walk to a viewpoint or spot with a view and sit for 20 minutes",
+      "description": "Let your gaze settle on distance—rooftops, sky, landscape—and let your mind wander.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6324fdb1dc",
+      "title": "Journal a letter of gratitude to someone who helped you",
+      "description": "Be specific about what they did and how it changed things—write as if you'll read it to them.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b229952597",
+      "title": "Read a science or nature article that fascinates you",
+      "description": "Pick something that makes you go 'oh, I didn't know that'—feed your curiosity.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ebb9dff5a7",
+      "title": "Take a walk and practise noting details without your phone",
+      "description": "Notice five specific things—a colour, a smell, a sound, a texture, a shape—and really absorb them.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2e4bf67d9b",
+      "title": "Write down fears, then write counters to each one",
+      "description": "Name what scares you, then gently challenge each worry—sometimes reality is kinder than anxiety.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2af247f2a1",
+      "title": "Read a chapter of historical non-fiction",
+      "description": "Get absorbed in another era—see how people lived, thought, and navigated their world.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "eaba035b54",
+      "title": "Sit outside and write observations about the weather and how it makes you feel",
+      "description": "Notice light, temperature, air—and reflect on what the weather stirs in your mood.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "38aad153a0",
+      "title": "Walk slowly through a botanical garden or green space",
+      "description": "Notice plant names, colours, textures—let the pace of nature slow you down.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "9e9b6fecad",
+      "title": "Write about what you're proud of yourself for this year",
+      "description": "Big or small—acknowledge the wins, the growth, the moments you showed up.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d8faed8ec5",
+      "title": "Read a long article on a topic that challenges your perspective",
+      "description": "Sit with ideas that feel unfamiliar or uncomfortable—real learning often happens there.",
+      "duration_min": 55,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "cf8fdcc698",
+      "title": "Sit quietly and write about a recent conversation that stayed with you",
+      "description": "What was said, what wasn't said, what it revealed about them or about you.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "81dccdf6eb",
+      "title": "Take a long walk and mentally list things you're grateful for",
+      "description": "Combine movement with gratitude—let your feet and mind work together.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9c376c68b1",
+      "title": "Read 25 pages of a novel you've been meaning to finish",
+      "description": "Make real progress on a story you care about—feel the satisfaction of momentum.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5f3bfc5e03",
+      "title": "Write a review or reflection on a book, film, or experience you loved",
+      "description": "Crystallise what made it matter to you—the details, the feelings, the insights.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
     }
   ]
 }

@@ -1,90 +1,6480 @@
 {
-  "generated_at": "2026-05-21T00:00:00.000Z",
+  "generated_at": "2026-05-21T11:56:46.558Z",
   "audience": "teen",
   "activities": [
     {
-      "id": "stub-t-01",
-      "title": "Rewatch one episode of Beyblade Metal Fusion",
-      "description": "Pick a favorite Beyblade arc on YouTube and just enjoy it for 25 minutes — no pressure to do anything else.",
+      "id": "ab4b66378a",
+      "title": "Watch one episode of Beyblade Metal Fusion",
+      "description": "Relive the spinning battles and intense tournaments from the series that defined your childhood afternoons.",
       "duration_min": 25,
-      "tags": { "energy": ["low", "medium"], "mood": ["calm", "curious"], "timeOfDay": ["afternoon", "evening", "late_night"], "category": "nostalgic", "indoor": true, "cost": "free" }
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
     },
     {
-      "id": "stub-t-02",
-      "title": "Solve one Easy LeetCode problem on arrays",
-      "description": "Open leetcode.com, pick any easy array problem, give it 30 minutes. Small win, real progress.",
+      "id": "6ccedb6e01",
+      "title": "Play Pokemon Red/Blue on an emulator for 90 minutes",
+      "description": "Catch and train your first team in the original Game Boy games that started the Pokemon craze.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "dc8b693736",
+      "title": "Make homemade Kurkure or cheese snack equivalents from scratch",
+      "description": "Fry and season potato strips to recreate the exact crunch and flavour of your favourite 2000s snack.",
       "duration_min": 45,
-      "tags": { "energy": ["medium", "high"], "mood": ["curious", "restless"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "learning", "indoor": true, "cost": "free" }
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
     },
     {
-      "id": "stub-t-03",
-      "title": "Cycle to the nearest tea stall and back",
-      "description": "Grab the cycle, ride to the closest chai spot, drink one cutting chai, ride back. Pune evenings are perfect for this.",
-      "duration_min": 60,
-      "tags": { "energy": ["medium", "high"], "mood": ["restless", "calm"], "timeOfDay": ["morning", "evening"], "category": "physical", "indoor": false, "cost": "low" }
-    },
-    {
-      "id": "stub-t-04",
-      "title": "Doodle five pages in a notebook to one album",
-      "description": "Pick one album on Spotify, doodle whatever for its duration. No skill required.",
-      "duration_min": 45,
-      "tags": { "energy": ["low", "medium"], "mood": ["calm", "curious"], "timeOfDay": ["afternoon", "evening", "late_night"], "category": "creative", "indoor": true, "cost": "free" }
-    },
-    {
-      "id": "stub-t-05",
-      "title": "Call a school friend you haven't spoken to since boards",
-      "description": "Pick one name from your 12th batch WhatsApp group, call them for 15-20 min. Surprise yourself.",
-      "duration_min": 20,
-      "tags": { "energy": ["medium"], "mood": ["social", "curious"], "timeOfDay": ["afternoon", "evening"], "category": "social", "indoor": true, "cost": "free" }
-    },
-    {
-      "id": "stub-t-06",
-      "title": "Walk for 30 minutes with phone in pocket",
-      "description": "Just walk. Music optional. No scrolling. Notice five things you've never noticed before in your neighbourhood.",
-      "duration_min": 30,
-      "tags": { "energy": ["low", "medium"], "mood": ["restless", "calm"], "timeOfDay": ["morning", "evening"], "category": "physical", "indoor": false, "cost": "free" }
-    },
-    {
-      "id": "stub-t-07",
-      "title": "Read the first 20 pages of one ebook you've been meaning to start",
-      "description": "Open any pirated PDF you've been hoarding. Just 20 pages. You can stop after that.",
-      "duration_min": 40,
-      "tags": { "energy": ["low"], "mood": ["calm", "curious"], "timeOfDay": ["afternoon", "evening", "late_night"], "category": "restful", "indoor": true, "cost": "free" }
-    },
-    {
-      "id": "stub-t-08",
-      "title": "Write three pages by hand about what you actually want from college",
-      "description": "No filter, no judgement, just spill it on paper. Burn the pages after if you want.",
-      "duration_min": 45,
-      "tags": { "energy": ["low", "medium"], "mood": ["calm", "curious"], "timeOfDay": ["evening", "late_night"], "category": "creative", "indoor": true, "cost": "free" }
-    },
-    {
-      "id": "stub-t-09",
-      "title": "Organize one shelf in your room",
-      "description": "Pick one shelf, take everything off, dust it, put back only what you want there. 15 min max.",
-      "duration_min": 15,
-      "tags": { "energy": ["medium"], "mood": ["restless"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "productive", "indoor": true, "cost": "free" }
-    },
-    {
-      "id": "stub-t-10",
-      "title": "Build a tiny one-page portfolio site",
-      "description": "Even just your name + a sentence + your school + one photo. Use Vercel for free. Half a day of focused work.",
-      "duration_min": 240,
-      "tags": { "energy": ["medium", "high"], "mood": ["curious", "restless"], "timeOfDay": ["morning", "afternoon"], "category": "productive", "indoor": true, "cost": "free" }
-    },
-    {
-      "id": "stub-t-11",
-      "title": "Play 30 min of badminton with a sibling or neighbour",
-      "description": "If you have a racquet, dust it off. Even a half-broken shuttle works. Move, sweat, laugh.",
-      "duration_min": 30,
-      "tags": { "energy": ["high"], "mood": ["restless", "social"], "timeOfDay": ["morning", "evening"], "category": "physical", "indoor": false, "cost": "free" }
-    },
-    {
-      "id": "stub-t-12",
-      "title": "Watch one Studio Ghibli movie with no second screen",
-      "description": "Spirited Away, My Neighbor Totoro, anything. Phone in another room. Be a kid for two hours.",
+      "id": "d15c51ea61",
+      "title": "Binge four episodes of Mr. Bean cartoons back-to-back",
+      "description": "Laugh through the wordless physical comedy that made you giggle in the school common room.",
       "duration_min": 120,
-      "tags": { "energy": ["low"], "mood": ["calm"], "timeOfDay": ["afternoon", "evening", "late_night"], "category": "nostalgic", "indoor": true, "cost": "free" }
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b1ade81775",
+      "title": "Draw your childhood favourite Pokemon using online tutorials",
+      "description": "Follow YouTube speed-draw videos to sketch Pikachu, Charizard, or whatever Mon you loved most.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "1ce032a009",
+      "title": "Watch all three movies of Doraemon's 1980s-2000s golden age",
+      "description": "Experience the gentle sci-fi adventures and emotional storytelling that shaped Indian Gen Z childhoods.",
+      "duration_min": 300,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b7bea1029d",
+      "title": "Create a ranked tier list of all Cartoon Network shows you watched",
+      "description": "List and rank Dexter's Lab, PowerPuff Girls, Johnny Bravo, and others from memory—no Googling allowed.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b906d45ca3",
+      "title": "Play one full match of Badminton Legends on an emulator",
+      "description": "Experience the arcade nostalgia of a sports game you might've played at internet cafes back in the day.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c1e96bff12",
+      "title": "Rewatch MS Dhoni highlights from 2011 World Cup win",
+      "description": "Relive the glory of India's cricket dominance and that iconic helicopter shot that won the nation's heart.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "66d43117cb",
+      "title": "Make a Shin-chan (Shinnosuke) meme compilation from YouTube clips",
+      "description": "Collect your favourite funny moments from Crayon Shin-chan and edit them into a shareable video.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless",
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d9b4addbb9",
+      "title": "Play Super Mario Bros on NES emulator until you beat level 8",
+      "description": "Tackle the original side-scrolling platformer that inspired decades of games, pixel by pixel.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium",
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b7fe197144",
+      "title": "Write down all Hannah Montana episode titles you remember",
+      "description": "Test your memory of Miley Stewart's double life by listing every episode title from your watching days.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ee7aeeb44c",
+      "title": "Make homemade Maggi or instant noodles with exact 2000s-style toppings",
+      "description": "Cook Maggi exactly like you did during school days—with ketchup, onions, and maybe an egg on top.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "0d7f2d7c22",
+      "title": "Design a fictional Beyblade character with backstory",
+      "description": "Create your own spinning top fighter with a name, appearance, special move, and battle history.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "048ee44774",
+      "title": "Watch one full season of Shinchan (12 episodes) in Hindi dub",
+      "description": "Spend an afternoon with Shinnosuke's chaos, his family's patience, and those unfiltered jokes from your childhood.",
+      "duration_min": 300,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "1a81a4867a",
+      "title": "Play Contra on NES emulator without the Konami code",
+      "description": "Challenge yourself to beat the legendary run-and-gun game that kids played at arcades in the 1990s.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "49f9dd967f",
+      "title": "Recreate a scene from your favourite Cartoon Network show with action figures or toys",
+      "description": "Use whatever toys you still have at home to act out a memorable moment from Dexter, Johnny Bravo, or similar.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "18ea73df04",
+      "title": "Listen to the full discography of a 2000s-2010s Indian pop artist (A.R. Rahman, Sonu Nigam)",
+      "description": "Play all albums of an artist who soundtracked your childhood movies and TV shows back-to-back.",
+      "duration_min": 180,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6f44c79ffd",
+      "title": "Search for and buy one discontinued 2000s-2010s Indian snack online",
+      "description": "Hunt down a retro snack like Thumbs Up Candy or old-formula Ching's noodles on OLX or Amazon.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "1f0514d3d0",
+      "title": "Play Sonic the Hedgehog on Genesis emulator for 60 minutes",
+      "description": "Run through loops and collect rings in the Genesis classic that defined early-90s gaming speed.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium",
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f509d667ad",
+      "title": "Write a fake movie review of a 2000s Bollywood film you loved as a kid",
+      "description": "Pick a Shah Rukh Khan or Aamir Khan film from your childhood and write a humorous critic's review.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "98de4ef3dc",
+      "title": "Call a childhood friend and talk about favourite TV shows from school days",
+      "description": "Ring up someone from school and reminisce about Cartoon Network, Pokemon, and which character was the coolest.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "34010ffc06",
+      "title": "Create pixel art of Pikachu or your favourite Pokemon using online tools",
+      "description": "Use free pixel art software to design a small, colourful sprite of a childhood Mon.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ca77c0c924",
+      "title": "Binge one season of Dexter's Laboratory in one sitting",
+      "description": "Watch 13 episodes of the red-haired genius scientist and his secret lab hidden behind the bookcase.",
+      "duration_min": 300,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "870ff5ecac",
+      "title": "Play Tetris on Game Boy emulator until you max out the score",
+      "description": "Test your spatial reasoning and reflexes on the simple, addictive block-stacking game that never gets old.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6810e1f291",
+      "title": "Rank all Powerpuff Girls villains from most to least dangerous",
+      "description": "Write down Mojo Jojo, Fuzzy Lumpkins, and others, then score them on threat level and creativity.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a8eff4d998",
+      "title": "Make homemade mithai using a simple 2000s-era recipe (gulab jamun, laddu)",
+      "description": "Prepare a traditional Indian sweet the way your grandma or mom taught you during childhood festivals.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "c193c3c104",
+      "title": "Watch all five Die Hard films back-to-back (childhood action cinema marathon)",
+      "description": "Spend a full day with Bruce Willis shooting his way through every Die Hard instalment you grew up watching.",
+      "duration_min": 600,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4d226c5b9d",
+      "title": "Play one full game of Cricket 2007 on PS2 emulator",
+      "description": "Experience the video game that let you relive the India vs Australia match-ups during the MS Dhoni era.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "cb6db60c65",
+      "title": "Document all the toys and action figures you still own from childhood",
+      "description": "Photograph and list every toy you kept—Beyblades, Pokemon figurines, cars—with condition notes.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "285f47a1a5",
+      "title": "Watch Johnny Bravo back-to-back for two hours",
+      "description": "Experience the absurdist, Elvis-obsessed antics of the strongest mullet in cartoon history.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "47cf327b96",
+      "title": "Research and compile a list of discontinued Cartoon Network shows",
+      "description": "Hunt down info on forgotten CN shows you watched and write why each deserves a reboot.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "87c802e828",
+      "title": "Play one complete tournament in Street Fighter II on arcade emulator",
+      "description": "Face off against all fighters in the classic arcade fighting game kids played at game shops.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium",
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e291d7125c",
+      "title": "Spend 90 minutes creating a scrapbook page of 2000s-2010s magazine clippings",
+      "description": "Collect old magazine articles about Pokemon, cricket, Bollywood and glue them into a physical collage.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f7f457d564",
+      "title": "Write a short fiction story featuring yourself and a Cartoon Network character",
+      "description": "Pen a 500-word adventure where you team up with Dexter, the Powerpuff Girls, or another CN hero.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ec5fbbeb13",
+      "title": "Binge watch the entire first season of Hannah Montana (13 episodes)",
+      "description": "Spend a full afternoon with Miley Stewart's secret identity and all the pop music that defined a generation.",
+      "duration_min": 325,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d7e3c63ce2",
+      "title": "Design your own Beyblade spinning top on paper with detailed stats",
+      "description": "Sketch a custom top with name, colour scheme, special attack, and a full power breakdown.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9bfb726788",
+      "title": "Play 10 quick matches of Mario Kart 64 on emulator",
+      "description": "Race across Rainbow Road and Bowser's Castle in the N64 classic that fuelled childhood rivalries.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "12823deb7a",
+      "title": "Make a list of every Shinchan episode name and plot you can remember",
+      "description": "Recall the silly antics of Shinnosuke Nohara and document which episodes made you laugh hardest.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "982e2014ea",
+      "title": "Play Pac-Man on arcade emulator until you clear 10 levels",
+      "description": "Navigate the maze and eat dots while avoiding ghosts in the game that defined 1980s arcades.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "35dea6c2d5",
+      "title": "Watch three full movies of Pokemon (Mewtwo Strikes Back onwards)",
+      "description": "Relive Ash and Pikachu's epic cinema adventures from the late 1990s and early 2000s.",
+      "duration_min": 270,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "1d94e63a98",
+      "title": "Create a poll or Instagram post ranking your top 10 Cartoon Network shows",
+      "description": "Post a ranked list of CN shows on social media and challenge friends to debate your rankings.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "04236ab491",
+      "title": "Play The Legend of Zelda: Link's Awakening on emulator for 120 minutes",
+      "description": "Explore Koholint Island and solve puzzles in the Game Boy adventure that redefined handheld gaming.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "bd3fa0a0b6",
+      "title": "Recreate your favourite childhood snack (Bournvita, Horlicks, Kismi toffee) in exact way you made it",
+      "description": "Make your comfort drink or candy exactly the way you prepared it during school days—same proportions, same ritual.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "20e08c53eb",
+      "title": "Watch all of Courage the Cowardly Dog (15 episodes) in one session",
+      "description": "Spend two hours with the scaredy-cat dog protecting Muriel from supernatural threats in Podunk.",
+      "duration_min": 300,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c3b8f03a86",
+      "title": "Play Dragon Quest III on NES emulator for 180 minutes",
+      "description": "Experience the JRPG that defined dungeon crawling and turned millions into fantasy adventure fans.",
+      "duration_min": 180,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "02732c5dd1",
+      "title": "Interview your parents about what they watched as kids vs. what you watched",
+      "description": "Record or write down a conversation comparing their childhood TV to yours—generational perspective.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "7f80135cc8",
+      "title": "Play one full tournament of Super Smash Bros on N64 emulator",
+      "description": "Select your main and battle through the tournament mode in the fighting game that defined gaming friendships.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium",
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "efa5c1471b",
+      "title": "Write a detailed ranking of all Pokemon generations by nostalgia factor",
+      "description": "Score Gen I through Gen V (or whichever you grew up with) on how much they meant to you personally.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "7e1b93aeff",
+      "title": "Watch Mr. Bean live-action episodes (not cartoons) for 90 minutes",
+      "description": "Switch to the original British sitcom that inspired the cartoon you loved—same bumbling charm, real humans.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "0690013615",
+      "title": "Create a detailed character profile for your ideal Pokemon trainer",
+      "description": "Design your own trainer with name, hometown, starter Pokemon, team strategy, and personality backstory.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ca7c72c0e2",
+      "title": "Play Galaga on arcade emulator for 45 minutes (no save feature)",
+      "description": "Defend Earth from alien invaders in the relentless space shooter that defined arcade high scores.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f647bc7914",
+      "title": "Solve 3 LeetCode easy problems on arrays",
+      "description": "Practice fundamental DSA concepts with real coding problems, building confidence for internship interviews.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ceea9d8b50",
+      "title": "Complete one Duolingo language lesson daily streak (any language)",
+      "description": "Maintain consistency with language learning for 15-20 minutes using the gamified app you probably know already.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "fd15d0d696",
+      "title": "Write a Python script to automate a repetitive task on your laptop",
+      "description": "Build something practical—renaming files, organizing downloads, or parsing text—to feel productive while learning.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "75d8cdd614",
+      "title": "Create a one-page portfolio website with HTML and free template",
+      "description": "Use free resources like GitHub Pages or Vercel to build a simple personal site showcasing projects and intro.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "51b4b0d1e8",
+      "title": "Attempt 5 Codewars problems at your current skill level",
+      "description": "Gamified DSA practice with instant feedback and a satisfying levelling-up mechanic.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5cc2a47ba6",
+      "title": "Draw a detailed still-life of objects on your desk",
+      "description": "Sharpen observational sketching skills with everyday items—shadows, perspective, and texture all matter.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "34c010a09d",
+      "title": "Research and list 10 internship opportunities in your field of interest",
+      "description": "Spend an hour hunting for summer or semester internships on platforms like LinkedIn, AngelList, or company websites.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "bf416ebe37",
+      "title": "Customise your GitHub profile with a README and project descriptions",
+      "description": "Polish your GitHub presence so recruiters and peers see polished project READMEs and a professional profile.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "441e6f96b8",
+      "title": "Take a 30-minute walk while listening to a coding/learning podcast",
+      "description": "Combine fresh air and passive learning—there are many free tech and motivational podcasts made for your age group.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "16bb2fd920",
+      "title": "Practice mental maths games like Vedic maths tricks for 30 minutes",
+      "description": "Learn and drill Vedic maths shortcuts to feel sharp and impress friends with fast mental calculations.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "efb01ae6a9",
+      "title": "Redesign a UI mockup you see online using Figma's free tier",
+      "description": "Pick a website or app design you like, recreate it in Figma, and experiment with your own tweaks.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b6806c4a94",
+      "title": "Write three personalised internship application emails",
+      "description": "Craft thoughtful, brief emails to 3 companies or mentors expressing genuine interest—authenticity stands out.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "293e4f4ccc",
+      "title": "Complete a free short course on Khan Academy in a weak subject",
+      "description": "Pick a topic from school where you felt shaky—Khan Academy breaks it down with video + practice problems.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "544450546b",
+      "title": "Build a simple to-do or note-taking app in Python or JavaScript",
+      "description": "Code a functional small project that you can actually use—reinforces loops, functions, and basic data handling.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6ae4f11e6a",
+      "title": "Learn 20 new words in a language you're studying via flashcard app",
+      "description": "Use free tools like Anki or Quizlet to build vocabulary systematically in the language of your choice.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "281931c4c8",
+      "title": "Solve one medium-difficulty problem on HackerRank or HackerEarth",
+      "description": "Push past the easy zone with a slightly harder DSA or logic problem to test your growing skills.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "888758658c",
+      "title": "Sketch a character design for an imaginary game or story",
+      "description": "Invent a character—fantasy, sci-fi, or slice-of-life—and develop their look with multiple sketches and notes.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2f72c97c8e",
+      "title": "Research and compare 5 colleges for your chosen stream",
+      "description": "Dig into college websites, fees, placements, and alumni feedback to build your shortlist methodically.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8a9d1b199e",
+      "title": "Participate in a free online coding contest (CodeChef, AtCoder, etc.)",
+      "description": "Test yourself in real-time competition, get ranked instantly, and feel the rush of a live coding challenge.",
+      "duration_min": 180,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "45543facdb",
+      "title": "Create a mood board or Pinterest collection for a design project",
+      "description": "Gather visual inspiration—colours, layouts, typography—from the web for a portfolio piece or just creative exploration.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "97f65844a1",
+      "title": "Draft a resume highlighting your school projects and achievements",
+      "description": "Write your first formal resume, listing academic projects, certifications, and skills—essentials for internship hunting.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3524aece79",
+      "title": "Solve a logical reasoning puzzle collection for 45 minutes",
+      "description": "Use free websites like Puzzle Packs or Logic Mazes to sharpen deduction skills and keep your mind sharp.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "0d02d8c32f",
+      "title": "Draw or paint an abstract artwork exploring one emotion or colour",
+      "description": "Experiment without rules—use one emotion (anger, joy, peace) or colour theme to guide your creation.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c2aee23c81",
+      "title": "Contribute to an open-source project on GitHub for 1 hour",
+      "description": "Find beginner-friendly repos, fix a bug, improve documentation—gain real experience and help the community.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "cb2e0b782e",
+      "title": "Learn the basics of a new programming language via Codecademy free tier",
+      "description": "Pick up Python, JavaScript, or Java with interactive lessons—expand your coding toolkit without spending.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "22a5c15867",
+      "title": "Sketch 10 different hand gestures and poses in one sitting",
+      "description": "Focus on a small subject—hands in various positions—to develop control and anatomy awareness.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d6285144cc",
+      "title": "Interview yourself on video answering common interview questions",
+      "description": "Record yourself answering 'tell me about yourself' and 'why this internship'—review it and cringe into improvement.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "59064eab7e",
+      "title": "Revise a weak subject from 12th grade using YouTube edu channels",
+      "description": "Watch channels like Physics Wallah, Khan Academy, or others to shore up gaps before college kicks off.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "61f7dbd2a6",
+      "title": "Design a poster or infographic about a topic you're passionate about",
+      "description": "Use Canva's free tier to create a visually appealing poster—combines design, communication, and portfolio building.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "24da5a2521",
+      "title": "Solve a string manipulation problem on DSA practice site",
+      "description": "Work through string-based algorithms—crucial for interviews and often trickier than array problems.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c9ebf07880",
+      "title": "Watch and take notes on one TED talk about future careers or tech",
+      "description": "Pick a 15-20 min talk on YouTube about the field you're interested in—combine learning with life direction clarity.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a2ee663c3e",
+      "title": "Practice typing speed on TypeRacer or Nitro Type for 20 minutes",
+      "description": "Gamified typing practice that's actually fun—useful for competitive coding and faster productivity.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8bbdade31b",
+      "title": "Explore stream options via online quizzes and career blogs",
+      "description": "Use free career aptitude tests and read stream comparisons (CSE vs ECE vs Mech) to help clarify your path.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e74c1ed608",
+      "title": "Create a digital portfolio gallery of your best sketches and creative work",
+      "description": "Compile your art into a simple website or PDF showcase—makes you proud and ready to share with peers.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "70fc12705d",
+      "title": "Read one technical article on Medium about your field (10-15 min read)",
+      "description": "Stay current with the industry—Medium has brilliant free pieces on web dev, AI, design, etc.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "57a626d82c",
+      "title": "Sketch the view from your window or balcony with perspective lines",
+      "description": "Practice perspective and outdoor observation—landscape sketching helps build spatial reasoning.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "81fe5f8bd2",
+      "title": "Solve a linked list problem on a DSA platform",
+      "description": "Master one of the trickiest DSA topics—spend focused time on insert, delete, reverse, or traverse operations.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b4e351bf95",
+      "title": "Build a simple calculator or to-do list in HTML, CSS, and JavaScript",
+      "description": "Combine front-end skills in one mini-project—builds confidence and looks great in a portfolio.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a9bcd557a5",
+      "title": "Start a journal documenting your thoughts on stream choice and future",
+      "description": "Unload your worries and hopes onto paper—helps clarify your mind and makes a nice reflection later.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "41d3a1fdc0",
+      "title": "Participate in a free live coding AMA on Reddit or Discord server",
+      "description": "Join live Q&A sessions with developers or seniors—ask your internship and career questions in real-time.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4f063cbc7a",
+      "title": "Create a one-character animation storyboard (8-10 frames)",
+      "description": "Sketch a simple character moving or emoting across frames—combines drawing with storytelling.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6d29d3d136",
+      "title": "Attempt a tree or graph DSA problem on LeetCode medium tier",
+      "description": "Challenge yourself with one slightly harder graph/tree problem—builds problem-solving stamina.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ff583d782b",
+      "title": "Learn CSS Grid or Flexbox through an interactive tutorial",
+      "description": "Master modern layout techniques with free, gamified tutorials—essential for web dev interviews.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3d92f40af9",
+      "title": "Write a cover letter for a specific internship you found",
+      "description": "Personalize a cover letter showing genuine interest—stand out by addressing the company directly.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "45fc6eb2e8",
+      "title": "Practice public speaking by recording a 2-minute pitch about yourself",
+      "description": "Overcome nervousness—record yourself explaining who you are, what you're interested in, and where you're headed.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a905927b26",
+      "title": "Solve a dynamic programming problem (or learn DP basics)",
+      "description": "Tackle the scary part of DSA—start with a simple DP problem or tutorial to demystify the concept.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "productive",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9523d11418",
+      "title": "Redesign your bedroom or study corner for better focus and vibes",
+      "description": "Rearrange your space, add some life to your desk, organize notes—refreshes mental energy.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "db646b8e4d",
+      "title": "Create storyboards for a short comic strip idea",
+      "description": "Develop a funny or touching mini-story with 4-6 panels, planning layout and dialogue beforehand.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "1fccba956a",
+      "title": "Attend a free webinar on career planning or internships (many happen live)",
+      "description": "Join a live session hosted by platforms like Unstop, Unacademy, or company recruitment pages.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "92227da0e4",
+      "title": "Walk to your nearest park and sit under a tree for 20 minutes",
+      "description": "Find shade and watch birds or people; bring water and just exist without your phone for a bit.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "32e858aaf6",
+      "title": "Play gully cricket with neighborhood kids for one hour",
+      "description": "Classic Indian summer activity: gather 4-8 people, use a tennis ball, and relive your childhood matches.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "66393a619d",
+      "title": "Cycle to a nearby landmark you've never visited",
+      "description": "Explore your city or town on two wheels; pick a spot 5-10 km away and take in the route slowly.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "7b1ffaf744",
+      "title": "Do a 20-minute bodyweight circuit in your room or garden",
+      "description": "Push-ups, squats, planks, burpees: no equipment needed, just sweat and gratification.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "fc8230b3be",
+      "title": "Walk to a street food vendor and try one new chaat you've never had",
+      "description": "Explore local food culture within walking distance; budget-friendly and a sensory adventure.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "d16354f972",
+      "title": "Play badminton with a friend or family member for 45 minutes",
+      "description": "Set up a net in your yard or terrace; great cardio and totally free if you already own a racket.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9b6909b5c5",
+      "title": "Walk the entire length of your local mall (no shopping, just walking)",
+      "description": "Indoor, air-conditioned, safe: perfect for hot afternoons; people-watch and get your steps in.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "fe29d9b4f9",
+      "title": "Do stretching and yoga poses for 15 minutes before bed",
+      "description": "Calm your body and mind with simple stretches; improves sleep and costs nothing.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "604afe20aa",
+      "title": "Run or jog a fixed 3 km route in your neighborhood",
+      "description": "Challenge yourself to complete a route; track time if you want to see progress.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "665cd48e4a",
+      "title": "Take a slow walk and photograph interesting street scenes or nature",
+      "description": "Combine movement with creativity; use your phone camera to notice details you usually miss.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ec031ff39c",
+      "title": "Do a 10-minute plank hold challenge (multiple sets)",
+      "description": "Build core strength in minimal time; rest between sets and track your best time.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f90d7ed1cf",
+      "title": "Organize a neighborhood cricket or football match for the evening",
+      "description": "Social and physical: recruit friends, pick teams, play for 90 minutes on an open ground.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a292cd96e7",
+      "title": "Walk barefoot on grass or sand for 10 minutes (grounding exercise)",
+      "description": "Find a park or open space; let earth contact calm your nervous system naturally.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b3a0f809a3",
+      "title": "Cycle to a friend's house instead of taking a vehicle",
+      "description": "Combine social plans with exercise; save money and get fresh air on the ride.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "1e2ee00468",
+      "title": "Do 50 push-ups in sets spread throughout the day",
+      "description": "Break it into manageable chunks (10 x 5); builds chest and arms without gym equipment.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "eb0d823713",
+      "title": "Walk around your entire locality in one loop (map it mentally)",
+      "description": "Reacquaint yourself with your neighborhood; notice changes, shops, and people you pass daily.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "05892e1a52",
+      "title": "Practice shooting goals or tricks with a football/basketball alone",
+      "description": "Solo skill practice: find an open space, bring a ball, work on aim and control for 30 minutes.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8518c163d0",
+      "title": "Climb stairs (building or park) for a quick 10-minute cardio burst",
+      "description": "Intense, free, time-efficient: perfect when you have 10 minutes and need an energy boost.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "53066b7367",
+      "title": "Walk to a scenic viewpoint at sunrise and watch the light change",
+      "description": "Early morning adventure: climb a hill or reach an overlook in your area; peaceful and meditative.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "53b61a978c",
+      "title": "Do a tabata-style 20-minute workout (intense intervals)",
+      "description": "20 seconds on, 10 seconds rest: mix burpees, jumping jacks, and mountain climbers.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c1aebcf1ce",
+      "title": "Teach a younger sibling or cousin how to cycle or skateboard",
+      "description": "Social, physical, and rewarding: share a skill and get outdoor time in the process.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "cd3416cc8d",
+      "title": "Walk while listening to one full podcast episode (30-45 min)",
+      "description": "Combine learning with movement; find a podcast about something you're curious about.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6dc0edd090",
+      "title": "Organize a tennis rally or wall-ball practice with a friend",
+      "description": "Rhythm and coordination: find a wall or court and volley for 45 minutes.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3b792ccb4d",
+      "title": "Do 100 squats in multiple sets throughout your day",
+      "description": "Build leg strength; split into 5 sets of 20, spread across morning to evening.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3b535d7bfe",
+      "title": "Walk to a local library or bookstore and spend 30 minutes browsing",
+      "description": "Free or low-cost: rediscover reading; pick one book just because the cover appealed to you.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6b3d20c0df",
+      "title": "Challenge a friend to a 30-minute 1v1 basketball or football match",
+      "description": "Competitive, social, intense: settle a rivalry or just burn energy together.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e95a634a75",
+      "title": "Do a 5 km walking meditation in early morning silence",
+      "description": "Slow, focused, intentional: notice every step, breath, and sound around you.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8e551bc83c",
+      "title": "Create an obstacle course in your backyard and time yourself",
+      "description": "Cones, chairs, rope: design a 10-15 minute circuit and run it repeatedly to beat your time.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "16d18210a3",
+      "title": "Walk to a historical site or monument in your city",
+      "description": "Combine movement with local history; take a slow walk and really look at architecture.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "dfdbcdb46e",
+      "title": "Play a 2v2 or 3v3 volleyball game in your colony or park",
+      "description": "Recruit neighbors or friends; teamwork and cardio in one activity.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "937248317c",
+      "title": "Do jump rope for 15 minutes (multiple short rounds)",
+      "description": "Classic, intense, free: improves coordination and burns calories fast.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "de1ac07751",
+      "title": "Walk through a local market early morning and observe vendors setting up",
+      "description": "Cultural immersion: see the energy of everyday commerce and maybe grab fresh juice.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "curious",
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning"
+        ],
+        "category": "learning",
+        "indoor": false,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "9d962b97aa",
+      "title": "Do a 30-minute home workout video (YouTube, no cost)",
+      "description": "Follow along to a free fitness channel; variety of styles and intensities available.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4619a9f119",
+      "title": "Cycle to a river or water spot and sit by the water for 20 minutes",
+      "description": "Nature break: ride there, then rest and watch water or birds.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "802d1599c2",
+      "title": "Organize a midnight/late evening walk with 2-3 friends and talk freely",
+      "description": "Social + physical: night walks are cooler in summer and conversations flow differently.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "late_night"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f15ee2c402",
+      "title": "Do 200 calf raises on each leg, spread across the day",
+      "description": "Build ankle and lower leg strength; do in sets of 50 whenever you have 5 minutes.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "61a89f6b8d",
+      "title": "Walk a dog (yours or a neighbor's) for 30 minutes",
+      "description": "Build a relationship while getting out; animals make walks more enjoyable.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ef660e58de",
+      "title": "Run intervals (sprint 30 sec, walk 30 sec) for 15 minutes",
+      "description": "High-intensity, time-efficient cardio; boosts metabolism and requires no equipment.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "bf7c51b068",
+      "title": "Walk to a rooftop or high point at sunset and watch the sky change",
+      "description": "Free, meditative, photogenic: perfect for evening and great for mental clarity.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4da5164eb9",
+      "title": "Do a handstand or headstand practice against a wall for 10 minutes",
+      "description": "Core and balance work; challenge yourself to hold longer each session.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6593aefc5b",
+      "title": "Organize a 'gully games' tournament with neighborhood kids (relay races, etc.)",
+      "description": "Throwback to childhood: simple races and games, zero cost, maximum fun.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "77850ad17c",
+      "title": "Walk while listening to music from your childhood (Shinchan, Cartoon Network themes, etc.)",
+      "description": "Nostalgia + movement: create a playlist of 2000s/2010s Indian TV themes and walk 45 min.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3734d0a05b",
+      "title": "Do lunges and step-ups on stairs for 15 minutes",
+      "description": "Lower body strength without weights; use your home stairs or an outdoor slope.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6fe15a768f",
+      "title": "Cycle slowly through a botanical garden or nature reserve (if nearby)",
+      "description": "Low-speed exploration: observe plants, birds, and peaceful surroundings.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning"
+        ],
+        "category": "learning",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d71308db73",
+      "title": "Play one round of street cricket (10-20 overs) with a group",
+      "description": "Classic Indian summer: gully cricket as it's meant to be, casual and fun.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "cffbc37049",
+      "title": "Walk in a light rain (monsoon season) and enjoy the sounds and smell",
+      "description": "Seasonal activity: light cardio with atmospheric mood; refreshing and free.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6b39ab2a00",
+      "title": "Do a 20-minute yoga flow (YouTube, free) focusing on flexibility",
+      "description": "Calm and strengthening: improves range of motion and relieves tension.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "498669269a",
+      "title": "Walk to a nearby tea/coffee stall and chat with locals (without buying)",
+      "description": "Social and cultural: observe and interact with everyday neighborhood life.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3bc8394a54",
+      "title": "Do a 30-minute cycling session with friends exploring a new route",
+      "description": "Adventure and cardio: challenge yourself to find a new path through your area.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "bb8e441ac1",
+      "title": "Do 50 burpees in sets with rest breaks",
+      "description": "Full-body explosive movement; challenging but highly effective and time-efficient.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "959e2d8454",
+      "title": "Walk the perimeter of a large park multiple times (circuit training style)",
+      "description": "Repetition with fresh air: 3-4 laps of a park path for endurance building.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4263ca5a24",
+      "title": "Do swimming or water sports at a local public pool or beach (low cost entry)",
+      "description": "Full-body workout with fun factor; check local pool hours and rates.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "698b541e7e",
+      "title": "Walk barefoot on the floor and do balance exercises for 10 minutes",
+      "description": "Proprioception training: improves ankle stability and core engagement naturally.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "85615cea92",
+      "title": "Write a letter to your 10-year-old self about what you've learned",
+      "description": "Reflect on growth by penning an honest, warm letter to your younger self about mistakes, wins, and what matters now.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8c1e2efb28",
+      "title": "Create a ranked tier list of every Cartoon Network show you watched",
+      "description": "Rank Dexter's Lab, PowerPuff Girls, Ben 10, and others from S-tier to F-tier, then write why each belongs there.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c27ffbdd10",
+      "title": "Write fan fiction about your favorite anime/show characters in a modern college setting",
+      "description": "Imagine Shinchan or Ash from Pokemon dealing with college admissions, JEE stress, or choosing a stream.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a0dde6661f",
+      "title": "Doodle a comic strip roasting your own JEE/NEET experience",
+      "description": "Create a 4-6 panel comic with crude drawings and dark humor about your exam prep journey.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "609cd7409e",
+      "title": "Start a voice memo diary for one week, recording 3-minute thoughts each evening",
+      "description": "Instead of writing, speak your thoughts aloud daily—raw, unfiltered, about summer, future anxiety, or just the day.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a3005bcfdf",
+      "title": "Photograph every meal you eat today and create an Instagram-style grid caption",
+      "description": "Take pictures of breakfast, lunch, snacks, dinner, then write witty or deep captions as if posting to feed.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5b9d942ee4",
+      "title": "Write a brutally honest college essay about why you didn't get into your dream college (or why you might not)",
+      "description": "Pen a raw, funny essay about disappointment, parental pressure, and life after 'failure'—no sugarcoating.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8ab1013ce0",
+      "title": "Create a Spotify playlist with song-by-song commentary about your emotional state right now",
+      "description": "Curate 10-15 songs that match your current mood, then write a sentence next to each explaining why it's there.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4bde60ccbc",
+      "title": "Make a meme account/draft account and create 10 memes about Gen Z college expectations",
+      "description": "Draw, edit, or text-based memes about parents, cutoffs, stream selection, hostel life—post to draft or just save.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "28445009a7",
+      "title": "Illustrate a scene from your favorite childhood book or show from memory without looking it up",
+      "description": "Draw a moment from Harry Potter, Percy Jackson, or a Hindi comic—use only what you remember, flaws and all.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f11563e477",
+      "title": "Write a satirical self-help guide for 'How to Survive Summer Before College'",
+      "description": "Create a tongue-in-cheek manual with chapters on parent-dodging, sibling rivalry, and reading one book (or pretending to).",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "56224011ae",
+      "title": "Record a TikTok-length video lip-sync to your favorite Hindi or English song from childhood",
+      "description": "Pick a song you loved aged 8-12, record yourself syncing to it with goofy or sincere energy.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b1084d7070",
+      "title": "Interview a parent or grandparent about their college days and record it as a voice note",
+      "description": "Ask them about their choice of stream, fears, funny hostel stories, romance—then listen back and journal your thoughts.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c6279709e4",
+      "title": "Create a 'letter to my future college self' to open on day one of university",
+      "description": "Write advice, predictions, hopes, and warnings to yourself, seal it, and plan to read it in four months.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "7ea62ae536",
+      "title": "Shoot a short video of you explaining one concept from your 12th grade favorite subject badly",
+      "description": "Teach something (photosynthesis, Mughal Empire, quadratic equations) with exaggerated wrongness and edit it comedically.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5d3a56c5a2",
+      "title": "Write poetry (5-10 poems) about waiting—for results, college, adulthood, meaning",
+      "description": "Explore the liminal feeling of summer break through free verse or haiku, raw and unpolished.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "cab3264914",
+      "title": "Photograph your room from 10 different angles and create a photo essay about your pre-college sanctuary",
+      "description": "Shoot corners, your bed, posters, study desk, and write captions about what each space means to you.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d38e390b06",
+      "title": "Edit old photos from your school days into a nostalgic Instagram-style carousel",
+      "description": "Gather childhood pics, add filters, captions, and a Reels-style video montage set to a 2000s/2010s Bollywood song.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "07830c7eed",
+      "title": "Start a sketch-a-day challenge for the next week—doodle anything, no judgment",
+      "description": "Keep a small notebook and do one 10-minute sketch daily: your coffee cup, your pet, your anxious thoughts as doodles.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3e2abba9c8",
+      "title": "Write a fake Goodreads review for a book that defined your childhood (Harry Potter, Percy Jackson, etc.)",
+      "description": "Write a detailed, funny, emotional review as if you're revisiting it now, praising and roasting it equally.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ff3212b054",
+      "title": "Create a before-and-after photo series showing 'you in April' vs 'you now' post-results",
+      "description": "Take a candid photo today, then find one from April, and write captions about the emotional distance between them.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f0d524639b",
+      "title": "Write a script for a 2-minute YouTube skit with a friend roasting each other's college choices",
+      "description": "Pen dialogue where you both play exaggerated versions of yourselves picking streams, then act it out and film.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless",
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f7b61116da",
+      "title": "Make a ranked list of every Hindi or English movie you loved aged 8-15 with a sentence about each",
+      "description": "List 20-30 films (animated, Bollywood, kids' movies), rank by rewatchability, and note why each mattered then.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b3c359c764",
+      "title": "Design your ideal college dorm room (via sketches, collage, or digital mockup if on phone)",
+      "description": "Draw or collage what your hostel room will look like—posters, plants, setup—and imagine the life you'll live there.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f04350b52d",
+      "title": "Write a detailed character profile of yourself as if you're a protagonist in a coming-of-age novel",
+      "description": "Describe your flaws, quirks, secret dreams, fears, sense of humor—as if an author were introducing you to readers.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "cd2ef4998a",
+      "title": "Record a voice memo list of 50 things you want to do/try/learn in college",
+      "description": "Rapid-fire list everything—academics, social, hobbies, adventures—no filtering, just stream of consciousness.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5c9316d164",
+      "title": "Create a TikTok/Reel-style video of you doing the 'things I thought vs reality' trend about 12th grade",
+      "description": "Film split-screen clips showing what you expected 12th to be like vs. what it actually was—JEE struggles, friendships, etc.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3e4d4e6c34",
+      "title": "Write a detailed journal entry as if you're 40 years old, looking back at this summer",
+      "description": "Imagine yourself decades from now reminiscing about this exact week—what would you say you didn't know then?",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8801d26ea1",
+      "title": "Design a custom book cover for an imaginary memoir titled 'My 12th Grade Survival Guide'",
+      "description": "Sketch or digitally create a cover with title, tagline, and artwork reflecting your journey through exams and adolescence.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "18e0b0d09d",
+      "title": "Shoot a short 'day in my life' video during summer—morning to night, unfiltered",
+      "description": "Film yourself waking, eating, scrolling, thinking, procrastinating—a slice-of-life video of summer limbo.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "0731740969",
+      "title": "Write 10 apology letters to people you regret from school (keep private, never send)",
+      "description": "Address things you said, didn't say, or did during school—reflect on growth without intent to deliver.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "92daa105d7",
+      "title": "Create a photo series recreating iconic Bollywood movie scenes at home with household items",
+      "description": "Mimic famous movie moments (dramatic monsoon scene, romantic hallway, action pose) using your room and props.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "169e3b661a",
+      "title": "Write a 'burnout recovery' zine or booklet by hand with illustrations, quotes, and advice to yourself",
+      "description": "Create a DIY 5-10 page mini-zine about surviving academic pressure with doodles, collage, and honest writing.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3feb6c7f28",
+      "title": "Record yourself reading aloud a piece of your own writing and listen back critically",
+      "description": "Write a short story, poem, or essay, then record yourself reading it and take notes on what lands and what doesn't.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "65dcddc4e6",
+      "title": "Create a 'college bucket list' visual mood board via Pinterest, collage, or phone screenshots",
+      "description": "Gather images, colors, quotes, and vibes for who you want to be in college and arrange them as inspiration.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "1547b385e7",
+      "title": "Write lyrics for an original song about your current emotions and fears",
+      "description": "Compose a verse, chorus, and bridge about uncertainty, family pressure, friendship, or hope—no musical skill needed.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "1181d5f1b5",
+      "title": "Take a series of shadow or silhouette photos during sunset and caption them philosophically",
+      "description": "Shoot your shadow, trees, window frames at golden hour and pair with introspective captions about transitions.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4c23a7cd4e",
+      "title": "Write a fake Wikipedia entry for yourself as if you're a notable figure (serious or ridiculous)",
+      "description": "Pen a detailed bio about 'yourself' with 'early life,' 'education,' 'career,' and 'legacy' sections—humorous or sincere.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4d47a46dd4",
+      "title": "Illustrate your top 10 fictional crushes from childhood shows and rate them now as 18-year-old",
+      "description": "Draw or find images of characters you loved (Avatar's Aang, anime crushes, etc.), arrange them, add present-day commentary.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f81c642e38",
+      "title": "Create a podcast episode (voice recording) where you interview yourself about life post-12th",
+      "description": "Record yourself asking tough questions (What scared you? What excites you? What do you regret?) and answering candidly.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ea1c2fc851",
+      "title": "Design a custom playlist cover or digital art for a song/album that defines this summer for you",
+      "description": "Create artwork (digital or sketched, then photographed) that visually represents your current emotional state and music taste.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4f4cdfbcb0",
+      "title": "Write a spoof review of your own personality as if it's a product on Amazon",
+      "description": "Rate yourself with pros, cons, customer reviews, and a funny verdict—self-aware and humorous.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "da253d41f7",
+      "title": "Create a time capsule letter with predictions about where you'll be in 5, 10, and 20 years",
+      "description": "Write specific predictions about career, relationships, location, and regrets—seal and date it to open later.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e24caa6a00",
+      "title": "Photograph small details around your home (texture, light, color) and create an abstract visual diary",
+      "description": "Shoot 20-30 close-ups of mundane things—fabric, water droplets, shadows—arrange in a grid, add one-word captions.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "191115fcd4",
+      "title": "Write a letter to your school/college explaining why you chose your stream—honest version",
+      "description": "Compose a raw letter (don't send) explaining your stream choice: ambition, pressure, confusion, compromise, or clarity.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2a3bbe903c",
+      "title": "Create a 'glow-up' before-and-after video of your fashion sense from age 10 to now",
+      "description": "Find old photos of your style, create clips or stills showing evolution, add music and captions—funny or sincere.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "680b42f8ae",
+      "title": "Write a detailed letter to your future roommate (who you don't know) introducing yourself",
+      "description": "Pen a warm, honest introduction covering your habits, interests, boundaries, and hopes for living together.",
+      "duration_min": 35,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b7b4d1567a",
+      "title": "Create a gallery of screenshots of your text exchanges with best friends annotated with memories",
+      "description": "Screenshot funny/meaningful group chat moments, arrange in a document, and add captions about what they mean to you.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "27dde0cc2a",
+      "title": "Write a brutally honest review of your 12th-grade textbooks (English, History, anything you read)",
+      "description": "Grade each subject's curriculum on entertainment, usefulness, and trauma—funny, mean, or reflective.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "23080c2588",
+      "title": "Film a 'advice to my younger self' monologue and watch it back critically",
+      "description": "Record yourself on camera giving advice to 12-year-old you—what would you say, and do you believe it?",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9ea63f7b29",
+      "title": "Create a digital or hand-drawn map of your ideal college town with landmarks that matter to you",
+      "description": "Sketch or design a fantasy college town featuring your dorm, favorite cafe, library, hangout spots with labels and notes.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "dc7dcafd26",
+      "title": "Write a series of very short stories (100-200 words each) about different versions of your college life",
+      "description": "Explore alternate futures: one where you chose a different stream, one where you studied abroad, one where you dropped out.",
+      "duration_min": 70,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening",
+          "late_night"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "23c970dd2f",
+      "title": "Call your best friend from school and reminisce about funny classroom moments",
+      "description": "Ring up that one friend and spend 30 minutes laughing about teachers, exams, and inside jokes from your school days.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "46c5187f73",
+      "title": "Video call your grandparents and teach them one phone feature they don't know",
+      "description": "Connect with grandpa or grandma over video and show them how to use an app, take a selfie, or send a sticker.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8c804f471e",
+      "title": "Plan a cricket match with neighborhood friends this weekend",
+      "description": "Text 5–6 friends and nail down a time, place, and team roster for a friendly cricket game.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "455511595c",
+      "title": "Host a midnight snacks and chat session with your closest friend",
+      "description": "Invite a friend over, make popcorn or tea, and talk about life, dreams, and what's coming next after 12th.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "late_night"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "74d8f8cdb4",
+      "title": "Challenge your sibling to a Beyblade battle tournament with old tops",
+      "description": "Dig out your childhood Beyblades and stage a best-of-five tournament, keeping score and declaring a champion.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2591585b95",
+      "title": "Ask your grandparent to teach you one traditional recipe or dish from their hometown",
+      "description": "Sit down with a grandparent in the kitchen and learn to make their signature dish, hearing stories along the way.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "776bde97ce",
+      "title": "Organize a group video call with 5+ school friends and play a online trivia game",
+      "description": "Gather the crew on a video call and run a free trivia game about Bollywood, cricket, or 2000s nostalgia.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "99b69f6682",
+      "title": "Walk to a local park with a sibling and play badminton for 45 minutes",
+      "description": "Grab two rackets and a shuttlecock, head to the park, and have a casual match with your brother or sister.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5e3e0b3ac8",
+      "title": "Call an old school friend you haven't talked to in months and catch up",
+      "description": "Reach out to someone from your friend circle you've lost touch with and spend time reconnecting genuinely.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5e1cdfdcab",
+      "title": "Create a family photo collage from your school years and share it with parents",
+      "description": "Gather old photos, arrange them in a creative layout using a free app or printouts, and present it to your family.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a2d755f3bb",
+      "title": "Interview your grandparent about their life story and record it on your phone",
+      "description": "Sit down with a grandparent and ask them about their childhood, work, travels, and biggest life lessons—capture it.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "59a986f152",
+      "title": "Play a board game tournament with your family (Ludo, Snakes & Ladders, or Chess)",
+      "description": "Set up a best-of-three or round-robin tournament with family members, keep a leaderboard, crown a winner.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "1b6280f38d",
+      "title": "Invite a friend over and bake simple cookies or brownies together from scratch",
+      "description": "Pick an easy no-yeast recipe, cook together, chat, and enjoy warm treats straight from the oven.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "425fa617f8",
+      "title": "Text a group of 8–10 friends and plan a group hike or trek for next weekend",
+      "description": "Coordinate a casual hike near your area—pick a trail, fix a time, set a meeting point, invite everyone.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e2699ce539",
+      "title": "Sit with your parents and ask them about their college days and career choices",
+      "description": "Have a real conversation with your parents about how they picked their stream, their struggles, and advice for you.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "064c05d5ae",
+      "title": "Host a pizza night and invite 3–4 friends; order or make dough and customize toppings together",
+      "description": "Gather friends, divide labor on pizza-making, top your own version, and eat while catching up and joking.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "ea2f5d8e69",
+      "title": "Call your best friend and plan your first meet-up after summer break in detail",
+      "description": "Discuss where to go, what to do, when to meet, and who else to invite—get everyone excited for the reunion.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8d4758df8a",
+      "title": "Have a late-night philosophical conversation with a sibling about life and future",
+      "description": "Talk deeply with your brother or sister about fears, dreams, college, career, relationships—be vulnerable.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "late_night"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4a4594d708",
+      "title": "Organize a cricket commentary session where you and a friend narrate an old IPL match",
+      "description": "Watch a classic IPL or India-Pakistan match together and take turns being commentators—use accents and drama.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "cd188d63c7",
+      "title": "Invite a friend and play mobile multiplayer games together in the same room for 1 hour",
+      "description": "Sit side-by-side and play BGMI, Call of Duty Mobile, or any co-op game while talking trash and laughing.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e8dca2ae80",
+      "title": "Ask your grandparent to tell you stories about family history and lineage",
+      "description": "Sit with grandpa or grandma and ask about ancestors, family migrations, old homes, and relatives you've never met.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b71c3d5d33",
+      "title": "Organize a friend group debate on a funny or topical subject and keep score",
+      "description": "Call 4–6 friends, pick a silly topic (pineapple on pizza, India vs Pakistan, Marvel vs DC), and debate with humor.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e30856d006",
+      "title": "Take a long walk with a parent and have an unrushed conversation about anything",
+      "description": "Go for a 45-minute walk with mom or dad, no phone distractions, and let conversation flow naturally.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9c23e6debe",
+      "title": "Host a Mr. Bean or comedy sketch watch party where you mime along with the characters",
+      "description": "Gather siblings or friends, play classic Mr. Bean episodes, and take turns acting out scenes together.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "nostalgic",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "86d0666cb0",
+      "title": "Plan a surprise small gathering for a friend's birthday and coordinate with 5–6 others",
+      "description": "Text the group, decide on a venue (home, park, cafe), divide costs, finalize date—organize the whole thing.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8e397e14b4",
+      "title": "Visit a nearby cafe or tea shop with a friend and spend 1.5 hours catching up",
+      "description": "Meet up with a close friend, order chai or coffee, sit down, and have a long, deep conversation.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "b800768cb6",
+      "title": "Create a group chat collage of everyone's embarrassing school photos and laugh together",
+      "description": "Gather funny photos from a friend group chat, make a collage, share it with the group, and roast each other.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "da0fcc5d0e",
+      "title": "Teach your younger sibling one skill you're good at (drawing, cooking, sports, coding, etc.)",
+      "description": "Spend 60 minutes patiently teaching your sibling something you're decent at; make it fun and encouraging.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6b36a90cef",
+      "title": "Organize a karaoke night at home with friends or family using YouTube backing tracks",
+      "description": "Gather 4–6 people, find YouTube karaoke videos of songs you love, and take turns singing.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f9cd899115",
+      "title": "Call your best friend and talk about what you both want from college and life after school",
+      "description": "Have a real, honest phone call about fears, expectations, and dreams for the next few years.",
+      "duration_min": 50,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2254da4da6",
+      "title": "Play a round-robin Tennis or Badminton tournament with 4–6 friends in a park",
+      "description": "Gather friends, divide into groups, run quick matches, keep a scoreboard, declare winners at the end.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "15692e10c9",
+      "title": "Host a potluck dinner with friends where everyone brings one homemade dish",
+      "description": "Invite 4–6 friends, each brings a dish they've made, set a nice table, eat, and appreciate each other's cooking.",
+      "duration_min": 120,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d149308a42",
+      "title": "Create a handmade gift for a parent or grandparent and present it to them",
+      "description": "Make a photo frame, collage, or handwritten letter expressing gratitude and memories—gift it warmly.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5d75ba3dc8",
+      "title": "Organize a virtual escape room or puzzle game session with a friend group",
+      "description": "Find a free online escape room, invite 3–5 friends, and solve puzzles together via video call with a time limit.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ad53ccd25b",
+      "title": "Organize a group movie night at home and assign snacks to different friends to bring",
+      "description": "Pick a movie everyone agrees on, invite 5–6 friends, assign who brings popcorn, drinks, namkeen, etc.",
+      "duration_min": 150,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "b6383ac394",
+      "title": "Host a 'truth or dare' night with close friends and set fun, non-harmful challenges",
+      "description": "Invite 4–5 trusted friends, sit in a circle, play truth or dare with silly dares and honest questions.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "599619cee8",
+      "title": "Go for a bike ride or skating session with a friend in your neighborhood",
+      "description": "Grab your bike or skateboard, invite a friend, ride around local areas, chat, and enjoy the outdoors for an hour.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f6bbfa4468",
+      "title": "Call an old school friend who moved away and plan a reunion when they're in town",
+      "description": "Track down a friend you haven't seen in years, catch up, and start planning a meet-up.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6f413e170d",
+      "title": "Organize a photography walk with friends through your neighborhood or a scenic area",
+      "description": "Invite 2–3 friends, take phones or cameras, explore your area together, snap aesthetic pics, and share them.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ff1cb5163d",
+      "title": "Host a creative workshop where you teach friends to make friendship bracelets or origami",
+      "description": "Gather 4–5 friends, teach them a craft you know, chat while making things, and exchange what you've made.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "7d0f0ed3c0",
+      "title": "Play a pickup volleyball or football match with neighborhood kids and friends",
+      "description": "Round up 8–10 people from your area, split into two teams, and play a casual match in a park or grounds.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "high"
+        ],
+        "mood": [
+          "social",
+          "restless"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "57cad2edc3",
+      "title": "Sit with your sibling and plan a fun surprise or small gift for a parent",
+      "description": "Brainstorm together, decide what to do (breakfast in bed, a card, a coupon book), and execute the plan.",
+      "duration_min": 60,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "288368c2dd",
+      "title": "Organize a book discussion or reading club with 3–4 friends who like the same genre",
+      "description": "Pick a short book or novella, set a reading deadline, then gather and discuss themes, characters, and thoughts.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8f690cc096",
+      "title": "Host a music listening session where friends share songs and you all listen and discuss",
+      "description": "Invite 4–5 friends, each person shares 2–3 favorite songs, play them, and talk about why they love each one.",
+      "duration_min": 75,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "7b41beaafb",
+      "title": "Call your grandmother and ask her to teach you a traditional household skill or craft",
+      "description": "Ring up grandma and ask to learn embroidery, knitting, making pickles, or some traditional art over video.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "266e4fb085",
+      "title": "Organize a 'swap clothes or books' session with friends and take home things you like",
+      "description": "Invite friends to bring clothes, shoes, or books they don't wear/read anymore, swap freely, and go home happy.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "048dbbc87e",
+      "title": "Spend a morning cooking a full breakfast with a sibling and invite parents to enjoy it",
+      "description": "Plan a menu, divide tasks (one does toast, one does omelette, one does juice), cook together, serve with pride.",
+      "duration_min": 90,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "08bbb77743",
+      "title": "Organize a friend group movie or web series marathon with a voting system for what to watch",
+      "description": "Get 5–6 friends together, each suggests a movie or series, you vote, and watch multiple episodes or movies.",
+      "duration_min": 180,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "50ff0bb425",
+      "title": "Text old friends from your 8th or 9th grade and restart conversations with those you miss",
+      "description": "Scroll through old contacts, message people you lost touch with, and see who responds—reconnect genuinely.",
+      "duration_min": 45,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "social",
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "e5780810b1",
+      "title": "Write a letter to yourself from 5 years ago",
+      "description": "Reflect on who you were before JEE/NEET stress and write what that younger you would think about who you are now.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "85cf4c381d",
+      "title": "Sit on your roof or balcony for 15 minutes without phone",
+      "description": "Pick a quiet time, bring a cushion, and just observe the sky, birds, and neighborhood sounds.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "51a47dcb22",
+      "title": "Draw your emotions as abstract shapes and colors",
+      "description": "No art skill needed—use pencil, pen, or charcoal to turn how you're feeling into lines and patterns.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4f2acd14b1",
+      "title": "Practice box breathing: 4-4-4-4 for 10 minutes",
+      "description": "Breathe in for 4 counts, hold for 4, exhale for 4, hold for 4—perfect when neck or jaw feels tense.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "7706500383",
+      "title": "Walk around your neighborhood for 30 minutes, no phone",
+      "description": "Notice small details: cracks in sidewalks, flowers in gardens, the way light hits buildings.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "19be72c998",
+      "title": "Lie in bed and trace clouds through your window for 20 minutes",
+      "description": "Watch clouds morph and drift; it's a child's game that actually slows your mind down.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "09b17d0540",
+      "title": "Journaling prompt: 'Things I don't have to decide right now'",
+      "description": "Write down all the pressures and choices that feel urgent, then remind yourself which ones actually have a deadline.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "851842b35c",
+      "title": "Make tea or coffee slowly and drink it in one spot for 15 minutes",
+      "description": "Skip the rushing—hold the mug, notice temperature and taste, don't scroll while drinking.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "4eb7905ed3",
+      "title": "Sit in silence and count your breaths up to 100",
+      "description": "A meditation anchor: focus only on counting, and when your mind drifts, gently restart at 1.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "19a8869251",
+      "title": "Write three things that went right today, however small",
+      "description": "Train your brain to notice the good: warm water, a laugh, a message from a friend.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "59a54a0340",
+      "title": "Look at the stars or moon through your window or terrace for 10 minutes",
+      "description": "No app needed—just notice how small you are, how vast the sky is.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening",
+          "late_night"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "00596c4d5e",
+      "title": "Do a body scan meditation: notice each part from toes to head",
+      "description": "Close your eyes and mentally check in with every body part, releasing tension as you go.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "dd0ccc37e4",
+      "title": "Sketch a single object from your room in detail for 20 minutes",
+      "description": "Pick a lamp, cup, or plant and draw it carefully—this builds focus and quiets racing thoughts.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c18803c9fb",
+      "title": "Journal: 'What would I do if I wasn't worried about grades or parents?'",
+      "description": "Free write for 15 minutes without filtering—just to hear what your actual self wants.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "8975c723ca",
+      "title": "Take an intentional nap: set timer for 20 minutes, no phone alarm anxiety",
+      "description": "Sleep is productive—lie down, let yourself drift, and set an alarm so you don't worry.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "4ab24dade6",
+      "title": "Create a 'worry jar'—write anxieties on paper and fold them away",
+      "description": "Physical act of writing and putting worries aside can feel surprisingly grounding.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "ee3e528d10",
+      "title": "Lie on grass or earth for 15 minutes and do nothing",
+      "description": "Grounding practice: barefoot or lying down, feel the earth, let your nervous system settle.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f848e6f8e0",
+      "title": "Read a single poem slowly, three times",
+      "description": "Pick a short poem and read it aloud once, silently twice—notice how meaning shifts.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a54f9654dc",
+      "title": "Prepare and sit through a guided meditation on YouTube (10-15 min)",
+      "description": "Search 'calm meditation' or 'sleep meditation'—let someone else's voice guide you.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "89b154e37f",
+      "title": "Write a thank you note to someone who helped you, even if you don't send it",
+      "description": "Reflect on kindness and express gratitude in writing—shifts your mood toward connection.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "58354b2995",
+      "title": "Sit by a window and watch rain for 20 minutes",
+      "description": "If it's monsoon season, this is free meditation—the rhythm and sound are naturally calming.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f03ddb5cf4",
+      "title": "Stretch slowly for 15 minutes, no YouTube video—just move how it feels good",
+      "description": "Intuitive stretching, not fitness—touch your toes, twist, open your chest, whatever feels right.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "bc29bfce1d",
+      "title": "Make a list of 'Small Wins'—things you did well last month",
+      "description": "Counter the perfectionism: write down anything from 'called a friend' to 'finished a book'.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "6124772733",
+      "title": "Close your eyes and listen to bird sounds or nature sounds for 10 minutes",
+      "description": "Use free YouTube or a nature app—let ambient sound wash over you without visuals.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f19e86e2a0",
+      "title": "Paint or color a mandala design (download free templates)",
+      "description": "Repetitive, circular patterns are meditative—print or find a free coloring page online.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3df093b5be",
+      "title": "Write down your five senses right now: what you see, hear, feel, smell, taste",
+      "description": "Grounding technique that anchors you to the present moment instead of future worries.",
+      "duration_min": 5,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c1642d4945",
+      "title": "Do progressive muscle relaxation: tense and release each muscle group",
+      "description": "Squeeze leg muscles for 5 seconds, release; repeat for arms, core, neck—very physical release.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "physical",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f322f5dc77",
+      "title": "Walk to a nearby park and sit on a bench for 20 minutes",
+      "description": "Just sit—watch people, trees, whatever happens—no phone, no agenda.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "2c447702e7",
+      "title": "Journal: complete the sentence 'I've always wanted to...' ten times",
+      "description": "Bypass logic and just list things, big and small—dreams don't need JEE rank.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "a60dcd153f",
+      "title": "Sit and do alternate nostril breathing for 10 minutes",
+      "description": "Close left nostril, breathe right; close right, breathe left—Yogic practice that balances mind.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "37acc4d265",
+      "title": "Write a letter to your future self one year from now",
+      "description": "What do you hope you'll have learned? How do you hope you'll feel? Seal it and read next summer.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "3615b9040c",
+      "title": "Lie down and follow a '5-4-3-2-1' grounding exercise",
+      "description": "Notice 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "66e8b3a9cf",
+      "title": "Make a mind map of your hobbies and interests (not career path)",
+      "description": "Brainstorm what you actually enjoy doing, separate from what you think you 'should' do.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "d56719bde6",
+      "title": "Sit outside at dawn and watch the sunrise",
+      "description": "Early morning, quiet—let the light and silence reset your nervous system.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "72ddd5abd5",
+      "title": "Write or rewrite song lyrics that reflect how you're feeling",
+      "description": "Take a song you love and change words to match your emotions—creative and cathartic.",
+      "duration_min": 25,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "77e8974f80",
+      "title": "Sit in silence and observe your thoughts without judgment for 10 minutes",
+      "description": "Thoughts are clouds—watch them pass without attaching to them.",
+      "duration_min": 10,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "5ccc49ef1c",
+      "title": "Document a day in photos (no Instagram—just for you)",
+      "description": "Take 10-15 photos of small moments: light, food, your room, plants—notice details.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "b62950c525",
+      "title": "Create a playlist of 3-5 songs that calm you, and listen without doing anything else",
+      "description": "Curate your own peace soundtrack and give it full attention.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "322d7e0222",
+      "title": "Journal: Write a dialogue between 'Today You' and 'Future You'",
+      "description": "Let future you give advice to present you—sometimes your own wisdom surprises you.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "43ae8eeb3c",
+      "title": "Prepare and slowly sip herbal tea while sitting outside",
+      "description": "Combine ritual (tea prep) with mindfulness (slow sipping) and fresh air.",
+      "duration_min": 20,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "714579ac96",
+      "title": "Make a collage from old magazines or newspaper clippings of things you love",
+      "description": "Cut and paste without overthinking—visceral, hands-on creativity.",
+      "duration_min": 40,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "creative",
+        "indoor": true,
+        "cost": "low"
+      }
+    },
+    {
+      "id": "f9c0e1bed9",
+      "title": "Lie in bed and trace shapes on the ceiling with your eyes",
+      "description": "Find patterns, shadows, cracks—old-school daydreaming.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon"
+        ],
+        "category": "restful",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "9aa495a727",
+      "title": "Interview your parents about their summer after 12th grade",
+      "description": "Turns out they were anxious too—hearing their stories can ease your own pressure.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "c0c4852682",
+      "title": "Spend 15 minutes watering plants and noticing their growth",
+      "description": "Slow, repetitive task that grounds you—plus you're nurturing life.",
+      "duration_min": 15,
+      "tags": {
+        "energy": [
+          "low",
+          "medium"
+        ],
+        "mood": [
+          "calm"
+        ],
+        "timeOfDay": [
+          "morning",
+          "afternoon",
+          "evening"
+        ],
+        "category": "restful",
+        "indoor": false,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "f68e6cc368",
+      "title": "Listen to a podcast episode about mental health or life philosophy (no self-help pressure)",
+      "description": "Find something that resonates—validation that others feel what you feel.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "curious"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "learning",
+        "indoor": true,
+        "cost": "free"
+      }
+    },
+    {
+      "id": "388acf2c2f",
+      "title": "Sit with a friend in comfortable silence, no phones",
+      "description": "Being near someone without performance—this is rest too.",
+      "duration_min": 30,
+      "tags": {
+        "energy": [
+          "low"
+        ],
+        "mood": [
+          "calm",
+          "social"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "category": "social",
+        "indoor": false,
+        "cost": "free"
+      }
     }
   ]
 }

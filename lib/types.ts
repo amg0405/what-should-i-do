@@ -38,7 +38,10 @@ export const ActivitySchema = z.object({
     energy: z.array(EnergySchema).min(1),
     mood: z.array(MoodSchema).min(1),
     timeOfDay: z.array(TimeOfDaySchema).min(1),
-    category: CategorySchema,
+    category: z.preprocess(
+      (v) => (Array.isArray(v) ? v[0] : v),
+      CategorySchema,
+    ),
     indoor: z.boolean(),
     cost: CostSchema,
   }),
