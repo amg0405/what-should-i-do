@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-05-21T00:00:00.000Z",
+  "audience": "adult",
+  "activities": [
+    {
+      "id": "stub-a-01",
+      "title": "Call one friend you haven't spoken to in 6+ months",
+      "description": "Scroll your call log, pick a name that gives you a small pang. 15 minutes. No agenda.",
+      "duration_min": 20,
+      "tags": { "energy": ["low", "medium"], "mood": ["social", "calm"], "timeOfDay": ["afternoon", "evening"], "category": "social", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-a-02",
+      "title": "Read 20 pages of the book on your bedside",
+      "description": "The one you've been meaning to. No new book. The one already there. 30 minutes.",
+      "duration_min": 30,
+      "tags": { "energy": ["low"], "mood": ["calm"], "timeOfDay": ["morning", "evening", "late_night"], "category": "restful", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-a-03",
+      "title": "Take a 20-minute walk outside without your phone",
+      "description": "Leave it on the counter. Walk anywhere. Notice the light, the people, the air. Come back.",
+      "duration_min": 20,
+      "tags": { "energy": ["low", "medium"], "mood": ["restless", "calm"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "physical", "indoor": false, "cost": "free" }
+    },
+    {
+      "id": "stub-a-04",
+      "title": "Clear one drawer that has been bothering you",
+      "description": "The kitchen junk drawer, the bathroom under-sink, the cable drawer. Empty, sort, return. 15 min.",
+      "duration_min": 15,
+      "tags": { "energy": ["medium"], "mood": ["restless"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "productive", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-a-05",
+      "title": "Cook one recipe you bookmarked but never made",
+      "description": "Open your bookmarks, pick whichever you saved earliest. Buy the missing ingredient or improvise.",
+      "duration_min": 90,
+      "tags": { "energy": ["medium"], "mood": ["curious", "calm"], "timeOfDay": ["afternoon", "evening"], "category": "creative", "indoor": true, "cost": "low" }
+    },
+    {
+      "id": "stub-a-06",
+      "title": "Watch one talk from a real-life craft you don't do",
+      "description": "Glassblowing, falconry, bookbinding, beekeeping. YouTube. 30 minutes of someone who loves their thing.",
+      "duration_min": 30,
+      "tags": { "energy": ["low"], "mood": ["curious"], "timeOfDay": ["afternoon", "evening", "late_night"], "category": "learning", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-a-07",
+      "title": "Sit on your balcony with chai and stare at the sky for 20 min",
+      "description": "Bring just chai. No phone, no book. Watch the sky change. That's the whole activity.",
+      "duration_min": 20,
+      "tags": { "energy": ["low"], "mood": ["calm"], "timeOfDay": ["morning", "evening"], "category": "restful", "indoor": false, "cost": "free" }
+    },
+    {
+      "id": "stub-a-08",
+      "title": "Write a thank-you message to a mentor or old boss",
+      "description": "Three sentences. Specific about what they did for you. Send before you overthink it.",
+      "duration_min": 15,
+      "tags": { "energy": ["low"], "mood": ["calm", "social"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "social", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-a-09",
+      "title": "10-minute full-body stretch with a YouTube video",
+      "description": "Search 'morning stretch 10 min'. Pick first result. Do it. Notice the difference.",
+      "duration_min": 10,
+      "tags": { "energy": ["medium"], "mood": ["restless"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "physical", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-a-10",
+      "title": "Half-day at a cafe with a single side project",
+      "description": "Laptop, notebook, headphones, one project, no Slack. Three hours. The thing you keep saying you'll start.",
+      "duration_min": 180,
+      "tags": { "energy": ["medium", "high"], "mood": ["curious"], "timeOfDay": ["morning", "afternoon"], "category": "productive", "indoor": true, "cost": "low" }
+    },
+    {
+      "id": "stub-a-11",
+      "title": "Plan one weekend trip with a friend on a real call",
+      "description": "Not WhatsApp. Pick up the phone, agree on dates and place in one call. Book one thing today.",
+      "duration_min": 30,
+      "tags": { "energy": ["medium"], "mood": ["social", "curious"], "timeOfDay": ["afternoon", "evening"], "category": "social", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-a-12",
+      "title": "Browse old photos on your phone for 20 min",
+      "description": "Scroll back two years. Send one to the person in it. Delete duplicates while you're there.",
+      "duration_min": 20,
+      "tags": { "energy": ["low"], "mood": ["calm", "social"], "timeOfDay": ["evening", "late_night"], "category": "nostalgic", "indoor": true, "cost": "free" }
+    }
+  ]
+}

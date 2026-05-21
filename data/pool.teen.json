@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-05-21T00:00:00.000Z",
+  "audience": "teen",
+  "activities": [
+    {
+      "id": "stub-t-01",
+      "title": "Rewatch one episode of Beyblade Metal Fusion",
+      "description": "Pick a favorite Beyblade arc on YouTube and just enjoy it for 25 minutes — no pressure to do anything else.",
+      "duration_min": 25,
+      "tags": { "energy": ["low", "medium"], "mood": ["calm", "curious"], "timeOfDay": ["afternoon", "evening", "late_night"], "category": "nostalgic", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-t-02",
+      "title": "Solve one Easy LeetCode problem on arrays",
+      "description": "Open leetcode.com, pick any easy array problem, give it 30 minutes. Small win, real progress.",
+      "duration_min": 45,
+      "tags": { "energy": ["medium", "high"], "mood": ["curious", "restless"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "learning", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-t-03",
+      "title": "Cycle to the nearest tea stall and back",
+      "description": "Grab the cycle, ride to the closest chai spot, drink one cutting chai, ride back. Pune evenings are perfect for this.",
+      "duration_min": 60,
+      "tags": { "energy": ["medium", "high"], "mood": ["restless", "calm"], "timeOfDay": ["morning", "evening"], "category": "physical", "indoor": false, "cost": "low" }
+    },
+    {
+      "id": "stub-t-04",
+      "title": "Doodle five pages in a notebook to one album",
+      "description": "Pick one album on Spotify, doodle whatever for its duration. No skill required.",
+      "duration_min": 45,
+      "tags": { "energy": ["low", "medium"], "mood": ["calm", "curious"], "timeOfDay": ["afternoon", "evening", "late_night"], "category": "creative", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-t-05",
+      "title": "Call a school friend you haven't spoken to since boards",
+      "description": "Pick one name from your 12th batch WhatsApp group, call them for 15-20 min. Surprise yourself.",
+      "duration_min": 20,
+      "tags": { "energy": ["medium"], "mood": ["social", "curious"], "timeOfDay": ["afternoon", "evening"], "category": "social", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-t-06",
+      "title": "Walk for 30 minutes with phone in pocket",
+      "description": "Just walk. Music optional. No scrolling. Notice five things you've never noticed before in your neighbourhood.",
+      "duration_min": 30,
+      "tags": { "energy": ["low", "medium"], "mood": ["restless", "calm"], "timeOfDay": ["morning", "evening"], "category": "physical", "indoor": false, "cost": "free" }
+    },
+    {
+      "id": "stub-t-07",
+      "title": "Read the first 20 pages of one ebook you've been meaning to start",
+      "description": "Open any pirated PDF you've been hoarding. Just 20 pages. You can stop after that.",
+      "duration_min": 40,
+      "tags": { "energy": ["low"], "mood": ["calm", "curious"], "timeOfDay": ["afternoon", "evening", "late_night"], "category": "restful", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-t-08",
+      "title": "Write three pages by hand about what you actually want from college",
+      "description": "No filter, no judgement, just spill it on paper. Burn the pages after if you want.",
+      "duration_min": 45,
+      "tags": { "energy": ["low", "medium"], "mood": ["calm", "curious"], "timeOfDay": ["evening", "late_night"], "category": "creative", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-t-09",
+      "title": "Organize one shelf in your room",
+      "description": "Pick one shelf, take everything off, dust it, put back only what you want there. 15 min max.",
+      "duration_min": 15,
+      "tags": { "energy": ["medium"], "mood": ["restless"], "timeOfDay": ["morning", "afternoon", "evening"], "category": "productive", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-t-10",
+      "title": "Build a tiny one-page portfolio site",
+      "description": "Even just your name + a sentence + your school + one photo. Use Vercel for free. Half a day of focused work.",
+      "duration_min": 240,
+      "tags": { "energy": ["medium", "high"], "mood": ["curious", "restless"], "timeOfDay": ["morning", "afternoon"], "category": "productive", "indoor": true, "cost": "free" }
+    },
+    {
+      "id": "stub-t-11",
+      "title": "Play 30 min of badminton with a sibling or neighbour",
+      "description": "If you have a racquet, dust it off. Even a half-broken shuttle works. Move, sweat, laugh.",
+      "duration_min": 30,
+      "tags": { "energy": ["high"], "mood": ["restless", "social"], "timeOfDay": ["morning", "evening"], "category": "physical", "indoor": false, "cost": "free" }
+    },
+    {
+      "id": "stub-t-12",
+      "title": "Watch one Studio Ghibli movie with no second screen",
+      "description": "Spirited Away, My Neighbor Totoro, anything. Phone in another room. Be a kid for two hours.",
+      "duration_min": 120,
+      "tags": { "energy": ["low"], "mood": ["calm"], "timeOfDay": ["afternoon", "evening", "late_night"], "category": "nostalgic", "indoor": true, "cost": "free" }
+    }
+  ]
+}
