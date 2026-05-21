@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# What Should I Do?
 
-## Getting Started
+A zero-cost website that suggests activities when you're bored. Suggestions are AI-generated weekly and served as static JSON — the live site never calls an LLM.
 
-First, run the development server:
+## Stack
+
+Next.js 14 · Tailwind · TypeScript · Claude Haiku 4.5 (build-time only) · Vercel · GitHub Actions
+
+## Local dev
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm test           # unit tests
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Regenerate the activity pool
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+export ANTHROPIC_API_KEY=sk-...
+npm run generate:pool teen
+npm run generate:pool adult
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Pools live in `data/pool.{teen,adult}.json` and are committed to the repo. The live site bundles them — no runtime LLM calls.
 
-## Learn More
+## Deploy
 
-To learn more about Next.js, take a look at the following resources:
+Push `main` to GitHub, import into Vercel. No env vars required at runtime.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Weekly refresh
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+GitHub Action `.github/workflows/refresh-pool.yml` runs every Monday and commits a fresh pool. Requires `ANTHROPIC_API_KEY` set as a repo secret.
 
-## Deploy on Vercel
+## Architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `app/` — Next.js App Router pages
+- `components/` — UI components
+- `lib/` — pure logic (sampler, share encoding, time-of-day) and localStorage hooks
+- `data/` — pre-generated activity pools (committed JSON)
+- `scripts/` — pool generation (runs in CI, never at request time)
