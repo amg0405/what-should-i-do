@@ -7,9 +7,16 @@ type Props = {
   favorites: string[];
   onToggleFavorite: (id: string) => void;
   onDidIt: (id: string) => void;
+  onMoreLikeThis?: (activity: Activity) => void;
 };
 
-export default function MenuGrid({ activities, favorites, onToggleFavorite, onDidIt }: Props) {
+export default function MenuGrid({
+  activities,
+  favorites,
+  onToggleFavorite,
+  onDidIt,
+  onMoreLikeThis,
+}: Props) {
   if (activities.length === 0) {
     return (
       <div className="text-center py-16 px-4">
@@ -27,6 +34,7 @@ export default function MenuGrid({ activities, favorites, onToggleFavorite, onDi
             isFavorite={favorites.includes(a.id)}
             onToggleFavorite={() => onToggleFavorite(a.id)}
             onDidIt={() => onDidIt(a.id)}
+            onMoreLikeThis={onMoreLikeThis ? () => onMoreLikeThis(a) : undefined}
           />
         </div>
       ))}

@@ -8,9 +8,16 @@ type Props = {
   isFavorite: boolean;
   onToggleFavorite: () => void;
   onDidIt: () => void;
+  onMoreLikeThis?: () => void;
 };
 
-export default function ActivityCard({ activity, isFavorite, onToggleFavorite, onDidIt }: Props) {
+export default function ActivityCard({
+  activity,
+  isFavorite,
+  onToggleFavorite,
+  onDidIt,
+  onMoreLikeThis,
+}: Props) {
   const [done, setDone] = useState(false);
   const [celebrating, setCelebrating] = useState(false);
   const meta = CATEGORY_META[activity.tags.category];
@@ -33,9 +40,20 @@ export default function ActivityCard({ activity, isFavorite, onToggleFavorite, o
       style={{ background: meta.tintVar }}
     >
       <div className="flex items-start justify-between gap-2">
-        <span className="inline-flex items-center gap-1 text-xs font-medium text-ink-soft bg-white/60 px-2.5 py-1 rounded-full">
-          <span aria-hidden>{meta.emoji}</span> {meta.label}
-        </span>
+        {onMoreLikeThis ? (
+          <button
+            onClick={onMoreLikeThis}
+            title={`Show me more ${meta.label} ideas`}
+            className="inline-flex items-center gap-1 text-xs font-medium text-ink-soft bg-white/60 hover:bg-white px-2.5 py-1 rounded-full transition border border-transparent hover:border-ink-soft/30"
+          >
+            <span aria-hidden>{meta.emoji}</span> {meta.label}{' '}
+            <span className="text-ink-soft/70 ml-0.5">→</span>
+          </button>
+        ) : (
+          <span className="inline-flex items-center gap-1 text-xs font-medium text-ink-soft bg-white/60 px-2.5 py-1 rounded-full">
+            <span aria-hidden>{meta.emoji}</span> {meta.label}
+          </span>
+        )}
         <button
           aria-label={isFavorite ? 'Unfavorite' : 'Favorite'}
           onClick={onToggleFavorite}

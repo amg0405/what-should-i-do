@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { getPool } from '@/lib/pool';
-import { sample } from '@/lib/sampler';
+import { sample, sampleByCategory } from '@/lib/sampler';
 import { decodeFilters } from '@/lib/share';
 import { getTimeOfDay } from '@/lib/timeOfDay';
 import {
@@ -125,6 +125,17 @@ function PageInner() {
     [audience, filters, doomMode, recentShownIds, doneIds, record],
   );
 
+  const moreLikeThis = useCallback(
+    (activity: Activity) => {
+      const aud = audience ?? 'teen';
+      const pool = getPool(aud);
+      const next = sampleByCategory(pool, activity.tags.category, 6, doneIds());
+      setShown(next);
+      next.forEach((a) => record(a.id, 'shown'));
+    },
+    [audience, doneIds, record],
+  );
+
   // Live-update shown when filters or audience change
   useEffect(() => {
     if (!hydrated || !audience) return;
@@ -227,6 +238,7 @@ function PageInner() {
           favorites={favorites}
           onToggleFavorite={toggleFavorite}
           onDidIt={(id) => record(id, 'did_it')}
+          onMoreLikeThis={moreLikeThis}
         />
 
         {shown.length > 0 && (
