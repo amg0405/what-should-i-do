@@ -1,8 +1,8 @@
 name: Refresh activity pool
 
 on:
-  schedule:
-    - cron: '0 0 * * 1'
+  # Weekly cron disabled — pool is large enough not to need automatic refresh.
+  # Trigger manually from the Actions tab when you want a fresh batch.
   workflow_dispatch:
 
 permissions:
