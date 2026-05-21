@@ -1,5 +1,5 @@
 'use client';
-import type { Filters, TimeBucket, Energy, Mood, BudgetTier } from '@/lib/types';
+import type { Filters, TimeBucket, Energy, Mood, BudgetTier, Context } from '@/lib/types';
 
 const TIME_LABELS: Record<TimeBucket, string> = {
   '15min': '15 min',
@@ -20,6 +20,15 @@ const BUDGET_LABELS: Record<BudgetTier | 'any', string> = {
   under5: '≤ S$5',
   under10: '≤ S$10',
   under50: '≤ S$50',
+};
+const CONTEXT_LABELS: Record<Context | 'anywhere', string> = {
+  anywhere: 'Anywhere',
+  home: '🏠 Home',
+  commuting: '🚇 Commuting',
+  office: '💻 At work',
+  outdoor: '🌳 Out & about',
+  cafe: '☕ Café',
+  with_friend: '👯 With a friend',
 };
 
 type Props = {
@@ -84,6 +93,12 @@ export default function FilterChips({ filters, onChange }: Props) {
         value={filters.budget ?? 'any'}
         options={BUDGET_LABELS}
         onChange={(v) => onChange({ ...filters, budget: v })}
+      />
+      <ChipRow
+        label="Where"
+        value={filters.context ?? 'anywhere'}
+        options={CONTEXT_LABELS}
+        onChange={(v) => onChange({ ...filters, context: v })}
       />
     </div>
   );

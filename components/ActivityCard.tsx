@@ -99,6 +99,17 @@ export default function ActivityCard({
 
         <p className="text-sm text-ink-soft leading-relaxed">{activity.description}</p>
 
+        {activity.link && (
+          <a
+            href={activity.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 self-start px-3 py-1.5 rounded-full text-xs font-medium bg-ink text-bg-2 hover:bg-ink/85 transition"
+          >
+            ▶ Open link
+          </a>
+        )}
+
         <div className="flex items-center justify-between mt-auto pt-2">
           <span className="text-xs text-ink-soft font-medium">~{activity.duration_min} min</span>
           {done ? (

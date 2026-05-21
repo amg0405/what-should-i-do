@@ -40,6 +40,7 @@ BAD voice (NEVER):
 - "Watch a TED talk on the future of your industry" (LinkedIn-coach)
 - "Message your parents' friends and thank them" (guilt-trippy)
 - "A calming breathing pattern designed to slow heart rate" (Wikipedia stub)
+- ANY reference to K-drama or K-pop — these are not part of this product's cultural vocabulary. Use anime, Studio Ghibli, Western cartoons, Bollywood, sports, indie YouTube instead.
 
 LOCATION + COST:
 Most activities should be Singapore-specific or work seamlessly in Singapore. Reference real places where it fits: hawker centres (Maxwell, Old Airport Rd, Tiong Bahru, Ghim Moh, Adam Road, Tampines Round Market), parks (East Coast Park, Bishan-AMK, MacRitchie, Botanic Gardens, Marina Barrage, Pulau Ubin), neighbourhoods (Tiong Bahru, Joo Chiat, Holland V, Tanjong Pagar, Bras Basah, Kampong Glam), cultural (NGS, NMS, ArtScience, The Projector, Esplanade outdoor stage, NLB branches), transport (MRT lines, Park Connectors, SG Bike, EZ-Link, bumboat to Ubin), food (kopi, kaya toast, chendol, ice kachang, mee goreng, chicken rice, kway teow).
@@ -67,11 +68,30 @@ Description rules:
 
 Generate exactly ${target} unique activities. Vary duration (5 to 1440 minutes), energy, mood, indoor/outdoor, and cost across the full range from free to S$50.
 
+CONTEXTS (where the user can be when doing this activity):
+Tag each activity with the contexts where it's PRACTICAL to do. Think honestly:
+- "home" — needs your home (bed, fridge, balcony, kitchen, full quiet)
+- "commuting" — works on the MRT / bus / walking with earphones (mostly phone-based, audio, reading)
+- "office" — works at a desk during a break, mostly quiet/discreet
+- "outdoor" — must be outside the house (parks, attractions, hawker runs)
+- "cafe" — works seated in a public café (laptop / book / journal)
+- "with_friend" — requires another person present
+Most activities fit 2-3 contexts. "Rest on your bed" → ["home"]. "Listen to a podcast" → ["home","commuting","office"]. "Walk Park Connector" → ["outdoor"]. "Call a friend" → ["home","office","outdoor"]. "Order at Maxwell hawker" → ["outdoor"].
+
+OPTIONAL LINK:
+If the activity references a SPECIFIC well-known YouTube channel, app, or external resource that you know the real URL of with high confidence (e.g., "Pamela Reif", "Yoga With Adriene", "Chloe Ting", "Duolingo", "Forest app", "MasterClass", "Singapore Zoo official"), include the real URL in the optional "link" field. ONLY include URLs you are confident are real and stable. If unsure, OMIT the field — do NOT make up URLs.
+
+Examples where a link helps:
+- Title: "Do a 10-min Pamela Reif arm workout" → link: "https://www.youtube.com/@PamelaRf1"
+- Title: "Try the Forest app for a 25-min focus sprint" → link: "https://www.forestapp.cc"
+- Title: "Plan a half-day at Singapore Zoo" → link: "https://www.mandai.com/en/singapore-zoo.html"
+
 Return STRICT JSON: an array of objects with this exact schema (no extra fields, no markdown, no commentary):
 {
   "title": string (3-120 chars, in the voice above),
   "description": string (5-240 chars, one punchy line),
   "duration_min": integer 5-1440,
+  "link": string (optional, only if you know a real URL with high confidence),
   "tags": {
     "energy": array of one or more from ["low","medium","high"],
     "mood": array of one or more from ["calm","curious","restless","social"],
@@ -83,7 +103,8 @@ Return STRICT JSON: an array of objects with this exact schema (no extra fields,
     "budget_tier": one of ["free","under5","under10","under50"] (derive from cost_sgd: 0->"free", <=5->"under5", <=10->"under10", <=50->"under50"),
     "location": one of ["home","neighbourhood","island-wide","online"],
     "includes_transport": boolean (true if cost_sgd already covers MRT/bus fare),
-    "sg_local": boolean (true if the activity references a Singapore-specific place / phrase / cultural moment)
+    "sg_local": boolean (true if the activity references a Singapore-specific place / phrase / cultural moment),
+    "compatible_contexts": array of one or more from ["home","commuting","office","outdoor","cafe","with_friend"]
   }
 }
 

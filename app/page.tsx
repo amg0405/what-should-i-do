@@ -171,12 +171,12 @@ function PageInner() {
   // Live-update shown when filters or audience change
   useEffect(() => {
     if (!hydrated || !audience) return;
-    const sig = `${audience}|${filters.time}|${filters.energy}|${filters.mood}|${filters.budget ?? 'any'}|${filters.rainy ? 1 : 0}|${doomMode}`;
+    const sig = `${audience}|${filters.time}|${filters.energy}|${filters.mood}|${filters.budget ?? 'any'}|${filters.context ?? 'anywhere'}|${filters.rainy ? 1 : 0}|${doomMode}`;
     if (sig === lastSig.current) return;
     lastSig.current = sig;
     generate();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [hydrated, audience, filters.time, filters.energy, filters.mood, filters.budget, filters.rainy, doomMode]);
+  }, [hydrated, audience, filters.time, filters.energy, filters.mood, filters.budget, filters.context, filters.rainy, doomMode]);
 
   const generatedDate = useMemo(() => {
     if (!audience) return '';

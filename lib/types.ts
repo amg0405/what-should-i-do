@@ -35,6 +35,16 @@ export type BudgetTier = z.infer<typeof BudgetTierSchema>;
 export const LocationSchema = z.enum(['home', 'neighbourhood', 'island-wide', 'online']);
 export type Location = z.infer<typeof LocationSchema>;
 
+export const ContextSchema = z.enum([
+  'home',
+  'commuting',
+  'office',
+  'outdoor',
+  'cafe',
+  'with_friend',
+]);
+export type Context = z.infer<typeof ContextSchema>;
+
 export const ActivitySchema = z.object({
   id: z.string(),
   title: z.string().min(3).max(120),
@@ -63,7 +73,9 @@ export const ActivitySchema = z.object({
     location: LocationSchema.optional(),
     includes_transport: z.boolean().optional(),
     sg_local: z.boolean().optional(),
+    compatible_contexts: z.array(ContextSchema).optional(),
   }),
+  link: z.string().optional(),
 });
 export type Activity = z.infer<typeof ActivitySchema>;
 
@@ -81,6 +93,7 @@ export type Filters = {
   mood: Mood;
   budget?: BudgetTier | 'any';
   rainy?: boolean;
+  context?: Context | 'anywhere';
 };
 
 export type SampleOptions = {

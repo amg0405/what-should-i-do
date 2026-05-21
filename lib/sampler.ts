@@ -115,6 +115,15 @@ export function sample(pool: Pool, filters: Filters, opts: SampleOptions = {}): 
     candidates = candidates.filter((a) => a.tags.indoor);
   }
 
+  if (filters.context && filters.context !== 'anywhere') {
+    const ctx = filters.context;
+    candidates = candidates.filter((a) => {
+      // If the activity doesn't declare contexts, fall back to old behaviour (allow)
+      if (!a.tags.compatible_contexts) return true;
+      return a.tags.compatible_contexts.includes(ctx);
+    });
+  }
+
   if (candidates.length === 0) return [];
 
   const weighted: { activity: Activity; weight: number }[] = candidates.map((a) => {
