@@ -16,31 +16,59 @@ function idFor(title: string): string {
 }
 
 async function generateBatch(audience: Audience, theme: string, target: number): Promise<Activity[]> {
-  const prompt = `You are generating activities for a "what should I do when bored" website.
+  const prompt = `You are writing activity cards for a website that helps people figure out what to do when bored.
 
 Audience: ${AUDIENCE_DESCRIPTIONS[audience]}
 
 Theme for this batch: ${theme}
 
+VOICE (this is the most important part):
+Write like a slightly chaotic, warm friend texting you on a Saturday — NOT like a productivity coach, a guidance counsellor, or a LinkedIn influencer.
+
+GOOD examples of the voice:
+- "Make Frooti-flavoured ice pops in your freezer"
+- "Recreate Maggi with egg the way you ate it after school"
+- "Design a fake Pokemon gym leader card for yourself"
+- "Quiz yourself like it's exam season — but no consequences"
+- "Breathe like a Navy SEAL for 10 minutes. Sounds dumb. Works scary well."
+- "Steal 15 minutes of free wisdom from a stranger on stage"
+
+BAD examples (NEVER write like this):
+- "Message your parents' friends who hosted you once and thank them" (preachy, guilt-trippy)
+- "Watch a TED talk on the future of your industry" (LinkedIn-coach generic)
+- "Send a detailed voice note to a friend explaining why you've been distant" (therapy homework)
+- "Write a thank-you email to a professor" (school-suckup energy)
+- "Reflect on your goals for the next quarter" (boring corporate-speak)
+- "A calming breathing pattern designed to slow heart rate and ease anxiety" (Wikipedia stub)
+
+Title rules:
+- Strong verb + specific image. Concrete enough to act on with zero further thought.
+- 3-100 chars. No parenthetical instructions in the title (save those for description).
+- Names of specific things are better than generic categories: "Pokemon", "Beyblade", "Maggi", "Frooti", "cricket gully" beat "video game", "noodles", "drink", "sport".
+- Avoid: any title that sounds like a self-help listicle, a school assignment, or LinkedIn advice.
+
+Description rules:
+- 5-200 chars. One punchy line with personality. Optional wink, gentle dare, or vivid image.
+- DO NOT explain what an obvious thing is. ("Take a walk" doesn't need "Walking is a form of locomotion.")
+- DO NOT moralize. ("This will make you a better person.")
+- One emoji max, only if it adds something. Often zero is better.
+
 Generate exactly ${target} unique activities. Vary duration (5 to 1440 minutes), energy (some low, some high), mood-fit, indoor/outdoor, cost (mostly free, very few medium).
 
 Return STRICT JSON: an array of objects with this schema (no extra fields, no markdown, no commentary):
 {
-  "title": string (3-120 chars, concrete and actionable — "Watch one episode of Beyblade Metal Fusion" not "Watch TV"),
-  "description": string (5-240 chars, one warm sentence),
+  "title": string (3-120 chars, concrete and actionable, in the voice above),
+  "description": string (5-240 chars, one punchy line),
   "duration_min": integer 5-1440,
   "tags": {
     "energy": array of one or more from ["low","medium","high"],
     "mood": array of one or more from ["calm","curious","restless","social"],
     "timeOfDay": array of one or more from ["morning","afternoon","evening","late_night"],
-    "category": one of ["restful","productive","creative","social","physical","learning","nostalgic"],
+    "category": SINGLE STRING (not array) — one of ["restful","productive","creative","social","physical","learning","nostalgic"],
     "indoor": boolean,
     "cost": one of ["free","low","medium"]
   }
 }
-
-Avoid clichés like "learn to code" unless made specific ("do one LeetCode easy on arrays").
-Each title must be concrete enough to act on without further thought.
 
 Return ONLY the JSON array. No code fence, no preamble.`;
 
