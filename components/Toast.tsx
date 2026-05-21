@@ -23,11 +23,11 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   return (
     <ToastCtx.Provider value={push}>
       {children}
-      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 sm:bottom-auto sm:top-4 sm:left-auto sm:right-4 sm:translate-x-0 z-[60] flex flex-col gap-2 pointer-events-none">
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] flex flex-col gap-2 pointer-events-none w-[calc(100%-2rem)] max-w-md">
         {toasts.map((t) => (
           <div
             key={t.id}
-            className="animate-pop-in bg-ink text-bg-2 px-4 py-2.5 rounded-full shadow-lg text-sm font-medium"
+            className="animate-pop-in bg-ink text-bg-2 px-4 py-2.5 rounded-2xl shadow-lg text-sm font-medium text-center"
           >
             {t.text}
           </div>

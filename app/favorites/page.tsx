@@ -35,13 +35,22 @@ function FavoritesInner() {
   return (
     <main className="min-h-screen">
       <div className="max-w-5xl mx-auto px-4 py-6 sm:py-10">
-        <header className="flex items-center justify-between mb-6 gap-3 flex-wrap">
-          <a href="/" className="display text-2xl sm:text-3xl font-semibold tracking-tight text-ink">
-            ← Back
+        <header className="mb-6">
+          <a
+            href="/"
+            className="inline-block text-sm text-ink-soft hover:text-ink mb-3 underline-offset-4 hover:underline"
+          >
+            ← Back to ideas
           </a>
-          <h1 className="display text-xl sm:text-2xl font-semibold text-ink">
-            ♥ Saved · {items.length}
+          <h1 className="display text-3xl sm:text-4xl font-semibold tracking-tight text-ink">
+            ♥ Your saved <span className="text-primary">·</span>{' '}
+            <span className="text-primary">{items.length}</span>
           </h1>
+          {items.length > 0 && (
+            <p className="text-ink-soft text-sm mt-1">
+              Stuff you want to come back to. Tap ♥ again to remove.
+            </p>
+          )}
         </header>
 
         {items.length === 0 ? (

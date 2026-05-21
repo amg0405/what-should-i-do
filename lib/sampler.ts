@@ -35,6 +35,33 @@ const PHONE_WORDS = [
   'post one',
   'story ',
   'discord',
+  'rewatch',
+  'emulator',
+  'online',
+  'spotify',
+  'netflix',
+  'browse',
+  'stream',
+  'watch one',
+  'watch a',
+  'watch the',
+  'binge',
+  'movie',
+  'series',
+  'episode',
+  'podcast',
+  ' tv ',
+  'webseries',
+  'website',
+  ' web ',
+  ' web,',
+  ' web.',
+  ' wifi',
+  'free online',
+  'google',
+  'kahoot',
+  'leetcode',
+  'duolingo',
 ];
 
 function isPhoneActivity(a: Activity): boolean {
@@ -70,6 +97,22 @@ export function sample(pool: Pool, filters: Filters, opts: SampleOptions = {}): 
     return { activity: a, weight: w };
   });
 
+  return diversifiedSample(weighted, count, 2);
+}
+
+// Variant: filter to a single category (used by "Show me more like this")
+export function sampleByCategory(
+  pool: Pool,
+  category: Category,
+  count: number,
+  excludeIds: string[] = [],
+): Activity[] {
+  const exclude = new Set(excludeIds);
+  const candidates = pool.activities.filter(
+    (a) => a.tags.category === category && !exclude.has(a.id),
+  );
+  if (candidates.length === 0) return [];
+  const weighted = candidates.map((a) => ({ activity: a, weight: 1 }));
   return weightedSampleWithoutReplacement(weighted, count);
 }
 
@@ -90,6 +133,39 @@ function weightedSampleWithoutReplacement<T>(
     if (idx >= pool.length) idx = pool.length - 1;
     out.push(pool[idx].activity);
     pool.splice(idx, 1);
+  }
+  return out;
+}
+
+function diversifiedSample(
+  items: { activity: Activity; weight: number }[],
+  count: number,
+  maxPerCategory: number,
+): Activity[] {
+  const remaining = [...items];
+  const out: Activity[] = [];
+  const catCount: Partial<Record<Category, number>> = {};
+
+  while (out.length < count && remaining.length > 0) {
+    const allowed = remaining.filter(
+      (it) => (catCount[it.activity.tags.category] ?? 0) < maxPerCategory,
+    );
+    const usePool = allowed.length > 0 ? allowed : remaining;
+
+    const total = usePool.reduce((s, it) => s + it.weight, 0);
+    let r = Math.random() * total;
+    let idx = 0;
+    for (; idx < usePool.length; idx++) {
+      r -= usePool[idx].weight;
+      if (r <= 0) break;
+    }
+    if (idx >= usePool.length) idx = usePool.length - 1;
+    const chosen = usePool[idx];
+    out.push(chosen.activity);
+    catCount[chosen.activity.tags.category] = (catCount[chosen.activity.tags.category] ?? 0) + 1;
+
+    const mainIdx = remaining.indexOf(chosen);
+    if (mainIdx >= 0) remaining.splice(mainIdx, 1);
   }
   return out;
 }

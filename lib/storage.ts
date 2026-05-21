@@ -65,7 +65,12 @@ export function useHistory() {
     [history],
   );
 
-  return { history, record, recentShownIds };
+  const doneIds = useCallback(
+    () => Array.from(new Set(history.filter((h) => h.action === 'did_it').map((h) => h.id))),
+    [history],
+  );
+
+  return { history, record, recentShownIds, doneIds };
 }
 
 export function usePersistedAudience(): [Audience | null, (a: Audience) => void] {

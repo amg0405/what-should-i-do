@@ -73,7 +73,7 @@ function RotatingSubtitle() {
   return (
     <span
       key={i}
-      className="block text-ink-soft text-base sm:text-lg font-normal animate-slide-up"
+      className="block text-ink-soft text-base sm:text-lg font-normal animate-fade-swap"
       dangerouslySetInnerHTML={{ __html: SUBTITLES[i] }}
     />
   );
@@ -84,7 +84,7 @@ function PageInner() {
   const [audience, setAudience] = usePersistedAudience();
   const [filters, setFilters] = usePersistedFilters(DEFAULT_FILTERS);
   const { favorites, toggle: toggleFavorite } = useFavorites();
-  const { record, recentShownIds, history } = useHistory();
+  const { record, recentShownIds, doneIds, history } = useHistory();
   const [shown, setShown] = useState<Activity[]>([]);
   const [doomMode, setDoomMode] = useState(false);
   const [hydrated, setHydrated] = useState(false);
@@ -116,13 +116,13 @@ function PageInner() {
           count: 6,
           antiDoomscroll: opts.antiDoomscroll ?? doomMode,
           currentTimeOfDay: getTimeOfDay(),
-          excludeIds: recentShownIds(20),
+          excludeIds: [...recentShownIds(20), ...doneIds()],
         },
       );
       setShown(next);
       next.forEach((a) => record(a.id, 'shown'));
     },
-    [audience, filters, doomMode, recentShownIds, record],
+    [audience, filters, doomMode, recentShownIds, doneIds, record],
   );
 
   // Live-update shown when filters or audience change
@@ -183,27 +183,31 @@ function PageInner() {
 
         <section className="bg-bg-2 border border-muted rounded-3xl p-5 sm:p-6 mb-6 shadow-sm">
           <FilterChips filters={filters} onChange={setFilters} />
-          <div className="flex flex-wrap items-center gap-3 mt-5 pt-5 border-t border-muted">
-            <button
-              onClick={() => {
-                setDoomMode(false);
-                generate(undefined, { antiDoomscroll: false });
-              }}
-              className="px-5 py-2.5 bg-primary text-white rounded-full font-medium hover:bg-primary-hover shadow-sm hover:shadow"
-            >
-              🎲 Surprise me
-            </button>
-            <AntiDoomscrollButton
-              onClick={() => {
-                setDoomMode(true);
-                generate(undefined, { antiDoomscroll: true });
-              }}
-            />
-            <div className="ml-auto flex items-center gap-2">
-              {doneCount > 0 && (
+          <div className="mt-5 pt-5 border-t border-muted space-y-3">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+              <button
+                onClick={() => {
+                  setDoomMode(false);
+                  generate(undefined, { antiDoomscroll: false });
+                }}
+                className="w-full sm:w-auto px-5 py-2.5 bg-primary text-white rounded-full font-medium hover:bg-primary-hover shadow-sm hover:shadow"
+              >
+                🎲 Surprise me
+              </button>
+              <AntiDoomscrollButton
+                onClick={() => {
+                  setDoomMode(true);
+                  generate(undefined, { antiDoomscroll: true });
+                }}
+              />
+            </div>
+            <div className="flex items-center justify-between gap-3">
+              {doneCount > 0 ? (
                 <span className="text-xs text-success font-semibold">
                   {doneCount} done this week 🔥
                 </span>
+              ) : (
+                <span />
               )}
               <ShareButton filters={filters} />
             </div>
