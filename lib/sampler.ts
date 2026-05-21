@@ -1,4 +1,23 @@
-import type { Activity, Pool, Filters, SampleOptions, TimeBucket, Category } from './types';
+import type { Activity, Pool, Filters, SampleOptions, TimeBucket, Category, BudgetTier } from './types';
+
+const BUDGET_CAP_SGD: Record<Exclude<BudgetTier, 'free'>, number> = {
+  under5: 5,
+  under10: 10,
+  under50: 50,
+};
+
+function matchesBudget(a: Activity, tier: BudgetTier | 'any'): boolean {
+  if (tier === 'any') return true;
+  if (tier === 'free') {
+    return (a.tags.cost_sgd ?? 0) === 0 || a.tags.cost === 'free';
+  }
+  const cap = BUDGET_CAP_SGD[tier];
+  if (typeof a.tags.cost_sgd === 'number') return a.tags.cost_sgd <= cap;
+  // legacy fallback when cost_sgd missing
+  if (tier === 'under5') return a.tags.cost === 'free';
+  if (tier === 'under10') return a.tags.cost === 'free' || a.tags.cost === 'low';
+  return true; // under50 includes any non-medium
+}
 
 const TIME_BUCKETS: Record<TimeBucket, (m: number) => boolean> = {
   '15min': (m) => m <= 20,
@@ -86,6 +105,14 @@ export function sample(pool: Pool, filters: Filters, opts: SampleOptions = {}): 
     candidates = candidates.filter(
       (a) => ANTI_DOOMSCROLL_CATS.includes(a.tags.category) && !isPhoneActivity(a),
     );
+  }
+
+  if (filters.budget && filters.budget !== 'any') {
+    candidates = candidates.filter((a) => matchesBudget(a, filters.budget!));
+  }
+
+  if (filters.rainy) {
+    candidates = candidates.filter((a) => a.tags.indoor);
   }
 
   if (candidates.length === 0) return [];

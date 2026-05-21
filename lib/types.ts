@@ -29,6 +29,12 @@ export type Category = z.infer<typeof CategorySchema>;
 export const CostSchema = z.enum(['free', 'low', 'medium']);
 export type Cost = z.infer<typeof CostSchema>;
 
+export const BudgetTierSchema = z.enum(['free', 'under5', 'under10', 'under50']);
+export type BudgetTier = z.infer<typeof BudgetTierSchema>;
+
+export const LocationSchema = z.enum(['home', 'neighbourhood', 'island-wide', 'online']);
+export type Location = z.infer<typeof LocationSchema>;
+
 export const ActivitySchema = z.object({
   id: z.string(),
   title: z.string().min(3).max(120),
@@ -44,6 +50,11 @@ export const ActivitySchema = z.object({
     ),
     indoor: z.boolean(),
     cost: CostSchema,
+    cost_sgd: z.number().min(0).max(500).optional(),
+    budget_tier: BudgetTierSchema.optional(),
+    location: LocationSchema.optional(),
+    includes_transport: z.boolean().optional(),
+    sg_local: z.boolean().optional(),
   }),
 });
 export type Activity = z.infer<typeof ActivitySchema>;
@@ -60,6 +71,8 @@ export type Filters = {
   time: TimeBucket;
   energy: Energy;
   mood: Mood;
+  budget?: BudgetTier | 'any';
+  rainy?: boolean;
 };
 
 export type SampleOptions = {

@@ -1,5 +1,5 @@
 'use client';
-import type { Filters, TimeBucket, Energy, Mood } from '@/lib/types';
+import type { Filters, TimeBucket, Energy, Mood, BudgetTier } from '@/lib/types';
 
 const TIME_LABELS: Record<TimeBucket, string> = {
   '15min': '15 min',
@@ -13,6 +13,13 @@ const MOOD_LABELS: Record<Mood, string> = {
   curious: '🤔 Curious',
   restless: '🫨 Restless',
   social: '🫶 Social',
+};
+const BUDGET_LABELS: Record<BudgetTier | 'any', string> = {
+  any: 'Any',
+  free: 'Free',
+  under5: '≤ S$5',
+  under10: '≤ S$10',
+  under50: '≤ S$50',
 };
 
 type Props = {
@@ -71,6 +78,12 @@ export default function FilterChips({ filters, onChange }: Props) {
         value={filters.mood}
         options={MOOD_LABELS}
         onChange={(v) => onChange({ ...filters, mood: v })}
+      />
+      <ChipRow
+        label="Budget"
+        value={filters.budget ?? 'any'}
+        options={BUDGET_LABELS}
+        onChange={(v) => onChange({ ...filters, budget: v })}
       />
     </div>
   );

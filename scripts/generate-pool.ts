@@ -5,8 +5,8 @@ import { createHash } from 'crypto';
 import { ActivitySchema, AudienceSchema, type Audience, type Activity, type Pool } from '../lib/types';
 import { AUDIENCE_DESCRIPTIONS, SEED_THEMES } from './seedThemes';
 
-const PER_THEME = 50;
-const MIN_TOTAL = 250;
+const PER_THEME = 80;
+const MIN_TOTAL = 400;
 const MODEL = 'claude-haiku-4-5';
 
 const client = new Anthropic();
@@ -16,57 +16,65 @@ function idFor(title: string): string {
 }
 
 async function generateBatch(audience: Audience, theme: string, target: number): Promise<Activity[]> {
-  const prompt = `You are writing activity cards for a website that helps people figure out what to do when bored.
+  const prompt = `You are writing activity cards for a Singapore-based website that helps people figure out what to do when bored. The product is professional, fun, globally readable, but specifically usable in Singapore.
 
 Audience: ${AUDIENCE_DESCRIPTIONS[audience]}
 
 Theme for this batch: ${theme}
 
-VOICE (this is the most important part):
-Write like a slightly chaotic, warm friend texting you on a Saturday — NOT like a productivity coach, a guidance counsellor, or a LinkedIn influencer.
+VOICE:
+Slightly chaotic, warm friend texting you on a Saturday. Professional polish — globally readable for an international audience but specifically usable for someone living in Singapore. NOT a productivity coach, NOT a guidance counsellor, NOT a LinkedIn influencer. Avoid slang-heavy "bro" energy.
 
-GOOD examples of the voice:
-- "Make Frooti-flavoured ice pops in your freezer"
-- "Recreate Maggi with egg the way you ate it after school"
+GOOD voice:
+- "Bumboat to Pulau Ubin and rent a creaky bike for an hour"
+- "Order the most random hawker dish at Maxwell, no menu peeking"
+- "Kopi-o + kaya toast at the nearest coffeeshop. No phone."
+- "Walk one Park Connector segment you've never tried"
+- "Sunset at Marina Barrage rooftop. Bring a friend if you have one."
 - "Design a fake Pokemon gym leader card for yourself"
-- "Quiz yourself like it's exam season — but no consequences"
-- "Breathe like a Navy SEAL for 10 minutes. Sounds dumb. Works scary well."
-- "Steal 15 minutes of free wisdom from a stranger on stage"
+- "Breathe 4-7-8 for 10 min. Sounds dumb. Works scary well."
 
-BAD examples (NEVER write like this):
-- "Message your parents' friends who hosted you once and thank them" (preachy, guilt-trippy)
-- "Watch a TED talk on the future of your industry" (LinkedIn-coach generic)
-- "Send a detailed voice note to a friend explaining why you've been distant" (therapy homework)
-- "Write a thank-you email to a professor" (school-suckup energy)
-- "Reflect on your goals for the next quarter" (boring corporate-speak)
-- "A calming breathing pattern designed to slow heart rate and ease anxiety" (Wikipedia stub)
+BAD voice (NEVER):
+- "Reflect on your quarterly goals" (corporate)
+- "Write a thank-you email to a professor" (school-suckup)
+- "Watch a TED talk on the future of your industry" (LinkedIn-coach)
+- "Message your parents' friends and thank them" (guilt-trippy)
+- "A calming breathing pattern designed to slow heart rate" (Wikipedia stub)
+
+LOCATION + COST:
+Most activities should be Singapore-specific or work seamlessly in Singapore. Reference real places where it fits: hawker centres (Maxwell, Old Airport Rd, Tiong Bahru, Ghim Moh, Adam Road, Tampines Round Market), parks (East Coast Park, Bishan-AMK, MacRitchie, Botanic Gardens, Marina Barrage, Pulau Ubin), neighbourhoods (Tiong Bahru, Joo Chiat, Holland V, Tanjong Pagar, Bras Basah, Kampong Glam), cultural (NGS, NMS, ArtScience, The Projector, Esplanade outdoor stage, NLB branches), transport (MRT lines, Park Connectors, SG Bike, EZ-Link, bumboat to Ubin), food (kopi, kaya toast, chendol, ice kachang, mee goreng, chicken rice, kway teow).
+
+COST in S$ INCLUDING return MRT/bus fare (~S$2-4 per round trip). Be honest about cost_sgd.
 
 Title rules:
 - Strong verb + specific image. Concrete enough to act on with zero further thought.
-- 3-100 chars. No parenthetical instructions in the title (save those for description).
-- Names of specific things are better than generic categories: "Pokemon", "Beyblade", "Maggi", "Frooti", "cricket gully" beat "video game", "noodles", "drink", "sport".
-- Avoid: any title that sounds like a self-help listicle, a school assignment, or LinkedIn advice.
+- 3-100 chars. No parenthetical instructions in the title.
+- Specific names beat generic ones: "Maxwell hawker", "Park Connector", "Bras Basah library", "Marina Barrage rooftop" beat "hawker", "park", "library", "rooftop".
+- Mix Singapore-flavored entries with culturally global ones (e.g., journal, sketch, read, breathe, call a friend) so the pool stays varied. Aim ~60% SG-specific, ~40% globally applicable.
 
 Description rules:
-- 5-200 chars. One punchy line with personality. Optional wink, gentle dare, or vivid image.
-- DO NOT explain what an obvious thing is. ("Take a walk" doesn't need "Walking is a form of locomotion.")
-- DO NOT moralize. ("This will make you a better person.")
-- One emoji max, only if it adds something. Often zero is better.
+- 5-200 chars. One punchy line with personality, optional gentle dare.
+- Don't moralize. Don't explain the obvious. One emoji max if it earns its place.
 
-Generate exactly ${target} unique activities. Vary duration (5 to 1440 minutes), energy (some low, some high), mood-fit, indoor/outdoor, cost (mostly free, very few medium).
+Generate exactly ${target} unique activities. Vary duration (5 to 1440 minutes), energy, mood, indoor/outdoor, and cost across the full range from free to S$50.
 
-Return STRICT JSON: an array of objects with this schema (no extra fields, no markdown, no commentary):
+Return STRICT JSON: an array of objects with this exact schema (no extra fields, no markdown, no commentary):
 {
-  "title": string (3-120 chars, concrete and actionable, in the voice above),
+  "title": string (3-120 chars, in the voice above),
   "description": string (5-240 chars, one punchy line),
   "duration_min": integer 5-1440,
   "tags": {
     "energy": array of one or more from ["low","medium","high"],
     "mood": array of one or more from ["calm","curious","restless","social"],
     "timeOfDay": array of one or more from ["morning","afternoon","evening","late_night"],
-    "category": SINGLE STRING (not array) — one of ["restful","productive","creative","social","physical","learning","nostalgic"],
+    "category": SINGLE STRING (not array) from ["restful","productive","creative","social","physical","learning","nostalgic"],
     "indoor": boolean,
-    "cost": one of ["free","low","medium"]
+    "cost": one of ["free","low","medium"],
+    "cost_sgd": integer (0 = free; for anything paid, include all-in cost incl. return MRT/bus fare ~S$2-4),
+    "budget_tier": one of ["free","under5","under10","under50"] (derive from cost_sgd: 0->"free", <=5->"under5", <=10->"under10", <=50->"under50"),
+    "location": one of ["home","neighbourhood","island-wide","online"],
+    "includes_transport": boolean (true if cost_sgd already covers MRT/bus fare),
+    "sg_local": boolean (true if the activity references a Singapore-specific place / phrase / cultural moment)
   }
 }
 

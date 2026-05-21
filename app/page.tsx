@@ -16,7 +16,7 @@ import AudienceSwitcher from '@/components/AudienceSwitcher';
 import FilterChips from '@/components/FilterChips';
 import MenuGrid from '@/components/MenuGrid';
 import AntiDoomscrollButton from '@/components/AntiDoomscrollButton';
-import ShareButton from '@/components/ShareButton';
+import ShareMenu from '@/components/ShareMenu';
 import { ToastProvider } from '@/components/Toast';
 
 const DEFAULT_FILTERS: Filters = {
@@ -24,7 +24,36 @@ const DEFAULT_FILTERS: Filters = {
   time: '1hr',
   energy: 'medium',
   mood: 'curious',
+  budget: 'any',
+  rainy: false,
 };
+
+function greetingFor(hour: number): string {
+  if (hour < 5) return 'Late night?';
+  if (hour < 12) return 'Good morning';
+  if (hour < 17) return 'Good afternoon';
+  if (hour < 22) return 'Good evening';
+  return 'Late night?';
+}
+
+function computeStreak(history: { ts: number; action: string }[]): number {
+  const days = new Set(
+    history
+      .filter((h) => h.action === 'did_it')
+      .map((h) => new Date(h.ts).toDateString()),
+  );
+  if (days.size === 0) return 0;
+  let streak = 0;
+  const today = new Date();
+  for (let i = 0; i < 365; i++) {
+    const d = new Date(today);
+    d.setDate(today.getDate() - i);
+    if (days.has(d.toDateString())) streak++;
+    else if (i === 0) continue;
+    else break;
+  }
+  return streak;
+}
 
 const SUBTITLES = [
   '…when I&apos;m bored?',
@@ -95,6 +124,9 @@ function PageInner() {
     return history.filter((h) => h.action === 'did_it' && h.ts > oneWeekAgo).length;
   }, [history]);
 
+  const streak = useMemo(() => computeStreak(history), [history]);
+  const greeting = useMemo(() => greetingFor(new Date().getHours()), []);
+
   useEffect(() => {
     const fromUrl = decodeFilters(searchParams);
     if (fromUrl) {
@@ -139,12 +171,12 @@ function PageInner() {
   // Live-update shown when filters or audience change
   useEffect(() => {
     if (!hydrated || !audience) return;
-    const sig = `${audience}|${filters.time}|${filters.energy}|${filters.mood}|${doomMode}`;
+    const sig = `${audience}|${filters.time}|${filters.energy}|${filters.mood}|${filters.budget ?? 'any'}|${filters.rainy ? 1 : 0}|${doomMode}`;
     if (sig === lastSig.current) return;
     lastSig.current = sig;
     generate();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [hydrated, audience, filters.time, filters.energy, filters.mood, doomMode]);
+  }, [hydrated, audience, filters.time, filters.energy, filters.mood, filters.budget, filters.rainy, doomMode]);
 
   const generatedDate = useMemo(() => {
     if (!audience) return '';
@@ -170,7 +202,26 @@ function PageInner() {
             <a href="/" className="display text-2xl sm:text-3xl font-semibold tracking-tight text-ink">
               WhatShouldIDo<span className="text-primary">?</span>
             </a>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+              {streak > 0 && (
+                <span
+                  className="px-3 py-1.5 rounded-full text-sm bg-accent/40 text-ink font-semibold"
+                  title={`${streak}-day streak`}
+                >
+                  🔥 {streak}
+                </span>
+              )}
+              <button
+                onClick={() => setFilters({ ...filters, rainy: !filters.rainy })}
+                title={filters.rainy ? 'Show outdoor again' : 'Indoor only (rainy day)'}
+                className={`px-3 py-1.5 rounded-full text-sm transition border ${
+                  filters.rainy
+                    ? 'bg-ink text-bg-2 border-ink'
+                    : 'bg-card border-muted hover:border-ink-soft text-ink'
+                }`}
+              >
+                ☔ {filters.rainy ? 'Indoor only' : 'Rainy?'}
+              </button>
               <AudienceSwitcher
                 value={audience}
                 onChange={(a) => {
@@ -180,15 +231,21 @@ function PageInner() {
               />
               <a
                 href="/favorites"
-                className="px-3 py-1.5 rounded-full text-sm text-ink hover:bg-card transition"
+                className="px-3 py-1.5 rounded-full text-sm text-ink bg-card border border-muted hover:border-ink-soft transition"
                 title="Favorites"
               >
-                ♥ {favorites.length || ''}
+                ♥ {favorites.length || 0}
               </a>
             </div>
           </div>
-          <div className="mt-2">
-            <RotatingSubtitle />
+          <div className="mt-3">
+            <p className="display text-2xl sm:text-3xl font-semibold text-ink leading-tight">
+              {greeting} — what should I do
+              <span className="text-primary">?</span>
+            </p>
+            <div className="mt-1">
+              <RotatingSubtitle />
+            </div>
           </div>
         </header>
 
@@ -220,7 +277,7 @@ function PageInner() {
               ) : (
                 <span />
               )}
-              <ShareButton filters={filters} />
+              <ShareMenu filters={filters} />
             </div>
           </div>
           {doomMode && (
