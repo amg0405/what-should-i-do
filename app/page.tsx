@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useMemo, useState, Suspense } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { getPool } from '@/lib/pool';
 import { sample } from '@/lib/sampler';
@@ -17,6 +17,7 @@ import FilterChips from '@/components/FilterChips';
 import MenuGrid from '@/components/MenuGrid';
 import AntiDoomscrollButton from '@/components/AntiDoomscrollButton';
 import ShareButton from '@/components/ShareButton';
+import { ToastProvider } from '@/components/Toast';
 
 const DEFAULT_FILTERS: Filters = {
   audience: 'teen',
@@ -25,30 +26,56 @@ const DEFAULT_FILTERS: Filters = {
   mood: 'curious',
 };
 
+const SUBTITLES = [
+  '…when I&apos;m bored?',
+  '…instead of doomscrolling?',
+  '…with this random Tuesday?',
+  '…that&apos;s actually fun?',
+  '…that future-me will thank me for?',
+];
+
 function FirstVisitModal({ onChoose }: { onChoose: (a: Audience) => void }) {
   return (
-    <div className="fixed inset-0 bg-black/40 flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-2xl p-6 max-w-sm w-full shadow-xl">
-        <h2 className="text-lg font-semibold mb-2">Who are you roughly?</h2>
-        <p className="text-sm text-gray-600 mb-4">
-          We&apos;ll tune suggestions to your life situation. You can switch later.
+    <div className="fixed inset-0 bg-ink/30 backdrop-blur-sm flex items-center justify-center p-4 z-50 animate-slide-up">
+      <div className="bg-bg-2 rounded-3xl p-7 max-w-sm w-full shadow-xl border border-muted animate-pop-in">
+        <div className="text-4xl mb-2">👋</div>
+        <h2 className="display text-2xl font-semibold mb-2 text-ink">What&apos;s your vibe?</h2>
+        <p className="text-sm text-ink-soft mb-5">
+          Tells us how to flavour the ideas. You can switch any time.
         </p>
         <div className="flex flex-col gap-2">
           <button
             onClick={() => onChoose('teen')}
-            className="px-4 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-700"
+            className="px-4 py-3.5 bg-ink text-bg-2 rounded-2xl hover:bg-ink/85 font-medium text-left flex items-center gap-3"
           >
-            I&apos;m 22 or younger (school/college)
+            <span className="text-2xl">🧑‍🎓</span>
+            <span>Still in school / college</span>
           </button>
           <button
             onClick={() => onChoose('adult')}
-            className="px-4 py-3 bg-white border border-gray-300 rounded-lg hover:border-gray-500"
+            className="px-4 py-3.5 bg-card border-2 border-muted rounded-2xl hover:border-ink font-medium text-left flex items-center gap-3"
           >
-            I&apos;m older than 22 (working)
+            <span className="text-2xl">💼</span>
+            <span>Working life</span>
           </button>
         </div>
       </div>
     </div>
+  );
+}
+
+function RotatingSubtitle() {
+  const [i, setI] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setI((n) => (n + 1) % SUBTITLES.length), 3200);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <span
+      key={i}
+      className="block text-ink-soft text-base sm:text-lg font-normal animate-slide-up"
+      dangerouslySetInnerHTML={{ __html: SUBTITLES[i] }}
+    />
   );
 }
 
@@ -57,9 +84,16 @@ function PageInner() {
   const [audience, setAudience] = usePersistedAudience();
   const [filters, setFilters] = usePersistedFilters(DEFAULT_FILTERS);
   const { favorites, toggle: toggleFavorite } = useFavorites();
-  const { record, recentShownIds } = useHistory();
+  const { record, recentShownIds, history } = useHistory();
   const [shown, setShown] = useState<Activity[]>([]);
+  const [doomMode, setDoomMode] = useState(false);
   const [hydrated, setHydrated] = useState(false);
+  const lastSig = useRef<string>('');
+
+  const doneCount = useMemo(() => {
+    const oneWeekAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+    return history.filter((h) => h.action === 'did_it' && h.ts > oneWeekAgo).length;
+  }, [history]);
 
   useEffect(() => {
     const fromUrl = decodeFilters(searchParams);
@@ -71,27 +105,35 @@ function PageInner() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const generate = (overrideAudience?: Audience, opts: { antiDoomscroll?: boolean } = {}) => {
-    const aud = overrideAudience ?? audience ?? 'teen';
-    const pool = getPool(aud);
-    const next = sample(
-      pool,
-      { ...filters, audience: aud },
-      {
-        count: 6,
-        antiDoomscroll: opts.antiDoomscroll,
-        currentTimeOfDay: getTimeOfDay(),
-        excludeIds: recentShownIds(20),
-      },
-    );
-    setShown(next);
-    next.forEach((a) => record(a.id, 'shown'));
-  };
+  const generate = useCallback(
+    (overrideAudience?: Audience, opts: { antiDoomscroll?: boolean } = {}) => {
+      const aud = overrideAudience ?? audience ?? 'teen';
+      const pool = getPool(aud);
+      const next = sample(
+        pool,
+        { ...filters, audience: aud },
+        {
+          count: 6,
+          antiDoomscroll: opts.antiDoomscroll ?? doomMode,
+          currentTimeOfDay: getTimeOfDay(),
+          excludeIds: recentShownIds(20),
+        },
+      );
+      setShown(next);
+      next.forEach((a) => record(a.id, 'shown'));
+    },
+    [audience, filters, doomMode, recentShownIds, record],
+  );
 
+  // Live-update shown when filters or audience change
   useEffect(() => {
-    if (hydrated && audience && shown.length === 0) generate();
+    if (!hydrated || !audience) return;
+    const sig = `${audience}|${filters.time}|${filters.energy}|${filters.mood}|${doomMode}`;
+    if (sig === lastSig.current) return;
+    lastSig.current = sig;
+    generate();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [hydrated, audience]);
+  }, [hydrated, audience, filters.time, filters.energy, filters.mood, doomMode]);
 
   const generatedDate = useMemo(() => {
     if (!audience) return '';
@@ -110,39 +152,70 @@ function PageInner() {
     );
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="max-w-5xl mx-auto px-4 py-8 sm:py-12">
-        <header className="flex items-center justify-between mb-8">
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">What should I do?</h1>
-          <div className="flex items-center gap-3">
-            <AudienceSwitcher
-              value={audience}
-              onChange={(a) => {
-                setAudience(a);
-                setFilters({ ...filters, audience: a });
-                setShown([]);
-              }}
-            />
-            <a href="/favorites" className="text-sm text-gray-600 hover:text-gray-900 underline">
-              Favorites
+    <main className="min-h-screen">
+      <div className="max-w-5xl mx-auto px-4 py-6 sm:py-10">
+        <header className="mb-6 sm:mb-8">
+          <div className="flex items-center justify-between gap-3 flex-wrap">
+            <a href="/" className="display text-2xl sm:text-3xl font-semibold tracking-tight text-ink">
+              WhatShouldIDo<span className="text-primary">?</span>
             </a>
+            <div className="flex items-center gap-2">
+              <AudienceSwitcher
+                value={audience}
+                onChange={(a) => {
+                  setAudience(a);
+                  setFilters({ ...filters, audience: a });
+                }}
+              />
+              <a
+                href="/favorites"
+                className="px-3 py-1.5 rounded-full text-sm text-ink hover:bg-card transition"
+                title="Favorites"
+              >
+                ♥ {favorites.length || ''}
+              </a>
+            </div>
+          </div>
+          <div className="mt-2">
+            <RotatingSubtitle />
           </div>
         </header>
 
-        <section className="bg-white border border-gray-200 rounded-2xl p-5 mb-6">
+        <section className="bg-bg-2 border border-muted rounded-3xl p-5 sm:p-6 mb-6 shadow-sm">
           <FilterChips filters={filters} onChange={setFilters} />
-          <div className="flex flex-wrap items-center gap-3 mt-5">
+          <div className="flex flex-wrap items-center gap-3 mt-5 pt-5 border-t border-muted">
             <button
-              onClick={() => generate()}
-              className="px-5 py-2.5 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-700"
+              onClick={() => {
+                setDoomMode(false);
+                generate(undefined, { antiDoomscroll: false });
+              }}
+              className="px-5 py-2.5 bg-primary text-white rounded-full font-medium hover:bg-primary-hover shadow-sm hover:shadow"
             >
-              Show me ideas
+              🎲 Surprise me
             </button>
-            <AntiDoomscrollButton onClick={() => generate(undefined, { antiDoomscroll: true })} />
-            <div className="ml-auto">
+            <AntiDoomscrollButton
+              onClick={() => {
+                setDoomMode(true);
+                generate(undefined, { antiDoomscroll: true });
+              }}
+            />
+            <div className="ml-auto flex items-center gap-2">
+              {doneCount > 0 && (
+                <span className="text-xs text-success font-semibold">
+                  {doneCount} done this week 🔥
+                </span>
+              )}
               <ShareButton filters={filters} />
             </div>
           </div>
+          {doomMode && (
+            <div className="mt-3 text-xs text-ink-soft">
+              Anti-doomscroll mode on — showing offline, no-phone activities.{' '}
+              <button onClick={() => setDoomMode(false)} className="underline">
+                turn off
+              </button>
+            </div>
+          )}
         </section>
 
         <MenuGrid
@@ -153,18 +226,18 @@ function PageInner() {
         />
 
         {shown.length > 0 && (
-          <div className="flex justify-center mt-6">
+          <div className="flex justify-center mt-8">
             <button
               onClick={() => generate()}
-              className="px-4 py-2 text-sm text-gray-600 hover:text-gray-900 underline"
+              className="px-5 py-2.5 rounded-full text-sm bg-card border-2 border-muted hover:border-ink font-medium text-ink"
             >
-              Refresh ↻
+              ↻ Show me 6 different ones
             </button>
           </div>
         )}
 
-        <footer className="text-center text-xs text-gray-400 mt-12">
-          Pool last updated: {generatedDate}
+        <footer className="text-center text-xs text-ink-soft mt-12 pb-6">
+          Fresh ideas every Monday · pool refreshed {generatedDate} ✨
         </footer>
       </div>
     </main>
@@ -173,8 +246,10 @@ function PageInner() {
 
 export default function Page() {
   return (
-    <Suspense fallback={null}>
-      <PageInner />
-    </Suspense>
+    <ToastProvider>
+      <Suspense fallback={null}>
+        <PageInner />
+      </Suspense>
+    </ToastProvider>
   );
 }

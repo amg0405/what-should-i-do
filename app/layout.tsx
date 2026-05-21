@@ -1,21 +1,23 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+  axes: ["SOFT", "WONK", "opsz"],
 });
 
 export const metadata: Metadata = {
-  title: "What should I do?",
-  description: "Ideas for what to do when bored — tuned to your time, energy, and mood.",
+  title: "WhatShouldIDo · ideas for when you're bored",
+  description: "A chaotic-friend-in-your-pocket. Pick your vibe, get something to do.",
 };
 
 export default function RootLayout({
@@ -25,9 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${fraunces.variable} antialiased`}>
         {children}
       </body>
     </html>

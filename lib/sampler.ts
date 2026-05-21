@@ -7,7 +7,40 @@ const TIME_BUCKETS: Record<TimeBucket, (m: number) => boolean> = {
   fullday: (m) => m > 200,
 };
 
-const ANTI_DOOMSCROLL_CATS: Category[] = ['physical', 'social', 'creative'];
+// Anti-doomscroll: physical + social + (real-world) creative
+const ANTI_DOOMSCROLL_CATS: Category[] = ['physical', 'social', 'creative', 'nostalgic'];
+
+// Substrings that imply phone/screen use — exclude these when anti-doomscroll is on
+const PHONE_WORDS = [
+  'phone',
+  'video',
+  'tiktok',
+  'instagram',
+  'reel',
+  'scroll',
+  'app ',
+  ' app',
+  'screen',
+  'youtube',
+  'edit a',
+  'edit one',
+  'meme',
+  'voice note',
+  'text ',
+  'whatsapp',
+  'snap ',
+  'snapchat',
+  'twitter',
+  'post a',
+  'post one',
+  'story ',
+  'discord',
+];
+
+function isPhoneActivity(a: Activity): boolean {
+  const haystack = `${a.title} ${a.description}`.toLowerCase();
+  return PHONE_WORDS.some((w) => haystack.includes(w));
+}
 
 export function sample(pool: Pool, filters: Filters, opts: SampleOptions = {}): Activity[] {
   const { count = 6, antiDoomscroll = false, currentTimeOfDay, excludeIds = [] } = opts;
@@ -23,7 +56,9 @@ export function sample(pool: Pool, filters: Filters, opts: SampleOptions = {}): 
   );
 
   if (antiDoomscroll) {
-    candidates = candidates.filter((a) => ANTI_DOOMSCROLL_CATS.includes(a.tags.category));
+    candidates = candidates.filter(
+      (a) => ANTI_DOOMSCROLL_CATS.includes(a.tags.category) && !isPhoneActivity(a),
+    );
   }
 
   if (candidates.length === 0) return [];
@@ -31,7 +66,7 @@ export function sample(pool: Pool, filters: Filters, opts: SampleOptions = {}): 
   const weighted: { activity: Activity; weight: number }[] = candidates.map((a) => {
     let w = 1;
     if (currentTimeOfDay && a.tags.timeOfDay.includes(currentTimeOfDay)) w *= 2;
-    if (antiDoomscroll && !a.tags.indoor) w *= 1.5;
+    if (antiDoomscroll && !a.tags.indoor) w *= 1.8;
     return { activity: a, weight: w };
   });
 

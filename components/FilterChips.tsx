@@ -5,14 +5,14 @@ const TIME_LABELS: Record<TimeBucket, string> = {
   '15min': '15 min',
   '1hr': '1 hr',
   '3hr': '3 hrs',
-  fullday: 'Full day',
+  fullday: 'All day',
 };
-const ENERGY_LABELS: Record<Energy, string> = { low: 'Low', medium: 'Medium', high: 'High' };
+const ENERGY_LABELS: Record<Energy, string> = { low: '🪫 Low', medium: '🔋 Medium', high: '⚡ High' };
 const MOOD_LABELS: Record<Mood, string> = {
-  calm: 'Calm',
-  curious: 'Curious',
-  restless: 'Restless',
-  social: 'Social',
+  calm: '🧘 Calm',
+  curious: '🤔 Curious',
+  restless: '🫨 Restless',
+  social: '🫶 Social',
 };
 
 type Props = {
@@ -28,30 +28,32 @@ function ChipRow<T extends string>(props: {
 }) {
   const keys = Object.keys(props.options) as T[];
   return (
-    <div className="flex items-center gap-2 flex-wrap">
-      <span className="text-xs uppercase tracking-wide text-gray-500 w-16 shrink-0">
+    <div className="flex flex-col gap-2">
+      <span className="text-[10px] font-semibold uppercase tracking-[0.15em] text-ink-soft">
         {props.label}
       </span>
-      {keys.map((k) => (
-        <button
-          key={k}
-          onClick={() => props.onChange(k)}
-          className={`px-3 py-1.5 rounded-full text-sm border transition ${
-            props.value === k
-              ? 'bg-gray-900 text-white border-gray-900'
-              : 'bg-white text-gray-700 border-gray-300 hover:border-gray-500'
-          }`}
-        >
-          {props.options[k]}
-        </button>
-      ))}
+      <div className="flex items-center gap-2 flex-wrap">
+        {keys.map((k) => (
+          <button
+            key={k}
+            onClick={() => props.onChange(k)}
+            className={`px-3.5 py-1.5 rounded-full text-sm border transition font-medium ${
+              props.value === k
+                ? 'bg-ink text-bg-2 border-ink shadow-sm'
+                : 'bg-card text-ink border-muted hover:border-ink-soft'
+            }`}
+          >
+            {props.options[k]}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
 
 export default function FilterChips({ filters, onChange }: Props) {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-4">
       <ChipRow
         label="Time"
         value={filters.time}

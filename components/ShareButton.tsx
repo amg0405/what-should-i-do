@@ -1,16 +1,23 @@
 'use client';
-import { useState } from 'react';
 import { encodeFilters } from '@/lib/share';
+import { useToast } from './Toast';
 import type { Filters } from '@/lib/types';
 
 export default function ShareButton({ filters }: { filters: Filters }) {
-  const [copied, setCopied] = useState(false);
+  const toast = useToast();
   const onClick = async () => {
     const url = `${window.location.origin}/?${encodeFilters(filters).toString()}`;
+    if (typeof navigator !== 'undefined' && 'share' in navigator) {
+      try {
+        await navigator.share({ title: 'What should I do?', url });
+        return;
+      } catch {
+        /* user cancelled or no support — fall through to clipboard */
+      }
+    }
     try {
       await navigator.clipboard.writeText(url);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1500);
+      toast('Link copied — share with a friend ✨');
     } catch {
       window.prompt('Copy this link:', url);
     }
@@ -18,9 +25,9 @@ export default function ShareButton({ filters }: { filters: Filters }) {
   return (
     <button
       onClick={onClick}
-      className="px-3 py-1.5 text-sm text-gray-600 hover:text-gray-900 underline"
+      className="px-3 py-1.5 text-sm text-ink-soft hover:text-ink underline-offset-4 hover:underline"
     >
-      {copied ? 'Copied ✓' : 'Share these filters'}
+      ↗ Share these filters
     </button>
   );
 }

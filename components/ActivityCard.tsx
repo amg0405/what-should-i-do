@@ -1,5 +1,7 @@
 'use client';
+import { useState } from 'react';
 import type { Activity } from '@/lib/types';
+import { CATEGORY_META } from '@/lib/categoryMeta';
 
 type Props = {
   activity: Activity;
@@ -9,28 +11,68 @@ type Props = {
 };
 
 export default function ActivityCard({ activity, isFavorite, onToggleFavorite, onDidIt }: Props) {
+  const [done, setDone] = useState(false);
+  const [celebrating, setCelebrating] = useState(false);
+  const meta = CATEGORY_META[activity.tags.category];
+
+  const handleDidIt = () => {
+    if (done) return;
+    setCelebrating(true);
+    onDidIt();
+    setTimeout(() => {
+      setDone(true);
+      setCelebrating(false);
+    }, 600);
+  };
+
   return (
-    <div className="bg-white border border-gray-200 rounded-2xl p-5 flex flex-col gap-3 shadow-sm hover:shadow-md transition">
+    <div
+      className={`relative border border-muted rounded-3xl p-5 flex flex-col gap-3 shadow-sm hover:shadow-md transition-all duration-300 animate-slide-up ${
+        done ? 'opacity-50' : 'opacity-100'
+      }`}
+      style={{ background: meta.tintVar }}
+    >
       <div className="flex items-start justify-between gap-2">
-        <h3 className="font-semibold text-gray-900 leading-tight">{activity.title}</h3>
+        <span className="inline-flex items-center gap-1 text-xs font-medium text-ink-soft bg-white/60 px-2.5 py-1 rounded-full">
+          <span aria-hidden>{meta.emoji}</span> {meta.label}
+        </span>
         <button
           aria-label={isFavorite ? 'Unfavorite' : 'Favorite'}
           onClick={onToggleFavorite}
-          className="text-xl shrink-0 text-rose-500 hover:scale-110 transition"
+          className="text-xl shrink-0 text-primary hover:scale-110 transition"
         >
           {isFavorite ? '♥' : '♡'}
         </button>
       </div>
-      <p className="text-sm text-gray-600">{activity.description}</p>
+
+      <h3
+        className={`display font-semibold text-ink text-lg leading-snug ${
+          done ? 'line-through' : ''
+        }`}
+      >
+        {activity.title}
+      </h3>
+      <p className="text-sm text-ink-soft leading-relaxed">{activity.description}</p>
+
       <div className="flex items-center justify-between mt-auto pt-2">
-        <span className="text-xs text-gray-500">~{activity.duration_min} min</span>
-        <button
-          onClick={onDidIt}
-          className="text-xs text-emerald-700 hover:text-emerald-900 underline"
-        >
-          Did it ✓
-        </button>
+        <span className="text-xs text-ink-soft font-medium">~{activity.duration_min} min</span>
+        {done ? (
+          <span className="text-xs text-success font-semibold">Done ✓</span>
+        ) : (
+          <button
+            onClick={handleDidIt}
+            className="text-xs text-success font-semibold hover:underline"
+          >
+            {celebrating ? 'Nice! 🎉' : 'Did it ✓'}
+          </button>
+        )}
       </div>
+
+      {celebrating && (
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none text-5xl animate-pop-in">
+          🎉
+        </div>
+      )}
     </div>
   );
 }
