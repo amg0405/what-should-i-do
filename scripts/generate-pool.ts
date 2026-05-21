@@ -6,7 +6,7 @@ import { ActivitySchema, AudienceSchema, type Audience, type Activity, type Pool
 import { AUDIENCE_DESCRIPTIONS, SEED_THEMES } from './seedThemes';
 
 const PER_THEME = 50;
-const MIN_TOTAL = 250;
+const MIN_TOTAL = 300;
 const MODEL = 'claude-haiku-4-5';
 
 const client = new Anthropic();
@@ -44,7 +44,16 @@ BAD voice (NEVER):
 LOCATION + COST:
 Most activities should be Singapore-specific or work seamlessly in Singapore. Reference real places where it fits: hawker centres (Maxwell, Old Airport Rd, Tiong Bahru, Ghim Moh, Adam Road, Tampines Round Market), parks (East Coast Park, Bishan-AMK, MacRitchie, Botanic Gardens, Marina Barrage, Pulau Ubin), neighbourhoods (Tiong Bahru, Joo Chiat, Holland V, Tanjong Pagar, Bras Basah, Kampong Glam), cultural (NGS, NMS, ArtScience, The Projector, Esplanade outdoor stage, NLB branches), transport (MRT lines, Park Connectors, SG Bike, EZ-Link, bumboat to Ubin), food (kopi, kaya toast, chendol, ice kachang, mee goreng, chicken rice, kway teow).
 
-COST in S$ INCLUDING return MRT/bus fare (~S$2-4 per round trip). Be honest about cost_sgd.
+COST in S$ INCLUDING return MRT/bus fare (~S$2-4 per round trip). Be honest about cost_sgd — if it's the Zoo it's ~S$48, if it's Wings of Time it's ~S$15, if it's an SG Bike hour it's ~S$3, if it's a chendol it's ~S$3.
+
+COST DISTRIBUTION (CRITICAL):
+Spread activities across budget tiers. AIM FOR:
+- ~25% free (cost_sgd = 0): walks, breathing, calls, sketching at home
+- ~25% under5: kopi, kaya toast, chendol, MRT trip somewhere quiet
+- ~25% under10: hawker lunch, one café session, a movie matinee
+- ~25% under50: real outings — Zoo, USS, S.E.A. Aquarium, Wings of Time, Skyline Luge, Hai Di Lao share, climbing day pass, omakase lunch, Cloud Forest
+
+DO NOT cluster everything in the free/under5 tier. The whole point of the budget filter is that someone with S$30-50 to spend should have plenty of real Singapore experiences surfaced.
 
 Title rules:
 - Strong verb + specific image. Concrete enough to act on with zero further thought.
