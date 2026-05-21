@@ -1,101 +1,180 @@
-import Image from "next/image";
+'use client';
+import { useEffect, useMemo, useState, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { getPool } from '@/lib/pool';
+import { sample } from '@/lib/sampler';
+import { decodeFilters } from '@/lib/share';
+import { getTimeOfDay } from '@/lib/timeOfDay';
+import {
+  useFavorites,
+  useHistory,
+  usePersistedAudience,
+  usePersistedFilters,
+} from '@/lib/storage';
+import type { Audience, Filters, Activity } from '@/lib/types';
+import AudienceSwitcher from '@/components/AudienceSwitcher';
+import FilterChips from '@/components/FilterChips';
+import MenuGrid from '@/components/MenuGrid';
+import AntiDoomscrollButton from '@/components/AntiDoomscrollButton';
+import ShareButton from '@/components/ShareButton';
 
-export default function Home() {
+const DEFAULT_FILTERS: Filters = {
+  audience: 'teen',
+  time: '1hr',
+  energy: 'medium',
+  mood: 'curious',
+};
+
+function FirstVisitModal({ onChoose }: { onChoose: (a: Audience) => void }) {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="fixed inset-0 bg-black/40 flex items-center justify-center p-4 z-50">
+      <div className="bg-white rounded-2xl p-6 max-w-sm w-full shadow-xl">
+        <h2 className="text-lg font-semibold mb-2">Who are you roughly?</h2>
+        <p className="text-sm text-gray-600 mb-4">
+          We&apos;ll tune suggestions to your life situation. You can switch later.
+        </p>
+        <div className="flex flex-col gap-2">
+          <button
+            onClick={() => onChoose('teen')}
+            className="px-4 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-700"
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            I&apos;m 22 or younger (school/college)
+          </button>
+          <button
+            onClick={() => onChoose('adult')}
+            className="px-4 py-3 bg-white border border-gray-300 rounded-lg hover:border-gray-500"
           >
-            Read our docs
-          </a>
+            I&apos;m older than 22 (working)
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
+  );
+}
+
+function PageInner() {
+  const searchParams = useSearchParams();
+  const [audience, setAudience] = usePersistedAudience();
+  const [filters, setFilters] = usePersistedFilters(DEFAULT_FILTERS);
+  const { favorites, toggle: toggleFavorite } = useFavorites();
+  const { record, recentShownIds } = useHistory();
+  const [shown, setShown] = useState<Activity[]>([]);
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    const fromUrl = decodeFilters(searchParams);
+    if (fromUrl) {
+      setFilters(fromUrl);
+      setAudience(fromUrl.audience);
+    }
+    setHydrated(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const generate = (overrideAudience?: Audience, opts: { antiDoomscroll?: boolean } = {}) => {
+    const aud = overrideAudience ?? audience ?? 'teen';
+    const pool = getPool(aud);
+    const next = sample(
+      pool,
+      { ...filters, audience: aud },
+      {
+        count: 6,
+        antiDoomscroll: opts.antiDoomscroll,
+        currentTimeOfDay: getTimeOfDay(),
+        excludeIds: recentShownIds(20),
+      },
+    );
+    setShown(next);
+    next.forEach((a) => record(a.id, 'shown'));
+  };
+
+  useEffect(() => {
+    if (hydrated && audience && shown.length === 0) generate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hydrated, audience]);
+
+  const generatedDate = useMemo(() => {
+    if (!audience) return '';
+    return new Date(getPool(audience).generated_at).toLocaleDateString();
+  }, [audience]);
+
+  if (!hydrated) return null;
+  if (!audience)
+    return (
+      <FirstVisitModal
+        onChoose={(a) => {
+          setAudience(a);
+          setFilters({ ...filters, audience: a });
+        }}
+      />
+    );
+
+  return (
+    <main className="min-h-screen bg-gray-50">
+      <div className="max-w-5xl mx-auto px-4 py-8 sm:py-12">
+        <header className="flex items-center justify-between mb-8">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">What should I do?</h1>
+          <div className="flex items-center gap-3">
+            <AudienceSwitcher
+              value={audience}
+              onChange={(a) => {
+                setAudience(a);
+                setFilters({ ...filters, audience: a });
+                setShown([]);
+              }}
+            />
+            <a href="/favorites" className="text-sm text-gray-600 hover:text-gray-900 underline">
+              Favorites
+            </a>
+          </div>
+        </header>
+
+        <section className="bg-white border border-gray-200 rounded-2xl p-5 mb-6">
+          <FilterChips filters={filters} onChange={setFilters} />
+          <div className="flex flex-wrap items-center gap-3 mt-5">
+            <button
+              onClick={() => generate()}
+              className="px-5 py-2.5 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-700"
+            >
+              Show me ideas
+            </button>
+            <AntiDoomscrollButton onClick={() => generate(undefined, { antiDoomscroll: true })} />
+            <div className="ml-auto">
+              <ShareButton filters={filters} />
+            </div>
+          </div>
+        </section>
+
+        <MenuGrid
+          activities={shown}
+          favorites={favorites}
+          onToggleFavorite={toggleFavorite}
+          onDidIt={(id) => record(id, 'did_it')}
+        />
+
+        {shown.length > 0 && (
+          <div className="flex justify-center mt-6">
+            <button
+              onClick={() => generate()}
+              className="px-4 py-2 text-sm text-gray-600 hover:text-gray-900 underline"
+            >
+              Refresh ↻
+            </button>
+          </div>
+        )}
+
+        <footer className="text-center text-xs text-gray-400 mt-12">
+          Pool last updated: {generatedDate}
+        </footer>
+      </div>
+    </main>
+  );
+}
+
+export default function Page() {
+  return (
+    <Suspense fallback={null}>
+      <PageInner />
+    </Suspense>
   );
 }
