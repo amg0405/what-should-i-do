@@ -5,8 +5,8 @@ import { createHash } from 'crypto';
 import { ActivitySchema, AudienceSchema, type Audience, type Activity, type Pool } from '../lib/types';
 import { AUDIENCE_DESCRIPTIONS, SEED_THEMES } from './seedThemes';
 
-const PER_THEME = 80;
-const MIN_TOTAL = 400;
+const PER_THEME = 50;
+const MIN_TOTAL = 250;
 const MODEL = 'claude-haiku-4-5';
 
 const client = new Anthropic();
@@ -82,7 +82,7 @@ Return ONLY the JSON array. No code fence, no preamble.`;
 
   const resp = await client.messages.create({
     model: MODEL,
-    max_tokens: 8000,
+    max_tokens: 16000,
     messages: [{ role: 'user', content: prompt }],
   });
   const text = resp.content

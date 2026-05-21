@@ -43,7 +43,15 @@ export const ActivitySchema = z.object({
   tags: z.object({
     energy: z.array(EnergySchema).min(1),
     mood: z.array(MoodSchema).min(1),
-    timeOfDay: z.array(TimeOfDaySchema).min(1),
+    timeOfDay: z.preprocess(
+      (v) => {
+        if (!Array.isArray(v)) return v;
+        const valid = TimeOfDaySchema.options as readonly string[];
+        const filtered = v.filter((x) => typeof x === 'string' && valid.includes(x));
+        return filtered.length > 0 ? filtered : ['afternoon'];
+      },
+      z.array(TimeOfDaySchema).min(1),
+    ),
     category: z.preprocess(
       (v) => (Array.isArray(v) ? v[0] : v),
       CategorySchema,
